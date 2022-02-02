@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -20,13 +20,46 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
+    "snap": true,
     "zoomFactor": 0.5999999999999996,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "NewObject",
+      "persistentUuid": "ac710fde-2280-4bf6-b62b-2a8d9972b180",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "",
+      "locked": false,
+      "name": "minimalistic_art_be_like",
+      "persistentUuid": "da88ae17-161c-4712-8f66-2320b54702c4",
+      "width": 608,
+      "x": 224,
+      "y": 376,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
   "objects": [
     {
       "name": "minimalistic_art_be_like",
@@ -35,7 +68,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
           "name": "NewObject",
@@ -67,9 +108,158 @@
           ]
         }
       ]
+    },
+    {
+      "name": "NewObject",
+      "tags": "",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "MarchingSquaresBehavior",
+          "type": "MarchingSquares::MarchingSquaresBehavior",
+          "AreaLeftBound": 0,
+          "AreaTopBound": 0,
+          "AreaRightBound": 0,
+          "AreaBottomBound": 0,
+          "CellWidth": 20,
+          "CellHeight": 20,
+          "FillOutside": false,
+          "Threshold": 1,
+          "MustOnlyDrawScreen": true
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 6,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 141,
+        "g": 209,
+        "r": 88
+      },
+      "outlineColor": {
+        "b": 88,
+        "g": 114,
+        "r": 30
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MarchingSquares::MarchingSquaresBehavior::AddDisk"
+          },
+          "parameters": [
+            "NewObject",
+            "MarchingSquaresBehavior",
+            "MouseX()",
+            "MouseY()",
+            "4",
+            "5",
+            "\"Addition\"",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Right"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MarchingSquares::MarchingSquaresBehavior::UpdateHitboxes"
+          },
+          "parameters": [
+            "NewObject",
+            "MarchingSquaresBehavior",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MarchingSquares::MarchingSquaresBehavior::DrawField"
+          },
+          "parameters": [
+            "NewObject",
+            "MarchingSquaresBehavior",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 32,
@@ -94,5 +284,14 @@
       "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "MarchingSquaresBehavior",
+      "type": "MarchingSquares::MarchingSquaresBehavior"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    }
+  ]
 }
