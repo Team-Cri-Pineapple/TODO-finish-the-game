@@ -64,7 +64,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewObject-1.png",
+                  "image": "assets\\NewObject-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
