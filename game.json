@@ -59,15 +59,6 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "NewObject-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewObject-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/NewObject-1.png",
         "kind": "image",
         "metadata": "",
