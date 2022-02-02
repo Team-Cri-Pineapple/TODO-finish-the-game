@@ -344,15 +344,38 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "JSONToVariableStructure"
+              },
+              "parameters": [
+                "GlobalVarToJSON(betterInventory)",
+                "betterInventory"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "betterInventory.temp.found",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::ForEachChildVariable",
-              "iterableVariableName": "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[GetArgumentAsNumber(\"slot\")].quantity",
-              "valueIteratorVariableName": "child",
-              "keyIteratorVariableName": "",
+              "iterableVariableName": "betterInventory.bags[GetArgumentAsString(\"bag\")].slots",
+              "valueIteratorVariableName": "childbetterInventory.temp.slot",
+              "keyIteratorVariableName": "betterInventory.temp.slotNum",
               "conditions": [],
               "actions": [],
               "events": []
