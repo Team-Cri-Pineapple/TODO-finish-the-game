@@ -42,22 +42,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "",
-      "locked": false,
-      "name": "minimalistic_art_be_like",
-      "persistentUuid": "da88ae17-161c-4712-8f66-2320b54702c4",
-      "width": 608,
-      "x": 224,
-      "y": 376,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -68,15 +52,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "canBeGrabbed": true,
-          "name": "Platform",
-          "platformType": "NormalPlatform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "NewObject",
@@ -209,39 +185,6 @@
       "disabled": false,
       "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "MouseButtonReleased"
-          },
-          "parameters": [
-            "",
-            "Right"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "MarchingSquares::MarchingSquaresBehavior::UpdateHitboxes"
-          },
-          "parameters": [
-            "NewObject",
-            "MarchingSquaresBehavior",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
         {
@@ -288,10 +231,6 @@
     {
       "name": "MarchingSquaresBehavior",
       "type": "MarchingSquares::MarchingSquaresBehavior"
-    },
-    {
-      "name": "Platform",
-      "type": "PlatformBehavior::PlatformBehavior"
     }
   ]
 }
