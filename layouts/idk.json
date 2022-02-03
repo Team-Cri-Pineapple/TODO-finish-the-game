@@ -115,15 +115,15 @@
           "AreaTopBound": 0,
           "AreaRightBound": 0,
           "AreaBottomBound": 0,
-          "CellWidth": 20,
-          "CellHeight": 20,
+          "CellWidth": 50,
+          "CellHeight": 50,
           "FillOutside": false,
           "Threshold": 1,
           "MustOnlyDrawScreen": true
         }
       ],
       "fillOpacity": 255,
-      "outlineSize": 6,
+      "outlineSize": 4,
       "outlineOpacity": 255,
       "fillColor": {
         "b": 141,
@@ -136,7 +136,7 @@
         "r": 30
       },
       "absoluteCoordinates": false,
-      "clearBetweenFrames": true
+      "clearBetweenFrames": false
     },
     {
       "bold": false,
@@ -202,12 +202,25 @@
             ""
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BetterInventory::createItem"
+          },
+          "parameters": [
+            "",
+            "\"cricandi\"",
+            "16",
+            ""
+          ],
+          "subInstructions": []
         }
       ],
       "events": []
     },
     {
-      "disabled": false,
+      "disabled": true,
       "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -256,6 +269,42 @@
           },
           "parameters": [
             "",
+            "Left"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BetterInventory::addItem"
+          },
+          "parameters": [
+            "",
+            "\"cricandi\"",
+            "\"bag\"",
+            "3",
+            "-1",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
             "Right"
           ],
           "subInstructions": []
@@ -271,8 +320,8 @@
             "",
             "\"p\"",
             "\"bag\"",
-            "1",
-            "3",
+            "2",
+            "-1",
             ""
           ],
           "subInstructions": []

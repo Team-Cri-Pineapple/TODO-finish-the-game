@@ -177,7 +177,7 @@
                   "parameters": [
                     "GetArgumentAsString(\"item\")",
                     "=",
-                    "GlobalVariableString(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[GetArgumentAsNumber(\"bag\")].name)"
+                    "GlobalVariableString(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[GetArgumentAsNumber(\"slot\")].name)"
                   ],
                   "subInstructions": []
                 }
@@ -291,7 +291,7 @@
                   "parameters": [
                     "GetArgumentAsString(\"item\")",
                     "!=",
-                    "GlobalVariableString(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[GetArgumentAsNumber(\"bag\")].name)"
+                    "GlobalVariableString(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[GetArgumentAsNumber(\"slot\")].name)"
                   ],
                   "subInstructions": []
                 }
@@ -530,7 +530,7 @@
                                 "value": "VarGlobal"
                               },
                               "parameters": [
-                                "betterInventory.items[Variable(betterInventory.temp.slotNum)].max",
+                                "betterInventory.items[GetArgumentAsString(\"item\")].max",
                                 ">=",
                                 "Variable(betterInventory.temp.itemNum) + GlobalVariable(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity)"
                               ],
@@ -599,7 +599,7 @@
                                 "value": "VarGlobal"
                               },
                               "parameters": [
-                                "betterInventory.items[Variable(betterInventory.temp.slotNum)].max",
+                                "betterInventory.items[GetArgumentAsString(\"item\")].max",
                                 "<",
                                 "Variable(betterInventory.temp.itemNum) + GlobalVariable(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity)"
                               ],
@@ -615,7 +615,7 @@
                               "parameters": [
                                 "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity",
                                 "+",
-                                "Variable(betterInventory.temp.itemNum) + GlobalVariable(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max)"
+                                "Variable(betterInventory.temp.itemNum)-((Variable(betterInventory.temp.itemNum) + GlobalVariable(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity)) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max))"
                               ],
                               "subInstructions": []
                             },
@@ -627,7 +627,7 @@
                               "parameters": [
                                 "betterInventory.temp.itemNum",
                                 "-",
-                                "Variable(betterInventory.temp.itemNum) + GlobalVariable(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max)"
+                                "Variable(betterInventory.temp.itemNum)-((Variable(betterInventory.temp.itemNum) + GlobalVariable(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity)) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max))"
                               ],
                               "subInstructions": []
                             },
@@ -670,7 +670,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -681,6 +681,18 @@
                           "parameters": [
                             "betterInventory.temp.notSameName",
                             "False"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity",
+                            "<=",
+                            "0"
                           ],
                           "subInstructions": []
                         }
@@ -698,7 +710,7 @@
                                 "value": "VarGlobal"
                               },
                               "parameters": [
-                                "betterInventory.items[Variable(betterInventory.temp.slotNum)].max",
+                                "betterInventory.items[GetArgumentAsString(\"item\")].max",
                                 ">=",
                                 "Variable(betterInventory.temp.itemNum)"
                               ],
@@ -767,7 +779,7 @@
                                 "value": "VarGlobal"
                               },
                               "parameters": [
-                                "betterInventory.items[Variable(betterInventory.temp.slotNum)].max",
+                                "betterInventory.items[GetArgumentAsString(\"item\")].max",
                                 "<",
                                 "Variable(betterInventory.temp.itemNum)"
                               ],
@@ -783,7 +795,7 @@
                               "parameters": [
                                 "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity",
                                 "+",
-                                "Variable(betterInventory.temp.itemNum) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max)"
+                                "Variable(betterInventory.temp.itemNum) -  (Variable(betterInventory.temp.itemNum) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max))"
                               ],
                               "subInstructions": []
                             },
@@ -795,7 +807,7 @@
                               "parameters": [
                                 "betterInventory.temp.itemNum",
                                 "-",
-                                "Variable(betterInventory.temp.itemNum) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max)"
+                                "Variable(betterInventory.temp.itemNum) -  (Variable(betterInventory.temp.itemNum) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max))"
                               ],
                               "subInstructions": []
                             },
