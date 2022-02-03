@@ -42,6 +42,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 22,
+      "layer": "",
+      "locked": false,
+      "name": "debug",
+      "persistentUuid": "d8f88727-422f-4dc1-80c4-579ca95aacb9",
+      "width": 736,
+      "x": 128,
+      "y": 160,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -121,6 +137,26 @@
       },
       "absoluteCoordinates": false,
       "clearBetweenFrames": true
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "debug",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "assets\\Minecraft.ttf",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "events": [
@@ -140,7 +176,34 @@
           "subInstructions": []
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BetterInventory::createBag"
+          },
+          "parameters": [
+            "",
+            "\"bag\"",
+            "10",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BetterInventory::createItem"
+          },
+          "parameters": [
+            "",
+            "\"p\"",
+            "10",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
       "events": []
     },
     {
@@ -185,6 +248,42 @@
       "disabled": false,
       "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Right"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BetterInventory::addItem"
+          },
+          "parameters": [
+            "",
+            "\"p\"",
+            "\"bag\"",
+            "1",
+            "3",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
         {
@@ -196,6 +295,18 @@
             "NewObject",
             "MarchingSquaresBehavior",
             ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "debug",
+            "=",
+            "GlobalVarToJSON(betterInventory)"
           ],
           "subInstructions": []
         }

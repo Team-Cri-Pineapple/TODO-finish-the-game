@@ -36,7 +36,7 @@
               "parameters": [
                 "betterInventory.bags[GetArgumentAsString(\"name\")].max",
                 "=",
-                "GetArgumentAsNumber(\"maxItem\")"
+                "GetArgumentAsNumber(\"maxSlot\")"
               ],
               "subInstructions": []
             }
@@ -58,9 +58,9 @@
         {
           "codeOnly": false,
           "defaultValue": "",
-          "description": "Max number of items (-1 for infinite)",
+          "description": "Max number of slots (-1 for infinite)",
           "longDescription": "",
-          "name": "maxItem",
+          "name": "maxSlot",
           "optional": false,
           "supplementaryInformation": "",
           "type": "expression"
@@ -115,10 +115,10 @@
           "defaultValue": "",
           "description": "Max number of items in one slot (-1 for infinite)",
           "longDescription": "",
-          "name": "max",
+          "name": "maxItem",
           "optional": false,
           "supplementaryInformation": "",
-          "type": "objectList"
+          "type": "expression"
         }
       ],
       "objectGroups": []
@@ -130,7 +130,7 @@
       "group": "Better Inventory/Items",
       "name": "addItem",
       "private": false,
-      "sentence": "",
+      "sentence": "Add _PARAM3_ _PARAM1_ items to bag _PARAM2_ in slot _PARAM4_",
       "events": [
         {
           "disabled": false,
@@ -370,11 +370,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "SetSceneVariableAsBoolean"
+                "value": "ModVarScene"
               },
               "parameters": [
-                "betterInventory.temp.end",
-                ""
+                "betterInventory.temp.itemNum",
+                "=",
+                "GetArgumentAsNumber(\"quantity\")"
               ],
               "subInstructions": []
             },
@@ -384,9 +385,9 @@
                 "value": "ModVarScene"
               },
               "parameters": [
-                "betterInventory.temp.itemNum",
+                "betterInventory.temp.slotNum",
                 "=",
-                "GetArgumentAsNumber(\"quantity\")"
+                "0"
               ],
               "subInstructions": []
             }
@@ -395,10 +396,54 @@
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::ForEachChildVariable",
-              "iterableVariableName": "betterInventory.bags[GetArgumentAsString(\"bag\")].slots",
-              "valueIteratorVariableName": "childbetterInventory.temp.slot",
-              "keyIteratorVariableName": "betterInventory.temp.slotNum",
+              "infiniteLoopWarning": true,
+              "type": "BuiltinCommonInstructions::While",
+              "whileConditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "betterInventory.bags[GetArgumentAsString(\"bag\")].max",
+                        ">=",
+                        "Variable(betterInventory.temp.slotNum)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "GetArgumentAsNumber(\"slot\")",
+                        "<=",
+                        "-1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "betterInventory.temp.found",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "conditions": [],
               "actions": [],
               "events": [
@@ -406,30 +451,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "betterInventory.temp.found",
-                        "False"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "betterInventory.temp.end",
-                        "False"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
@@ -446,7 +468,7 @@
                   "events": [
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -542,34 +564,24 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "SetSceneVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "betterInventory.temp.found",
-                                "True"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "SetSceneVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "betterInventory.temp.notSameName",
-                                "True"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
                                 "value": "ModVarGlobalTxt"
                               },
                               "parameters": [
                                 "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].name",
                                 "=",
                                 "GetArgumentAsString(\"item\")"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "betterInventory.temp.itemNum",
+                                "=",
+                                "0"
                               ],
                               "subInstructions": []
                             }
@@ -603,7 +615,51 @@
                               "parameters": [
                                 "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity",
                                 "+",
-                                "Variable(betterInventory.temp.itemNum)"
+                                "Variable(betterInventory.temp.itemNum) + GlobalVariable(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max)"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "betterInventory.temp.itemNum",
+                                "-",
+                                "Variable(betterInventory.temp.itemNum) + GlobalVariable(betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max)"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarGlobalTxt"
+                              },
+                              "parameters": [
+                                "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].name",
+                                "=",
+                                "GetArgumentAsString(\"item\")"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "betterInventory.temp.notSameName",
+                                "True"
                               ],
                               "subInstructions": []
                             }
@@ -614,7 +670,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -672,11 +728,114 @@
                                 "Variable(betterInventory.temp.itemNum)"
                               ],
                               "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarGlobalTxt"
+                              },
+                              "parameters": [
+                                "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].name",
+                                "=",
+                                "GetArgumentAsString(\"item\")"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "betterInventory.temp.itemNum",
+                                "=",
+                                "0"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarGlobal"
+                              },
+                              "parameters": [
+                                "betterInventory.items[Variable(betterInventory.temp.slotNum)].max",
+                                "<",
+                                "Variable(betterInventory.temp.itemNum)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarGlobal"
+                              },
+                              "parameters": [
+                                "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].quantity",
+                                "+",
+                                "Variable(betterInventory.temp.itemNum) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max)"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "betterInventory.temp.itemNum",
+                                "-",
+                                "Variable(betterInventory.temp.itemNum) - GlobalVariable(betterInventory.items[GetArgumentAsString(\"item\")].max)"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarGlobalTxt"
+                              },
+                              "parameters": [
+                                "betterInventory.bags[GetArgumentAsString(\"bag\")].slots[Variable(betterInventory.temp.slotNum)].name",
+                                "=",
+                                "GetArgumentAsString(\"item\")"
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "events": []
                         }
                       ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "betterInventory.temp.slotNum",
+                            "+",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ]
                 }

@@ -65,6 +65,13 @@
         "name": "assets\\NewObject-1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/Minecraft.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Minecraft.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
