@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5999999999999996,
+    "zoomFactor": 0.6250000000000003,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -46,18 +46,180 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 22,
+      "height": 64,
       "layer": "",
       "locked": false,
-      "name": "debug",
-      "persistentUuid": "d8f88727-422f-4dc1-80c4-579ca95aacb9",
-      "width": 736,
-      "x": 128,
-      "y": 160,
+      "name": "box",
+      "persistentUuid": "0e255f1f-b80e-482b-8120-e38e0fe2f58f",
+      "width": 64,
+      "x": 192,
+      "y": 224,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "1233d0fa-d4eb-4958-b975-4e82bca672e5",
+      "width": 64,
+      "x": 288,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "dafe2a4e-24aa-4ed9-9655-681fc82026d0",
+      "width": 64,
+      "x": 384,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "77913c5b-13ba-4c3d-bda5-276bb3cb447d",
+      "width": 64,
+      "x": 480,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "7cda51ba-2544-4279-a6e8-44ff262f6480",
+      "width": 64,
+      "x": 576,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 22,
+      "layer": "",
+      "locked": false,
+      "name": "debug",
+      "persistentUuid": "73a57527-e4fe-4799-879a-9882a12863a0",
+      "width": 480,
+      "x": 32,
+      "y": 330,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "minimalistic_art_be_like",
+      "persistentUuid": "82a5f4cd-b1b5-46b2-8ea6-66ca1dc2c8c3",
+      "width": 0,
+      "x": 448,
+      "y": 128,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "addd",
+      "persistentUuid": "907fe73a-f44d-409f-9768-5237faae9b93",
+      "width": 0,
+      "x": 736,
+      "y": 386,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "item",
+          "type": "string",
+          "value": "emdag"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "addd",
+      "persistentUuid": "dd85b8f4-6b4b-4d27-8fa1-26ac6dd869aa",
+      "width": 0,
+      "x": 736,
+      "y": 258,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "item",
+          "type": "string",
+          "value": "cricandi"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "addd",
+      "persistentUuid": "e63de636-9530-4c94-af71-2335a2473c03",
+      "width": 0,
+      "x": 736,
+      "y": 322,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "item",
+          "type": "string",
+          "value": "sword"
+        }
+      ]
     }
   ],
   "objects": [
@@ -157,6 +319,230 @@
         "g": 0,
         "r": 0
       }
+    },
+    {
+      "name": "box",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewObject2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject2-1.png",
+                  "points": [
+                    {
+                      "name": "Text",
+                      "x": 9,
+                      "y": 9
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "addd",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "item",
+          "type": "string",
+          "value": "0"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "add",
+      "font": "assets\\Minecraft.ttf",
+      "characterSize": 25,
+      "color": {
+        "b": 87,
+        "g": 28,
+        "r": 87
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "numItem",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "nu",
+      "font": "assets\\Minecraft.ttf",
+      "characterSize": 40,
+      "color": {
+        "b": 87,
+        "g": 28,
+        "r": 87
+      }
+    },
+    {
+      "name": "item",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "item-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sword",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject2-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cricandi",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject2-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "emdag",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "item-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -185,7 +571,7 @@
           "parameters": [
             "",
             "\"bag\"",
-            "10",
+            "5",
             ""
           ],
           "subInstructions": []
@@ -197,8 +583,8 @@
           },
           "parameters": [
             "",
-            "\"p\"",
-            "10",
+            "\"sword\"",
+            "1",
             ""
           ],
           "subInstructions": []
@@ -215,9 +601,45 @@
             ""
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BetterInventory::createItem"
+          },
+          "parameters": [
+            "",
+            "\"emdag\"",
+            "16",
+            ""
+          ],
+          "subInstructions": []
         }
       ],
-      "events": []
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "addd",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "addd",
+                "=",
+                "\"add \"+addd.VariableString(item)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     },
     {
       "disabled": true,
@@ -253,6 +675,18 @@
             ""
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "MarchingSquares::MarchingSquaresBehavior::DrawField"
+          },
+          "parameters": [
+            "NewObject",
+            "MarchingSquaresBehavior",
+            ""
+          ],
+          "subInstructions": []
         }
       ],
       "events": []
@@ -272,44 +706,21 @@
             "Left"
           ],
           "subInstructions": []
-        }
-      ],
-      "actions": [
+        },
         {
           "type": {
             "inverted": false,
-            "value": "BetterInventory::addItem"
+            "value": "SourisSurObjet"
           },
           "parameters": [
+            "addd",
             "",
-            "\"cricandi\"",
-            "\"bag\"",
-            "3",
-            "-1",
+            "",
             ""
           ],
           "subInstructions": []
         }
       ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "MouseButtonReleased"
-          },
-          "parameters": [
-            "",
-            "Right"
-          ],
-          "subInstructions": []
-        }
-      ],
       "actions": [
         {
           "type": {
@@ -318,10 +729,11 @@
           },
           "parameters": [
             "",
-            "\"p\"",
+            "addd.VariableString(item)",
             "\"bag\"",
-            "2",
+            "1",
             "-1",
+            "\"coolbag\"",
             ""
           ],
           "subInstructions": []
@@ -338,11 +750,458 @@
         {
           "type": {
             "inverted": false,
-            "value": "MarchingSquares::MarchingSquaresBehavior::DrawField"
+            "value": "TextObject::String"
           },
           "parameters": [
-            "NewObject",
-            "MarchingSquaresBehavior",
+            "debug",
+            "=",
+            "GlobalVarToJSON(betterInventory)"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "idCount",
+            "=",
+            "0"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "box",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "box",
+                        "slot",
+                        "=",
+                        "Variable(idCount)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "idCount",
+                        "+",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "numItem",
+                        "numItem",
+                        "box.PointX(\"Text\")",
+                        "box.PointY(\"Text\")",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "numItem",
+                        "item",
+                        "box.X()",
+                        "box.Y()",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "box",
+                        "numItem"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "box",
+                        "item"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "item",
+                        "=",
+                        "4.8"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "item",
+                        "=",
+                        "-10"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "numItem",
+                        "\"255;255;255\"",
+                        "5"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "BetterInventory::isSlotEmpty"
+                  },
+                  "parameters": [
+                    "",
+                    "box.Variable(slot)",
+                    "\"bag\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "BetterInventory::itemQuantity(box.Variable(slot), \"bag\")",
+                        "<=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "numItem",
+                        "box",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "numItem"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "BetterInventory::itemQuantity(box.Variable(slot), \"bag\")",
+                        ">",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "numItem",
+                        "box",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "numItem",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "numItem",
+                            "!=",
+                            "ToString(BetterInventory::itemQuantity(box.Variable(slot), \"bag\"))"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "numItem",
+                            "=",
+                            "ToString(BetterInventory::itemQuantity(box.Variable(slot), \"bag\"))"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "item",
+                        "box",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "item",
+                        "BetterInventory::itemName(box.Variable(slot), \"bag\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BetterInventory::isSlotEmpty"
+                  },
+                  "parameters": [
+                    "",
+                    "box.Variable(slot)",
+                    "\"bag\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "numItem",
+                    "box",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "numItem"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "item",
+                    "box",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "item",
+                    "\"0\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "item",
+            "",
+            "",
             ""
           ],
           "subInstructions": []
@@ -350,12 +1209,141 @@
         {
           "type": {
             "inverted": false,
-            "value": "TextObject::String"
+            "value": "ObjectVariableAsBoolean"
           },
           "parameters": [
-            "debug",
-            "=",
-            "GlobalVarToJSON(betterInventory)"
+            "item",
+            "hover",
+            "False"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "item",
+            "hover",
+            "True"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectScaleTween"
+          },
+          "parameters": [
+            "item",
+            "Tween",
+            "\"1\"",
+            "5.5",
+            "5.5",
+            "\"easeOutBack\"",
+            "100",
+            "",
+            "yes"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectAngleTween"
+          },
+          "parameters": [
+            "item",
+            "Tween",
+            "\"2\"",
+            "-20",
+            "\"easeOutBack\"",
+            "100",
+            "100"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "item",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "item",
+            "hover",
+            "True"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "item",
+            "hover",
+            "False"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectScaleTween"
+          },
+          "parameters": [
+            "item",
+            "Tween",
+            "\"1\"",
+            "4.8",
+            "4.8",
+            "\"easeOutBack\"",
+            "100",
+            "",
+            "yes"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectAngleTween"
+          },
+          "parameters": [
+            "item",
+            "Tween",
+            "\"2\"",
+            "-10",
+            "\"easeOutBack\"",
+            "100",
+            "100"
           ],
           "subInstructions": []
         }
@@ -391,6 +1379,10 @@
     {
       "name": "MarchingSquaresBehavior",
       "type": "MarchingSquares::MarchingSquaresBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
