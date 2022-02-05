@@ -75,66 +75,48 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "NewObject2-1.png",
+        "file": "assets/NewObject2-1.png",
         "kind": "image",
         "metadata": "",
-        "name": "NewObject2-1.png",
+        "name": "assets\\NewObject2-1.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "NewObject2-1-0.png",
+        "file": "assets/item-1-0.png",
         "kind": "image",
         "metadata": "",
-        "name": "NewObject2-1-0.png",
+        "name": "assets\\item-1-0.png",
         "smoothed": false,
-        "userAdded": true
+        "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "NewObject2-1-1.png",
+        "file": "assets/NewObject2-1-0.png",
         "kind": "image",
         "metadata": "",
-        "name": "NewObject2-1-1.png",
+        "name": "assets\\NewObject2-1-0.png",
         "smoothed": false,
-        "userAdded": true
+        "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "item-1.png",
+        "file": "assets/NewObject2-1-1.png",
         "kind": "image",
         "metadata": "",
-        "name": "item-1.png",
+        "name": "assets\\NewObject2-1-1.png",
         "smoothed": false,
-        "userAdded": true
+        "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "item-1-0.png",
+        "file": "assets/item-1-1.png",
         "kind": "image",
         "metadata": "",
-        "name": "item-1-0.png",
+        "name": "assets\\item-1-1.png",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "item-1-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "item-1-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "cricandi-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "cricandi-1.png",
-        "smoothed": false,
-        "userAdded": true
+        "userAdded": false
       }
     ],
     "resourceFolders": []

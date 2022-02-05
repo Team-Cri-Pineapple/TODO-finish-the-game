@@ -53,7 +53,7 @@
       "persistentUuid": "0e255f1f-b80e-482b-8120-e38e0fe2f58f",
       "width": 64,
       "x": 192,
-      "y": 224,
+      "y": 160,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -68,8 +68,8 @@
       "name": "box",
       "persistentUuid": "1233d0fa-d4eb-4958-b975-4e82bca672e5",
       "width": 64,
-      "x": 288,
-      "y": 224,
+      "x": 256,
+      "y": 160,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -84,8 +84,8 @@
       "name": "box",
       "persistentUuid": "dafe2a4e-24aa-4ed9-9655-681fc82026d0",
       "width": 64,
-      "x": 384,
-      "y": 224,
+      "x": 320,
+      "y": 160,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -100,8 +100,8 @@
       "name": "box",
       "persistentUuid": "77913c5b-13ba-4c3d-bda5-276bb3cb447d",
       "width": 64,
-      "x": 480,
-      "y": 224,
+      "x": 384,
+      "y": 160,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -116,8 +116,8 @@
       "name": "box",
       "persistentUuid": "7cda51ba-2544-4279-a6e8-44ff262f6480",
       "width": 64,
-      "x": 576,
-      "y": 224,
+      "x": 448,
+      "y": 160,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -135,22 +135,6 @@
       "x": 32,
       "y": 330,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "minimalistic_art_be_like",
-      "persistentUuid": "82a5f4cd-b1b5-46b2-8ea6-66ca1dc2c8c3",
-      "width": 0,
-      "x": 448,
-      "y": 128,
-      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -296,7 +280,103 @@
       "name": "box",
       "persistentUuid": "1805ad51-b0f7-402f-ab59-8e804e518233",
       "width": 64,
-      "x": 672,
+      "x": 512,
+      "y": 160,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "d7a3f34a-0444-4dd7-b349-b7a69d111492",
+      "width": 64,
+      "x": 192,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "eb7f5892-9724-46b9-9f6c-929bc11764d0",
+      "width": 64,
+      "x": 256,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "cc11ef4a-b787-4c6e-85a5-085e78d805af",
+      "width": 64,
+      "x": 320,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "7deabb04-ece6-4715-bd19-020a74ccb13c",
+      "width": 64,
+      "x": 384,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "1373211a-def8-4f83-bed1-22a6b552a366",
+      "width": 64,
+      "x": 448,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "447668e9-ed21-47a7-a514-e6327308e94f",
+      "width": 64,
+      "x": 512,
       "y": 224,
       "zOrder": 2,
       "numberProperties": [],
@@ -421,7 +501,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewObject2-1.png",
+                  "image": "assets\\NewObject2-1.png",
                   "points": [
                     {
                       "name": "Text",
@@ -544,7 +624,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "item-1-0.png",
+                  "image": "assets\\item-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -573,7 +653,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewObject2-1-0.png",
+                  "image": "assets\\NewObject2-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -602,7 +682,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "cricandi-1.png",
+                  "image": "assets\\NewObject2-1-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -631,7 +711,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "item-1-1.png",
+                  "image": "assets\\item-1-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -679,7 +759,7 @@
           "parameters": [
             "",
             "\"bag\"",
-            "6",
+            "12",
             ""
           ],
           "subInstructions": []
@@ -947,32 +1027,6 @@
             "False"
           ],
           "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "SourisSurObjet"
-          },
-          "parameters": [
-            "box",
-            "",
-            "",
-            ""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "BetterInventory::isSlotEmpty"
-          },
-          "parameters": [
-            "",
-            "box.Variable(slot)",
-            "\"bag\"",
-            ""
-          ],
-          "subInstructions": []
         }
       ],
       "actions": [
@@ -986,94 +1040,131 @@
             "True"
           ],
           "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "box1",
-            "=",
-            "box.Variable(slot)"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "item",
-            "MouseX()",
-            "MouseY()",
-            "\"\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "SetAngle"
-          },
-          "parameters": [
-            "item",
-            "=",
-            "-15"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ChangeScale"
-          },
-          "parameters": [
-            "item",
-            "=",
-            "4.8"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "SetObjectVariableAsBoolean"
-          },
-          "parameters": [
-            "item",
-            "drag",
-            "True"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "SetAnimationName"
-          },
-          "parameters": [
-            "item",
-            "BetterInventory::itemName(box.Variable(slot), \"bag\")"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "SetObjectVariableAsBoolean"
-          },
-          "parameters": [
-            "box",
-            "hide",
-            "True"
-          ],
-          "subInstructions": []
         }
       ],
-      "events": []
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "box",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "BetterInventory::isSlotEmpty"
+              },
+              "parameters": [
+                "",
+                "box.Variable(slot)",
+                "\"bag\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "box1",
+                "=",
+                "box.Variable(slot)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "item",
+                "MouseX()",
+                "MouseY()",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "item",
+                "=",
+                "-15"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "item",
+                "=",
+                "4.8"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "item",
+                "drag",
+                "True"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "item",
+                "BetterInventory::itemName(box.Variable(slot), \"bag\")"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "box",
+                "hide",
+                "True"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     },
     {
       "disabled": false,
