@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6250000000000003,
+    "zoomFactor": 0.8000000000000005,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -165,7 +165,7 @@
       "persistentUuid": "907fe73a-f44d-409f-9768-5237faae9b93",
       "width": 0,
       "x": 736,
-      "y": 386,
+      "y": 448,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -187,7 +187,7 @@
       "persistentUuid": "dd85b8f4-6b4b-4d27-8fa1-26ac6dd869aa",
       "width": 0,
       "x": 736,
-      "y": 258,
+      "y": 384,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -209,7 +209,7 @@
       "persistentUuid": "e63de636-9530-4c94-af71-2335a2473c03",
       "width": 0,
       "x": 736,
-      "y": 322,
+      "y": 416,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -220,6 +220,88 @@
           "value": "sword"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "remm",
+      "persistentUuid": "d074de95-8796-4547-a554-1b8c92e3f2e2",
+      "width": 0,
+      "x": 704,
+      "y": 128,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "item",
+          "type": "string",
+          "value": "emdag"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "remm",
+      "persistentUuid": "f88ebaa4-cecc-410c-ae8a-6b297e3bb0a1",
+      "width": 0,
+      "x": 704,
+      "y": 64,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "item",
+          "type": "string",
+          "value": "cricandi"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "remm",
+      "persistentUuid": "bffa7df7-3f6e-4af5-b4f3-e1c6383de54c",
+      "width": 0,
+      "x": 704,
+      "y": 96,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "item",
+          "type": "string",
+          "value": "sword"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "box",
+      "persistentUuid": "1805ad51-b0f7-402f-ab59-8e804e518233",
+      "width": 64,
+      "x": 672,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -369,6 +451,32 @@
     {
       "bold": false,
       "italic": false,
+      "name": "remm",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "item",
+          "type": "string",
+          "value": "0"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "remove",
+      "font": "assets\\Minecraft.ttf",
+      "characterSize": 25,
+      "color": {
+        "b": 81,
+        "g": 2,
+        "r": 208
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
       "name": "addd",
       "smoothed": true,
       "tags": "",
@@ -494,7 +602,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "NewObject2-1-1.png",
+                  "image": "cricandi-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -571,7 +679,7 @@
           "parameters": [
             "",
             "\"bag\"",
-            "5",
+            "6",
             ""
           ],
           "subInstructions": []
@@ -617,6 +725,28 @@
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "remm",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "remm",
+                "=",
+                "\"remove \"+remm.VariableString(item)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -735,6 +865,418 @@
             "-1",
             "\"coolbag\"",
             ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "remm",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BetterInventory::removeItem"
+          },
+          "parameters": [
+            "",
+            "remm.VariableString(item)",
+            "\"bag\"",
+            "1",
+            "-1",
+            "\"coolbag\"",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "holding",
+            "False"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "box",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "BetterInventory::isSlotEmpty"
+          },
+          "parameters": [
+            "",
+            "box.Variable(slot)",
+            "\"bag\"",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "holding",
+            "True"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "box1",
+            "=",
+            "box.Variable(slot)"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "item",
+            "MouseX()",
+            "MouseY()",
+            "\"\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetAngle"
+          },
+          "parameters": [
+            "item",
+            "=",
+            "-15"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangeScale"
+          },
+          "parameters": [
+            "item",
+            "=",
+            "4.8"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "item",
+            "drag",
+            "True"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "item",
+            "BetterInventory::itemName(box.Variable(slot), \"bag\")"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "box",
+            "hide",
+            "True"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "holding",
+            "True"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "holding",
+            "False"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "item",
+                "drag",
+                "True"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "box",
+                    "item",
+                    "",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "box",
+                    "item.X()",
+                    "item.Y()",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BetterInventory::replaceSlots"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bag\"",
+                    "box.Variable(slot)",
+                    "\"bag\"",
+                    "Variable(box1)",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "item",
+                    "item"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "box",
+                "hide",
+                "True"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "box",
+                "hide",
+                "False"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "item",
+            "drag",
+            "True"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "item",
+            "=",
+            "MouseX()",
+            "=",
+            "MouseY()"
           ],
           "subInstructions": []
         }
@@ -934,7 +1476,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1110,7 +1652,41 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "box",
+                            "hide",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "item",
+                            "\"0\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ]
             },
@@ -1217,6 +1793,18 @@
             "False"
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "item",
+            "drag",
+            "False"
+          ],
+          "subInstructions": []
         }
       ],
       "actions": [
@@ -1296,6 +1884,18 @@
             "item",
             "hover",
             "True"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "item",
+            "drag",
+            "False"
           ],
           "subInstructions": []
         }
