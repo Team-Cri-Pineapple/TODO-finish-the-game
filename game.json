@@ -117,6 +117,24 @@
         "name": "assets\\item-1-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewObject2-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewObject2-1-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewObject2-1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewObject2-1-3.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -127,7 +145,7 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/idk"
+      "referenceTo": "/layouts/donttouch"
     }
   ],
   "externalEvents": [
