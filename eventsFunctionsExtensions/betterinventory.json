@@ -18,9 +18,9 @@
       "fullName": "Create a bag",
       "functionType": "Action",
       "group": "",
-      "name": "createBag",
+      "name": "CreateBag",
       "private": false,
-      "sentence": "Create a bag called _PARAM1_ to store items in with _PARAM2_ slots",
+      "sentence": "Create a bag called _PARAM1_ to store items in with _PARAM2_ slots.",
       "events": [
         {
           "disabled": false,
@@ -73,9 +73,9 @@
       "fullName": "Create an item",
       "functionType": "Action",
       "group": "",
-      "name": "createItem",
+      "name": "CreateItem",
       "private": false,
-      "sentence": "Create an item _PARAM1_ with the max slot item quantity of _PARAM2_",
+      "sentence": "Create an item _PARAM1_ with the max slot item quantity of _PARAM2_.",
       "events": [
         {
           "disabled": false,
@@ -128,9 +128,9 @@
       "fullName": "Replace two slots",
       "functionType": "Action",
       "group": "",
-      "name": "replaceSlots",
+      "name": "ReplaceSlots",
       "private": false,
-      "sentence": "Replace slot _PARAM2_ of bag _PARAM1_ with slot _PARAM4_ of bag _PARAM3_ (Try adding: _PARAM5_)",
+      "sentence": "Replace slot _PARAM2_ of bag _PARAM1_ with slot _PARAM4_ of bag _PARAM3_. (Try adding: _PARAM5_)",
       "events": [
         {
           "disabled": false,
@@ -501,9 +501,9 @@
       "fullName": "Remove an item",
       "functionType": "Action",
       "group": "",
-      "name": "removeItem",
+      "name": "RemoveItem",
       "private": false,
-      "sentence": "Remove _PARAM3_ _PARAM1_ items from bag _PARAM2_ in slot _PARAM4_ (Ignore item name: _PARAM5_)",
+      "sentence": "Remove _PARAM3_ _PARAM1_ items from bag _PARAM2_ in slot _PARAM4_. (Ignore item name: _PARAM5_)",
       "events": [
         {
           "colorB": 228,
@@ -1081,9 +1081,9 @@
       "fullName": "Add an item",
       "functionType": "Action",
       "group": "",
-      "name": "addItem",
+      "name": "AddItem",
       "private": false,
-      "sentence": "Add _PARAM3_ _PARAM1_ items to bag _PARAM2_ in slot _PARAM4_ (Extra bag: _PARAM5_)",
+      "sentence": "Add _PARAM3_ _PARAM1_ items to bag _PARAM2_ in slot _PARAM4_. (Extra bag: _PARAM5_)",
       "events": [
         {
           "colorB": 228,
@@ -2596,12 +2596,12 @@
     },
     {
       "description": "Check if a slot is empty in a bag",
-      "fullName": "Check if a slot is empty",
+      "fullName": "Slot is empty",
       "functionType": "Condition",
       "group": "",
-      "name": "isSlotEmpty",
+      "name": "IsSlotEmpty",
       "private": false,
-      "sentence": "Check if slot _PARAM1_ is empty in bag _PARAM2_",
+      "sentence": "Check if slot _PARAM1_ is empty in bag _PARAM2_.",
       "events": [
         {
           "disabled": false,
@@ -2757,10 +2757,10 @@
     },
     {
       "description": "Get the quantity of an item in a slot",
-      "fullName": "Get the quantity of an item",
+      "fullName": "Item quantity",
       "functionType": "Expression",
       "group": "",
-      "name": "itemQuantity",
+      "name": "ItemQuantity",
       "private": false,
       "sentence": "",
       "events": [
@@ -2810,10 +2810,10 @@
     },
     {
       "description": "Get the name of an item in a slot",
-      "fullName": "Get the name of an item",
+      "fullName": "Item name",
       "functionType": "StringExpression",
       "group": "",
-      "name": "itemName",
+      "name": "ItemName",
       "private": false,
       "sentence": "",
       "events": [

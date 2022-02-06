@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7500000000000007,
+    "zoomFactor": 0.6000000000000005,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -118,7 +118,7 @@
       "name": "remm",
       "persistentUuid": "d074de95-8796-4547-a554-1b8c92e3f2e2",
       "width": 0,
-      "x": 512,
+      "x": 608,
       "y": 480,
       "zOrder": 6,
       "numberProperties": [],
@@ -140,7 +140,7 @@
       "name": "remm",
       "persistentUuid": "f88ebaa4-cecc-410c-ae8a-6b297e3bb0a1",
       "width": 0,
-      "x": 512,
+      "x": 608,
       "y": 416,
       "zOrder": 6,
       "numberProperties": [],
@@ -162,7 +162,7 @@
       "name": "remm",
       "persistentUuid": "bffa7df7-3f6e-4af5-b4f3-e1c6383de54c",
       "width": 0,
-      "x": 512,
+      "x": 608,
       "y": 448,
       "zOrder": 6,
       "numberProperties": [],
@@ -182,26 +182,10 @@
       "layer": "",
       "locked": false,
       "name": "box",
-      "persistentUuid": "6ec644b3-ae92-48e7-bc29-94831a82d8db",
-      "width": 127.99999237060547,
-      "x": 600,
-      "y": 192,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "box",
       "persistentUuid": "ce25938b-852b-4a0d-8d90-673f6b232537",
       "width": 127.99999237060547,
-      "x": 376,
-      "y": 256,
+      "x": 479.9999694824219,
+      "y": 287.9999694824219,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -216,8 +200,8 @@
       "name": "box",
       "persistentUuid": "0e9a9f85-b035-45f7-b4c2-c96da3ab4f89",
       "width": 127.99999237060547,
-      "x": 280,
-      "y": 256,
+      "x": 383.9999694824219,
+      "y": 288,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -232,8 +216,8 @@
       "name": "box",
       "persistentUuid": "6fa6ba04-7423-470a-8016-43f136d97a4e",
       "width": 127.99999237060547,
-      "x": 184,
-      "y": 256,
+      "x": 288,
+      "y": 287.9999694824219,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -248,8 +232,8 @@
       "name": "box",
       "persistentUuid": "ffbd1517-f0e7-46e2-9b09-67691b543da7",
       "width": 127.99999237060547,
-      "x": 408,
-      "y": 192,
+      "x": 512,
+      "y": 223.99993896484375,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -264,8 +248,8 @@
       "name": "box",
       "persistentUuid": "a8f6a86d-72d7-4374-ad6e-0d8b4e07bbe6",
       "width": 127.99999237060547,
-      "x": 312,
-      "y": 192,
+      "x": 415.9999694824219,
+      "y": 223.99996948242188,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -280,8 +264,8 @@
       "name": "box",
       "persistentUuid": "e22a28b5-c9c5-4cb1-b22d-64532cb7ae47",
       "width": 127.99999237060547,
-      "x": 216,
-      "y": 192,
+      "x": 319.9999694824219,
+      "y": 223.9999542236328,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -296,8 +280,8 @@
       "name": "box",
       "persistentUuid": "d4d2b00b-f343-4ffd-94af-7f1da4fa4841",
       "width": 127.99999237060547,
-      "x": 440,
-      "y": 128,
+      "x": 544,
+      "y": 159.9999542236328,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -312,8 +296,8 @@
       "name": "box",
       "persistentUuid": "8470e0f0-50e4-477e-931d-f3da40c5d5f3",
       "width": 127.99999237060547,
-      "x": 344,
-      "y": 128,
+      "x": 447.9999694824219,
+      "y": 159.9999542236328,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -328,8 +312,8 @@
       "name": "box",
       "persistentUuid": "fe70555c-ab76-47fd-b550-afb257fcf109",
       "width": 127.99999237060547,
-      "x": 248,
-      "y": 128,
+      "x": 351.9999694824219,
+      "y": 159.99996948242188,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -346,6 +330,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -358,9 +344,7 @@
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 700,
           "maxSpeed": 250,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "xGrabTolerance": 10,
           "yGrabOffset": 0
@@ -484,7 +468,7 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 14,
+                    "x": 16,
                     "y": 8
                   },
                   "centerPoint": {
@@ -727,12 +711,12 @@
         {
           "type": {
             "inverted": false,
-            "value": "BetterInventory::createBag"
+            "value": "BetterInventory::CreateBag"
           },
           "parameters": [
             "",
             "\"bag\"",
-            "10",
+            "-1",
             ""
           ],
           "subInstructions": []
@@ -740,7 +724,7 @@
         {
           "type": {
             "inverted": false,
-            "value": "BetterInventory::createItem"
+            "value": "BetterInventory::CreateItem"
           },
           "parameters": [
             "",
@@ -753,7 +737,7 @@
         {
           "type": {
             "inverted": false,
-            "value": "BetterInventory::createItem"
+            "value": "BetterInventory::CreateItem"
           },
           "parameters": [
             "",
@@ -766,7 +750,7 @@
         {
           "type": {
             "inverted": false,
-            "value": "BetterInventory::createItem"
+            "value": "BetterInventory::CreateItem"
           },
           "parameters": [
             "",
@@ -894,17 +878,6 @@
         {
           "type": {
             "inverted": false,
-            "value": "MouseButtonReleased"
-          },
-          "parameters": [
-            "",
-            "Left"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
             "value": "SourisSurObjet"
           },
           "parameters": [
@@ -920,7 +893,7 @@
         {
           "type": {
             "inverted": false,
-            "value": "BetterInventory::addItem"
+            "value": "BetterInventory::AddItem"
           },
           "parameters": [
             "",
@@ -944,17 +917,6 @@
         {
           "type": {
             "inverted": false,
-            "value": "MouseButtonReleased"
-          },
-          "parameters": [
-            "",
-            "Left"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
             "value": "SourisSurObjet"
           },
           "parameters": [
@@ -970,7 +932,7 @@
         {
           "type": {
             "inverted": false,
-            "value": "BetterInventory::removeItem"
+            "value": "BetterInventory::RemoveItem"
           },
           "parameters": [
             "",
@@ -1036,6 +998,19 @@
             {
               "type": {
                 "inverted": false,
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "box",
+                "MouseX()",
+                "MouseY()",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "SourisSurObjet"
               },
               "parameters": [
@@ -1049,7 +1024,7 @@
             {
               "type": {
                 "inverted": true,
-                "value": "BetterInventory::isSlotEmpty"
+                "value": "BetterInventory::IsSlotEmpty"
               },
               "parameters": [
                 "",
@@ -1130,7 +1105,7 @@
               },
               "parameters": [
                 "item",
-                "BetterInventory::itemName(box.Variable(slot), \"bag\")"
+                "BetterInventory::ItemName(box.Variable(slot), \"bag\")"
               ],
               "subInstructions": []
             },
@@ -1262,7 +1237,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BetterInventory::replaceSlots"
+                    "value": "BetterInventory::ReplaceSlots"
                   },
                   "parameters": [
                     "",
@@ -1423,7 +1398,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1492,7 +1467,7 @@
                       "parameters": [
                         "numItem",
                         "item",
-                        "box.X()",
+                        "box.X()-10",
                         "box.Y()",
                         "\"\""
                       ],
@@ -1571,7 +1546,7 @@
                 {
                   "type": {
                     "inverted": true,
-                    "value": "BetterInventory::isSlotEmpty"
+                    "value": "BetterInventory::IsSlotEmpty"
                   },
                   "parameters": [
                     "",
@@ -1595,7 +1570,7 @@
                         "value": "Egal"
                       },
                       "parameters": [
-                        "BetterInventory::itemQuantity(box.Variable(slot), \"bag\")",
+                        "BetterInventory::ItemQuantity(box.Variable(slot), \"bag\")",
                         "<=",
                         "1"
                       ],
@@ -1640,7 +1615,7 @@
                         "value": "Egal"
                       },
                       "parameters": [
-                        "BetterInventory::itemQuantity(box.Variable(slot), \"bag\")",
+                        "BetterInventory::ItemQuantity(box.Variable(slot), \"bag\")",
                         ">",
                         "1"
                       ],
@@ -1687,7 +1662,7 @@
                           "parameters": [
                             "numItem",
                             "!=",
-                            "ToString(BetterInventory::itemQuantity(box.Variable(slot), \"bag\"))"
+                            "ToString(BetterInventory::ItemQuantity(box.Variable(slot), \"bag\"))"
                           ],
                           "subInstructions": []
                         }
@@ -1701,7 +1676,7 @@
                           "parameters": [
                             "numItem",
                             "=",
-                            "ToString(BetterInventory::itemQuantity(box.Variable(slot), \"bag\"))"
+                            "ToString(BetterInventory::ItemQuantity(box.Variable(slot), \"bag\"))"
                           ],
                           "subInstructions": []
                         }
@@ -1768,7 +1743,7 @@
                       },
                       "parameters": [
                         "item",
-                        "BetterInventory::itemName(box.Variable(slot), \"bag\")"
+                        "BetterInventory::ItemName(box.Variable(slot), \"bag\")"
                       ],
                       "subInstructions": []
                     }
@@ -1819,7 +1794,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BetterInventory::isSlotEmpty"
+                    "value": "BetterInventory::IsSlotEmpty"
                   },
                   "parameters": [
                     "",
@@ -1976,6 +1951,45 @@
           "subInstructions": []
         }
       ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Tween::IsPlaying"
+          },
+          "parameters": [
+            "item",
+            "Tween",
+            "\"0\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
       "events": []
     },
     {
