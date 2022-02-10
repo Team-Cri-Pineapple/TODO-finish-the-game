@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6000000000000005,
+    "zoomFactor": 1.0500000000000005,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -716,7 +716,7 @@
           "parameters": [
             "",
             "\"bag\"",
-            "-1",
+            "9",
             ""
           ],
           "subInstructions": []
@@ -878,6 +878,17 @@
         {
           "type": {
             "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "SourisSurObjet"
           },
           "parameters": [
@@ -914,6 +925,17 @@
       "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        },
         {
           "type": {
             "inverted": false,

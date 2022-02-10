@@ -135,6 +135,13 @@
         "name": "assets\\NewObject2-1-3.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/F77MinecraftRegular-0VYv.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\F77MinecraftRegular-0VYv.ttf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []

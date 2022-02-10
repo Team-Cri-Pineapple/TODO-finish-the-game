@@ -8,9 +8,14 @@
   "name": "BetterInventory",
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/bag-personal.svg",
   "shortDescription": "A better inventory extension.",
-  "version": "",
-  "tags": [],
-  "authorIds": [],
+  "version": "1.0.0",
+  "tags": [
+    "inventory",
+    "slot"
+  ],
+  "authorIds": [
+    "onPsboRtDkUHNOsx7OPr8R8G1oj2"
+  ],
   "dependencies": [],
   "eventsFunctions": [
     {
