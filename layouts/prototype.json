@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5553749996185303,
+    "zoomFactor": 0.6303749996185304,
     "windowMask": false
   },
   "objectsGroups": [
@@ -29,10 +29,10 @@
       "name": "Events",
       "objects": [
         {
-          "name": "Action"
+          "name": "Condition"
         },
         {
-          "name": "Condition"
+          "name": "Action"
         }
       ]
     }
@@ -70,8 +70,8 @@
       "name": "player",
       "persistentUuid": "067cb58e-9470-46e8-b7d3-e08474b68002",
       "width": 64,
-      "x": 64,
-      "y": 192,
+      "x": 128,
+      "y": 256,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -92,6 +92,28 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "f57fc2cb-4b1e-4a71-a0ba-9285f3dd66d7",
+      "width": 0,
+      "x": 448,
+      "y": 256,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "isFake",
+          "type": "boolean",
+          "value": true
+        }
+      ]
     }
   ],
   "objects": [
@@ -102,7 +124,13 @@
       "texture": "placeholder-1-1.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 64,
-      "variables": [],
+      "variables": [
+        {
+          "name": "isFake",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -176,7 +204,7 @@
       ]
     },
     {
-      "name": "Action",
+      "name": "Condition",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -216,7 +244,7 @@
       ]
     },
     {
-      "name": "Condition",
+      "name": "Action",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -300,7 +328,7 @@
             "value": "JSONToVariableStructure"
           },
           "parameters": [
-            "\"[{\n  \\\"ConditionsList\\\": [\n    {\n      \\\"ID\\\":\\\"KeyPressed\\\",\n      \\\"Parameters\\\": [\\\"a\\\"]\n    },\n    {\n      \\\"ID\\\":\\\"KeyPressed\\\",\n      \\\"Parameters\\\": [\\\"a\\\"]\n    },\n    {\n      \\\"ID\\\":\\\"KeyPressed\\\",\n      \\\"Parameters\\\": [\\\"a\\\"]\n    }\n  ],\n  \\\"ActionsList\\\": [\n    {\n      \\\"ID\\\": \\\"ChangeAcceleration\\\",\n      \\\"Parameters\\\": [200]\n    }\n  ]\n}]\"",
+            "\"[{\n  \\\"ConditionsList\\\": [\n    {\n      \\\"ID\\\":\\\"KeyPressed\\\",\n      \\\"Parameters\\\": [\\\"a\\\"]\n    }\n  ],\n  \\\"ActionsList\\\": [\n    {\n      \\\"ID\\\": \\\"FlipFakeAndRealPlatforms\\\"    }\n  ]\n}]\"",
             "EventsList"
           ],
           "subInstructions": []

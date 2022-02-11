@@ -8,7 +8,7 @@
       "height": 20,
       "layer": "",
       "locked": false,
-      "name": "Action",
+      "name": "Condition",
       "persistentUuid": "1cfa5155-7248-4fce-9875-93c2f87852ca",
       "width": 256,
       "x": 0,
@@ -24,9 +24,9 @@
       "height": 20,
       "layer": "",
       "locked": false,
-      "name": "Condition",
+      "name": "Action",
       "persistentUuid": "3d9fd4e9-a428-43e2-9865-8202e01fcdd5",
-      "width": 256,
+      "width": 380,
       "x": 256,
       "y": 0,
       "zOrder": 60,
@@ -45,7 +45,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.0249999999999997,
+    "zoomFactor": 0.5499999999999993,
     "windowMask": false
   }
 }
