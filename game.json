@@ -188,6 +188,24 @@
         "name": "add-placeholder-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Action-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Action-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Condition-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Condition-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -254,6 +272,15 @@
         },
         {
           "name": "black"
+        },
+        {
+          "name": "EventText"
+        },
+        {
+          "name": "Action"
+        },
+        {
+          "name": "Condition"
         }
       ]
     }
@@ -293,6 +320,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/eventseditor"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/event"
     }
   ],
   "externalSourceFiles": []

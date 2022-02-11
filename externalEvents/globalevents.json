@@ -254,7 +254,7 @@
       "creationTime": 0,
       "disabled": false,
       "folded": false,
-      "name": "Show Editor GUI",
+      "name": "Toggle Editor GUI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -328,6 +328,17 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "rerenderNeeded",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
                   },
                   "parameters": [
@@ -337,28 +348,18 @@
                     "0"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "SceneVariableAsBoolean"
+                    "value": "AjoutObjConcern"
                   },
                   "parameters": [
-                    "menu",
-                    "True"
+                    "",
+                    "black"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "actions": [
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -423,45 +424,600 @@
       "parameters": []
     },
     {
-      "disabled": true,
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
       "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "name": "Editor GUI code",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "inverted": false,
-            "value": "MouseButtonReleased"
-          },
-          "parameters": [
-            "",
-            "Left"
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "menu",
+                "True"
+              ],
+              "subInstructions": []
+            }
           ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": [],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "SourisSurObjet"
-          },
-          "parameters": [
-            "add",
-            "",
-            "",
-            ""
-          ],
-          "subInstructions": []
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Handle events",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "add",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "rerenderNeeded",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "JSONToVariableStructure"
+                      },
+                      "parameters": [
+                        "\"{ \\\"ConditionsList\\\": [], \\\"ActionsList\\\": [] }\"",
+                        "NewItem"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariablePush"
+                      },
+                      "parameters": [
+                        "EventsList",
+                        "NewItem"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "If needed, rebuild the UI",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "rerenderNeeded",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "rerenderNeeded",
+                    "False"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "YOffset",
+                    "=",
+                    "50"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Events",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "EventText",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "EventsList",
+                  "valueIteratorVariableName": "Event",
+                  "keyIteratorVariableName": "",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Event\"",
+                        "40",
+                        "Variable(YOffset)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ConditionsOffset",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ActionsOffset",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                      "iterableVariableName": "Event.ConditionsList",
+                      "valueIteratorVariableName": "Condition",
+                      "keyIteratorVariableName": "",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "EventText",
+                            "42",
+                            "Variable(YOffset) + Variable(ConditionsOffset)",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "EventText",
+                            "=",
+                            "70"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "EventText",
+                            "=",
+                            "VariableString(Condition.ID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ConditionsOffset",
+                            "+",
+                            "EventText.Height() + 2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                      "iterableVariableName": "Event.ActionsList",
+                      "valueIteratorVariableName": "Action",
+                      "keyIteratorVariableName": "",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "EventText",
+                            "42 + 256",
+                            "Variable(YOffset) + Variable(ActionsOffset)",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "EventText",
+                            "=",
+                            "70"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "EventText",
+                            "=",
+                            "VariableString(Action.ID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ActionsOffset",
+                            "+",
+                            "EventText.Height() + 2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "EventText",
+                            "42",
+                            "Variable(YOffset) + Variable(ConditionsOffset)",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "EventText",
+                            "=",
+                            "70"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "EventText",
+                            "=",
+                            "\"Add Condition\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ConditionsOffset",
+                            "+",
+                            "EventText.Height() + 2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "EventText",
+                            "42 + 256",
+                            "Variable(YOffset) + Variable(ActionsOffset)",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "EventText",
+                            "=",
+                            "70"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ActionsOffset",
+                            "+",
+                            "EventText.Height() + 2"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "EventText",
+                            "=",
+                            "\"Add Action\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AjoutObjConcern"
+                          },
+                          "parameters": [
+                            "",
+                            "Events"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Events",
+                            "initialized",
+                            "="
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Events",
+                            "initialized",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeHeight"
+                          },
+                          "parameters": [
+                            "Events",
+                            "=",
+                            "max(Variable(ConditionsOffset), Variable(ActionsOffset))"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "YOffset",
+                            "+",
+                            "max(Variable(ConditionsOffset), Variable(ActionsOffset)) + 10"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
-      "actions": [],
-      "events": []
+      "parameters": []
     }
   ]
 }
