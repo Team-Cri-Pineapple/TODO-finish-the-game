@@ -1,0 +1,51 @@
+{
+  "associatedLayout": "prototype",
+  "name": "EventsEditor",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 540,
+      "layer": "",
+      "locked": false,
+      "name": "black",
+      "persistentUuid": "33e734d1-82e8-47bf-bfcb-931c3b751f2a",
+      "width": 1916,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1410065407,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 83,
+      "layer": "",
+      "locked": false,
+      "name": "add",
+      "persistentUuid": "282ef1f9-9a4f-40b1-bc33-40c4fd557973",
+      "width": 87,
+      "x": 5,
+      "y": 451,
+      "zOrder": 1569325056,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 64,
+    "gridHeight": 64,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.6749999999999996,
+    "windowMask": false
+  }
+}

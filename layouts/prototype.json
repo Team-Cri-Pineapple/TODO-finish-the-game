@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4850000000000002,
+    "zoomFactor": 0.45537499961853023,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -77,54 +77,6 @@
       "x": 640,
       "y": 320,
       "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 576,
-      "layer": "rules",
-      "locked": false,
-      "name": "black",
-      "persistentUuid": "55390066-2fd7-405e-ba81-9d15941511f8",
-      "width": 1088,
-      "x": -64,
-      "y": 0,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 320,
-      "layer": "rules",
-      "locked": false,
-      "name": "eventlist",
-      "persistentUuid": "a260bdb6-cf52-436e-83d4-0340c6b118f7",
-      "width": 512,
-      "x": 64,
-      "y": 128,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 128,
-      "layer": "rules",
-      "locked": false,
-      "name": "add",
-      "persistentUuid": "c44c34c1-9514-486c-88f3-3e4bf686d8fc",
-      "width": 128,
-      "x": 768,
-      "y": 384,
-      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -210,77 +162,6 @@
           ]
         }
       ]
-    },
-    {
-      "height": 32,
-      "name": "black",
-      "tags": "",
-      "texture": "black-1.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "bold": false,
-      "italic": false,
-      "name": "eventlist",
-      "smoothed": true,
-      "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "CLICK \"ADD\" TO CREATE A NEW EVENT",
-      "font": "",
-      "characterSize": 20,
-      "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
-      }
-    },
-    {
-      "name": "add",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "add-placeholder",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.07999999821186066,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "add-placeholder-1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "events": [
@@ -304,12 +185,11 @@
         {
           "type": {
             "inverted": false,
-            "value": "TiledSpriteObject::SetOpacity"
+            "value": "JSONToVariableStructure"
           },
           "parameters": [
-            "black",
-            "=",
-            "200"
+            "\"[{\n  \\\"ConditionsList\\\": [\n    {\n      \\\"ID\\\":\\\"KeyPressed\\\",\n      \\\"Parameters\\\": [\\\"a\\\"]\n    }\n  ],\n  \\\"ActionsList\\\": [\n    {\n      \\\"ID\\\": \\\"ChangeAcceleration\\\",\n      \\\"Parameters\\\": [200]\n    }\n  ]\n}]\"",
+            "EventsList"
           ],
           "subInstructions": []
         }
@@ -319,187 +199,11 @@
     {
       "disabled": false,
       "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "KeyReleased"
-          },
-          "parameters": [
-            "",
-            "Escape"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "ToggleSceneVariableAsBoolean"
-          },
-          "parameters": [
-            "menu"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "SceneVariableAsBoolean"
-          },
-          "parameters": [
-            "menu",
-            "True"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "ShowLayer"
-          },
-          "parameters": [
-            "",
-            "\"rules\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "player",
-            "PlatformerObject",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "SceneVariableAsBoolean"
-          },
-          "parameters": [
-            "menu",
-            "False"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "HideLayer"
-          },
-          "parameters": [
-            "",
-            "\"rules\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "player",
-            "PlatformerObject",
-            "yes"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "SceneVariableAsBoolean"
-          },
-          "parameters": [
-            "menu",
-            "True"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "SourisSurObjet"
-          },
-          "parameters": [
-            "add",
-            "",
-            "",
-            ""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "MouseButtonReleased"
-          },
-          "parameters": [
-            "",
-            "Left"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "TextObject::String"
-          },
-          "parameters": [
-            "eventlist",
-            "+",
-            "NewLine() + \"IF [EVENT] THEN [ACTION]\""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        }
-      ]
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "GlobalEvents"
     }
   ],
   "layers": [
@@ -523,17 +227,6 @@
           "width": 0
         }
       ],
-      "effects": []
-    },
-    {
-      "ambientLightColorB": 8890848,
-      "ambientLightColorG": 6031344,
-      "ambientLightColorR": 8446848,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "name": "rules",
-      "visibility": false,
-      "cameras": [],
       "effects": []
     }
   ],

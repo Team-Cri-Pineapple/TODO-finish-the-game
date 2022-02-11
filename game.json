@@ -23,7 +23,7 @@
     "windowHeight": 540,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
-    "minFPS": 20,
+    "minFPS": 60,
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
@@ -192,8 +192,72 @@
     ],
     "resourceFolders": []
   },
-  "objects": [],
-  "objectsGroups": [],
+  "objects": [
+    {
+      "name": "add",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "add-placeholder",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "add-placeholder-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "height": 32,
+      "name": "black",
+      "tags": "",
+      "texture": "black-1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
+  "objectsGroups": [
+    {
+      "name": "EditorObjects",
+      "objects": [
+        {
+          "name": "add"
+        },
+        {
+          "name": "black"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "layouts": [
     {
@@ -208,7 +272,7 @@
   "externalEvents": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/replace"
+      "referenceTo": "/externalEvents/globalevents"
     }
   ],
   "eventsFunctionsExtensions": [
@@ -223,12 +287,13 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/betterinventory"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/ifthen"
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/eventseditor"
+    }
+  ],
   "externalSourceFiles": []
 }
