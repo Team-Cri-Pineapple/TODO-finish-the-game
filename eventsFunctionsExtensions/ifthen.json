@@ -1,0 +1,30 @@
+{
+  "author": "",
+  "description": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggZD0iTTI5LjYsMTIuN2MtMC4xLTAuNS0wLjYtMC44LTEuMS0wLjhjLTEuMiwwLjItMi40LTAuNC0zLTEuNWMtMC42LTEtMC41LTIuNCwwLjItMy4zYzAuMy0wLjQsMC4zLTEtMC4xLTEuMw0KCUMyNCw0LjMsMjIuMSwzLjIsMjAsMi42Yy0wLjUtMC4xLTEsMC4xLTEuMiwwLjZDMTguMyw0LjMsMTcuMiw1LDE2LDVzLTIuMy0wLjctMi44LTEuOEMxMywyLjcsMTIuNSwyLjQsMTIsMi42DQoJQzkuOSwzLjIsOCw0LjMsNi40LDUuOUM2LDYuMiw2LDYuOCw2LjMsNy4yYzAuNywxLDAuOCwyLjMsMC4yLDMuM2MtMC42LDEtMS44LDEuNi0zLDEuNWMtMC41LTAuMS0xLDAuMy0xLjEsMC44DQoJQzIuMSwxMy44LDIsMTQuOSwyLDE2czAuMSwyLjIsMC40LDMuM0MyLjUsMTkuOCwzLDIwLjEsMy41LDIwYzEuMi0wLjIsMi40LDAuNCwzLDEuNWMwLjYsMSwwLjUsMi40LTAuMiwzLjNjLTAuMywwLjQtMC4zLDEsMC4xLDEuMw0KCWMxLjYsMS41LDMuNiwyLjcsNS43LDMuM2MwLjUsMC4xLDEtMC4xLDEuMi0wLjZjMC41LTEuMSwxLjYtMS44LDIuOC0xLjhzMi4zLDAuNywyLjgsMS44YzAuMiwwLjQsMC41LDAuNiwwLjksMC42DQoJYzAuMSwwLDAuMiwwLDAuMywwYzIuMS0wLjYsNC4xLTEuOCw1LjctMy4zYzAuNC0wLjQsMC40LTAuOSwwLjEtMS4zYy0wLjctMS0wLjgtMi4zLTAuMi0zLjNjMC42LTEsMS44LTEuNiwzLTEuNQ0KCWMwLjUsMC4xLDEtMC4zLDEuMS0wLjhjMC4zLTEuMSwwLjQtMi4yLDAuNC0zLjNTMjkuOSwxMy44LDI5LjYsMTIuN3ogTTExLjcsMTguM2MwLjQsMC40LDAuNCwxLDAsMS40QzExLjUsMTkuOSwxMS4zLDIwLDExLDIwDQoJcy0wLjUtMC4xLTAuNy0wLjNsLTMtM2MtMC40LTAuNC0wLjQtMSwwLTEuNGwzLTNjMC40LTAuNCwxLTAuNCwxLjQsMHMwLjQsMSwwLDEuNEw5LjQsMTZMMTEuNywxOC4zeiBNMTguOSwxMi40bC00LDgNCglDMTQuNywyMC44LDE0LjQsMjEsMTQsMjFjLTAuMiwwLTAuMywwLTAuNC0wLjFjLTAuNS0wLjItMC43LTAuOC0wLjQtMS4zbDQtOGMwLjItMC41LDAuOC0wLjcsMS4zLTAuNEMxOC45LDExLjQsMTkuMSwxMiwxOC45LDEyLjR6DQoJIE0yNC43LDE2LjdsLTMsM0MyMS41LDE5LjksMjEuMywyMCwyMSwyMHMtMC41LTAuMS0wLjctMC4zYy0wLjQtMC40LTAuNC0xLDAtMS40bDIuMy0yLjNsLTIuMy0yLjNjLTAuNC0wLjQtMC40LTEsMC0xLjQNCglzMS0wLjQsMS40LDBsMywzQzI1LjEsMTUuNywyNS4xLDE2LjMsMjQuNywxNi43eiIvPg0KPC9zdmc+DQo=",
+  "name": "IfThen",
+  "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Glyphster Pack/Master/SVG/Applications and Programming/Applications and Programming_compile_compiler_script_code_config.svg",
+  "shortDescription": "",
+  "version": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "eventsFunctions": [
+    {
+      "description": "",
+      "fullName": "",
+      "functionType": "Action",
+      "group": "",
+      "name": "Function",
+      "private": false,
+      "sentence": "",
+      "events": [],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": []
+}

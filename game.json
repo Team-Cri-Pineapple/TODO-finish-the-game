@@ -18,7 +18,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "coolpineaplecri",
-    "author": "cripineapple?",
+    "author": "cripineapple",
     "windowWidth": 960,
     "windowHeight": 540,
     "latestCompilationDirectory": "",
@@ -45,7 +45,8 @@
     "authorIds": [
       "onPsboRtDkUHNOsx7OPr8R8G1oj2",
       "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1",
-      "04k8NyykaEcX1dVkWEmXN2OxZDD3"
+      "04k8NyykaEcX1dVkWEmXN2OxZDD3",
+      "Mk7N5tFrpcePEmbe3ZLC4peEULY2"
     ],
     "extensionProperties": [],
     "platforms": [
@@ -142,6 +143,51 @@
         "metadata": "",
         "name": "assets\\F77MinecraftRegular-0VYv.ttf",
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "placeholder-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "placeholder-1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "player_placeholder-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "player_placeholder-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "player_placeholder-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "player_placeholder-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "black-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "black-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "add-placeholder-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "add-placeholder-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -152,7 +198,11 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/donttouch"
+      "referenceTo": "/layouts/prototype"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/ignorethat"
     }
   ],
   "externalEvents": [
@@ -169,6 +219,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/betterinventory"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/ifthen"
     }
   ],
   "externalLayouts": [],
