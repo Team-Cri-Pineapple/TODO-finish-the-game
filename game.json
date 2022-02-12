@@ -260,6 +260,24 @@
         "name": "NewObject-1-9.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-11.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
