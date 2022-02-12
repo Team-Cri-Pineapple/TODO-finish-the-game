@@ -306,6 +306,15 @@
         "name": "NewObject-1-12.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "popupbg-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "popupbg-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -361,6 +370,53 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "name": "ConditionName",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "CONDITIONS LIST",
+        "opacity": 255,
+        "fontSize": 15,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "ActionName",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "ACTIONS LIST",
+        "opacity": 255,
+        "fontSize": 15,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "height": 32,
+      "name": "popupBG",
+      "tags": "",
+      "texture": "popupbg-1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsGroups": [
@@ -384,11 +440,70 @@
         },
         {
           "name": "EventTextBB"
+        },
+        {
+          "name": "ConditionName"
+        },
+        {
+          "name": "ActionName"
+        },
+        {
+          "name": "popupBG"
         }
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "ConditionsList",
+      "type": "structure",
+      "children": [
+        {
+          "name": "KeyPressed",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "KeyPressed"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Check if key [...] is pressed"
+            },
+            {
+              "name": "Parameter",
+              "type": "string",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ActionsList",
+      "type": "structure",
+      "children": [
+        {
+          "name": "FlipFakeAndRealPlatforms",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "FlipFakeAndRealPlatforms"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Flip fake and real platforms"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

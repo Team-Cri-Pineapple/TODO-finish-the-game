@@ -1,7 +1,56 @@
 {
   "associatedLayout": "prototype",
   "name": "AddNewEvent",
-  "instances": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 482,
+      "layer": "",
+      "locked": false,
+      "name": "ConditionName",
+      "persistentUuid": "28e552d7-5e12-4d73-88e2-b14597dc26f2",
+      "width": 245,
+      "x": 444,
+      "y": 21,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 482,
+      "layer": "",
+      "locked": false,
+      "name": "ActionName",
+      "persistentUuid": "577cb367-3166-4b25-9913-7bbaa6fb5aba",
+      "width": 245,
+      "x": 689,
+      "y": 21,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 509,
+      "layer": "",
+      "locked": false,
+      "name": "popupBG",
+      "persistentUuid": "a34b369f-a9d1-480c-b92c-900460499f30",
+      "width": 505,
+      "x": 439,
+      "y": 14,
+      "zOrder": 80,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
   "editionSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -12,7 +61,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6499999999999997,
+    "zoomFactor": 0.5500000000000195,
     "windowMask": false
   }
 }
