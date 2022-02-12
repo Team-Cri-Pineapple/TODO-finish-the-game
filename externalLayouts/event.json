@@ -1,0 +1,51 @@
+{
+  "associatedLayout": "prototype",
+  "name": "Event",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 20,
+      "layer": "",
+      "locked": false,
+      "name": "Condition",
+      "persistentUuid": "1cfa5155-7248-4fce-9875-93c2f87852ca",
+      "width": 256,
+      "x": 0,
+      "y": 0,
+      "zOrder": 60,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 20,
+      "layer": "",
+      "locked": false,
+      "name": "Action",
+      "persistentUuid": "3d9fd4e9-a428-43e2-9865-8202e01fcdd5",
+      "width": 380,
+      "x": 256,
+      "y": 0,
+      "zOrder": 60,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.5499999999999993,
+    "windowMask": false
+  }
+}

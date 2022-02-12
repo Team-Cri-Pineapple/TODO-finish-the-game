@@ -1,8 +1,8 @@
 {
   "b": 41,
   "disableInputWhenNotFocused": true,
-  "mangledName": "donttouch",
-  "name": "donttouch",
+  "mangledName": "ignorethat",
+  "name": "ignorethat",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7000000000000703,
+    "zoomFactor": 0.5750000000000702,
     "windowMask": false
   },
   "objectsGroups": [],
