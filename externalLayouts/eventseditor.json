@@ -21,14 +21,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 83,
+      "height": 64,
       "layer": "",
       "locked": false,
       "name": "add",
       "persistentUuid": "282ef1f9-9a4f-40b1-bc33-40c4fd557973",
-      "width": 87,
-      "x": 5,
-      "y": 451,
+      "width": 64,
+      "x": 64,
+      "y": 448,
       "zOrder": 80,
       "numberProperties": [],
       "stringProperties": [],
@@ -36,7 +36,7 @@
     }
   ],
   "editionSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 64,
     "gridHeight": 64,
@@ -44,8 +44,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.5749999999999997,
+    "snap": true,
+    "zoomFactor": 0.574999999999999,
     "windowMask": false
   }
 }

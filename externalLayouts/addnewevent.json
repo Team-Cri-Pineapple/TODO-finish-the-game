@@ -1,0 +1,18 @@
+{
+  "associatedLayout": "prototype",
+  "name": "AddNewEvent",
+  "instances": [],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.6499999999999997,
+    "windowMask": false
+  }
+}
