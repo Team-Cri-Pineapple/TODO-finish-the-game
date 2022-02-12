@@ -352,7 +352,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "WASD",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -823,12 +823,12 @@
         {
           "type": {
             "inverted": false,
-            "value": "SetCameraX"
+            "value": "SetCameraY"
           },
           "parameters": [
             "",
             "=",
-            "lerp(CameraX(), playerHitbox.X(), 0.1)",
+            "Tween::Ease(\"easeInQuad\", CameraY(), playerHitbox.Y(), 0.2)",
             "\"\"",
             "0"
           ],
@@ -837,12 +837,12 @@
         {
           "type": {
             "inverted": false,
-            "value": "SetCameraY"
+            "value": "SetCameraX"
           },
           "parameters": [
             "",
             "=",
-            "lerp(CameraY(), playerHitbox.Y(), 0.2)",
+            "Tween::Ease(\"easeInQuad\", CameraY(), playerHitbox.Y(), 0.1)",
             "\"\"",
             "0"
           ],
