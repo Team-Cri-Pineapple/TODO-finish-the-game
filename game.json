@@ -381,6 +381,9 @@
         },
         {
           "name": "Condition"
+        },
+        {
+          "name": "EventTextBB"
         }
       ]
     }

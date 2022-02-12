@@ -724,7 +724,7 @@
                     "value": "Delete"
                   },
                   "parameters": [
-                    "EventText",
+                    "EventTextBB",
                     ""
                   ],
                   "subInstructions": []
@@ -819,7 +819,7 @@
                           },
                           "parameters": [
                             "",
-                            "EventText",
+                            "EventTextBB",
                             "70",
                             "Variable(YOffset) + Variable(ConditionsOffset) + 5",
                             ""
@@ -832,7 +832,7 @@
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "EventText",
+                            "EventTextBB",
                             "=",
                             "70"
                           ],
@@ -841,10 +841,10 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "TextObject::String"
+                            "value": "BBText::SetBBText"
                           },
                           "parameters": [
-                            "EventText",
+                            "EventTextBB",
                             "=",
                             "VariableString(Condition.ID)"
                           ],
@@ -858,7 +858,7 @@
                           "parameters": [
                             "ConditionsOffset",
                             "+",
-                            "EventText.Height() + 10"
+                            "EventTextBB.Height() + 10"
                           ],
                           "subInstructions": []
                         }
@@ -901,12 +901,12 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "TextObject::String"
+                                "value": "BBText::SetBBText"
                               },
                               "parameters": [
-                                "EventText",
+                                "EventTextBB",
                                 "=",
-                                "\"Check if key [\" + VariableString(Condition.Parameters[0]) + \"] is pressed\""
+                                "\"Check if key [outline=green][\" + VariableString(Condition.Parameters[0]) + \"] [/outline] is pressed\""
                               ],
                               "subInstructions": []
                             }
@@ -931,7 +931,7 @@
                           },
                           "parameters": [
                             "",
-                            "EventText",
+                            "EventTextBB",
                             "70 + 305",
                             "Variable(YOffset) + Variable(ActionsOffset) + 5",
                             ""
@@ -944,7 +944,7 @@
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "EventText",
+                            "EventTextBB",
                             "=",
                             "70"
                           ],
@@ -953,10 +953,10 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "TextObject::String"
+                            "value": "BBText::SetBBText"
                           },
                           "parameters": [
-                            "EventText",
+                            "EventTextBB",
                             "=",
                             "VariableString(Action.ID)"
                           ],
@@ -970,7 +970,7 @@
                           "parameters": [
                             "ActionsOffset",
                             "+",
-                            "EventText.Height() + 10"
+                            "EventTextBB.Height() + 10"
                           ],
                           "subInstructions": []
                         }
@@ -1013,10 +1013,10 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "TextObject::String"
+                                "value": "BBText::SetBBText"
                               },
                               "parameters": [
-                                "EventText",
+                                "EventTextBB",
                                 "=",
                                 "\"Flip fake and real platforms\""
                               ],
@@ -1063,7 +1063,7 @@
                           },
                           "parameters": [
                             "",
-                            "EventText",
+                            "EventTextBB",
                             "70",
                             "Variable(YOffset) + Variable(ConditionsOffset) + 5",
                             ""
@@ -1076,7 +1076,7 @@
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "EventText",
+                            "EventTextBB",
                             "=",
                             "70"
                           ],
@@ -1085,12 +1085,23 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "TextObject::String"
+                            "value": "BBText::SetBBText"
                           },
                           "parameters": [
-                            "EventText",
+                            "EventTextBB",
                             "=",
                             "\"Add Condition\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BBText::SetColor"
+                          },
+                          "parameters": [
+                            "EventTextBB",
+                            "\"200;200;200\""
                           ],
                           "subInstructions": []
                         },
@@ -1102,7 +1113,7 @@
                           "parameters": [
                             "ConditionsOffset",
                             "+",
-                            "EventText.Height() + 10"
+                            "EventTextBB.Height() + 10"
                           ],
                           "subInstructions": []
                         }
@@ -1137,7 +1148,7 @@
                           },
                           "parameters": [
                             "",
-                            "EventText",
+                            "EventTextBB",
                             "70 + 305",
                             "Variable(YOffset) + Variable(ActionsOffset) + 5",
                             ""
@@ -1150,7 +1161,7 @@
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "EventText",
+                            "EventTextBB",
                             "=",
                             "70"
                           ],
@@ -1159,12 +1170,23 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "TextObject::String"
+                            "value": "BBText::SetBBText"
                           },
                           "parameters": [
-                            "EventText",
+                            "EventTextBB",
                             "=",
                             "\"Add Action\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BBText::SetColor"
+                          },
+                          "parameters": [
+                            "EventTextBB",
+                            "\"200;200;200\""
                           ],
                           "subInstructions": []
                         },
@@ -1176,7 +1198,7 @@
                           "parameters": [
                             "ActionsOffset",
                             "+",
-                            "EventText.Height() + 10"
+                            "EventTextBB.Height() + 10"
                           ],
                           "subInstructions": []
                         }
