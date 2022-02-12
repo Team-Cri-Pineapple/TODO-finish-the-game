@@ -18,6 +18,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "coolpineaplecri",
+    "description": "",
     "author": "cripineapple",
     "windowWidth": 960,
     "windowHeight": 540,
@@ -276,6 +277,24 @@
         "kind": "image",
         "metadata": "",
         "name": "NewObject-1-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/eventsheetCondition.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\eventsheetCondition.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/eventsheetAction.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\eventsheetAction.png",
         "smoothed": false,
         "userAdded": false
       }

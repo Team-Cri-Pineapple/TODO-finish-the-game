@@ -703,7 +703,7 @@
                   "parameters": [
                     "YOffset",
                     "=",
-                    "50"
+                    "60"
                   ],
                   "subInstructions": []
                 },
@@ -820,8 +820,8 @@
                           "parameters": [
                             "",
                             "EventText",
-                            "42",
-                            "Variable(YOffset) + Variable(ConditionsOffset)",
+                            "70",
+                            "Variable(YOffset) + Variable(ConditionsOffset) + 5",
                             ""
                           ],
                           "subInstructions": []
@@ -858,7 +858,7 @@
                           "parameters": [
                             "ConditionsOffset",
                             "+",
-                            "EventText.Height() + 2"
+                            "EventText.Height() + 10"
                           ],
                           "subInstructions": []
                         }
@@ -932,8 +932,8 @@
                           "parameters": [
                             "",
                             "EventText",
-                            "42 + 256",
-                            "Variable(YOffset) + Variable(ActionsOffset)",
+                            "70 + 305",
+                            "Variable(YOffset) + Variable(ActionsOffset) + 5",
                             ""
                           ],
                           "subInstructions": []
@@ -970,7 +970,7 @@
                           "parameters": [
                             "ActionsOffset",
                             "+",
-                            "EventText.Height() + 2"
+                            "EventText.Height() + 10"
                           ],
                           "subInstructions": []
                         }
@@ -1064,8 +1064,8 @@
                           "parameters": [
                             "",
                             "EventText",
-                            "42",
-                            "Variable(YOffset) + Variable(ConditionsOffset)",
+                            "70",
+                            "Variable(YOffset) + Variable(ConditionsOffset) + 5",
                             ""
                           ],
                           "subInstructions": []
@@ -1102,7 +1102,7 @@
                           "parameters": [
                             "ConditionsOffset",
                             "+",
-                            "EventText.Height() + 2"
+                            "EventText.Height() + 10"
                           ],
                           "subInstructions": []
                         }
@@ -1138,8 +1138,8 @@
                           "parameters": [
                             "",
                             "EventText",
-                            "42 + 256",
-                            "Variable(YOffset) + Variable(ActionsOffset)",
+                            "70 + 305",
+                            "Variable(YOffset) + Variable(ActionsOffset) + 5",
                             ""
                           ],
                           "subInstructions": []
@@ -1159,24 +1159,24 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ModVarScene"
-                          },
-                          "parameters": [
-                            "ActionsOffset",
-                            "+",
-                            "EventText.Height() + 2"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "TextObject::String"
                           },
                           "parameters": [
                             "EventText",
                             "=",
                             "\"Add Action\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ActionsOffset",
+                            "+",
+                            "EventText.Height() + 10"
                           ],
                           "subInstructions": []
                         }
@@ -1254,7 +1254,7 @@
                           "parameters": [
                             "YOffset",
                             "+",
-                            "max(Variable(ConditionsOffset), Variable(ActionsOffset)) + 10"
+                            "max(Variable(ConditionsOffset), Variable(ActionsOffset))"
                           ],
                           "subInstructions": []
                         }

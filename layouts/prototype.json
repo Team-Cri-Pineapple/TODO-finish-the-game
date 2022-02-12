@@ -222,7 +222,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "Action-1.png",
+                  "image": "assets\\eventsheetCondition.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -262,7 +262,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "Condition-1.png",
+                  "image": "assets\\eventsheetAction.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -295,12 +295,12 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "",
-      "characterSize": 20,
+      "font": "assets\\F77MinecraftRegular-0VYv.ttf",
+      "characterSize": 15,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     }
   ],
