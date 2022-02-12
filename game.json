@@ -214,6 +214,15 @@
         "name": "NewObject-1-6.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-7.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
