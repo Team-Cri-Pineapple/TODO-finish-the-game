@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Splash Screen",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -240,7 +240,7 @@
         "kind": "image",
         "metadata": "",
         "name": "cri-pineapple-logo.png",
-        "smoothed": false,
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -333,7 +333,11 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/splash"
+      "referenceTo": "/layouts/splash-screen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/main-menu"
     }
   ],
   "externalEvents": [
