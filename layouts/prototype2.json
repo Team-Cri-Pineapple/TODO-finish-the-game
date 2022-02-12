@@ -557,7 +557,7 @@
                 "playerHitbox",
                 "tilt",
                 "=",
-                "lerp(playerHitbox.Variable(tilt), 0, 0.1)"
+                "lerp(playerHitbox.Variable(tilt), 0, 0.4)"
               ],
               "subInstructions": []
             }
