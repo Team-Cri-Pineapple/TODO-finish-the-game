@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.3249999999999995,
+    "zoomFactor": 1.2999999999999996,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -296,7 +296,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "WASD",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -428,6 +428,53 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
+              },
+              "parameters": [
+                "playerHitbox",
+                "PlatformerObject",
+                "=",
+                "XFromAngleAndDistance(playerHitbox.AngleToPosition(MouseX(), MouseY()), 4000)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentFallSpeed"
+              },
+              "parameters": [
+                "playerHitbox",
+                "PlatformerObject",
+                "=",
+                "YFromAngleAndDistance(playerHitbox.AngleToPosition(MouseX(), MouseY()), 4000)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "parameters": []
@@ -438,7 +485,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Player tilt",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
