@@ -1006,7 +1006,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
                       "iterableVariableName": "Event.ConditionsList",
                       "valueIteratorVariableName": "Condition",
@@ -1021,6 +1021,20 @@
                           "parameters": [
                             "",
                             "EventTextBB",
+                            "105",
+                            "Variable(YOffset) + Variable(ConditionsOffset) + 5",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "EventIcon",
                             "70",
                             "Variable(YOffset) + Variable(ConditionsOffset) + 5",
                             ""
@@ -1030,10 +1044,21 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "EventIcon",
+                            "VariableString(Condition.ID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "EventTextBB",
+                            "TextAndIcon",
                             "=",
                             "70"
                           ],
@@ -1133,7 +1158,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
                       "iterableVariableName": "Event.ActionsList",
                       "valueIteratorVariableName": "Action",
@@ -1148,6 +1173,20 @@
                           "parameters": [
                             "",
                             "EventTextBB",
+                            "105 + 305",
+                            "Variable(YOffset) + Variable(ActionsOffset) + 5",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "EventIcon",
                             "70 + 305",
                             "Variable(YOffset) + Variable(ActionsOffset) + 5",
                             ""
@@ -1157,10 +1196,21 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "EventIcon",
+                            "VariableString(Action.ID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "EventTextBB",
+                            "TextAndIcon",
                             "=",
                             "70"
                           ],
