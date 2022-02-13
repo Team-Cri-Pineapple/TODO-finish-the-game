@@ -378,6 +378,24 @@
         "name": "NewObject-1-17.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-18.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -600,6 +618,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/traveltorandompositions"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
