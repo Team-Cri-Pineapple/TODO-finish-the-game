@@ -21,19 +21,190 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1,
+    "zoomFactor": 0.7765000000000007,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
-  "objects": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Link",
+      "persistentUuid": "c3c59d52-cd0c-4ec4-a0e9-21961ada0fe6",
+      "width": 0,
+      "x": 48,
+      "y": 28,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "to",
+          "type": "string",
+          "value": "prototype"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "value": "Test platformer with events"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Link",
+      "persistentUuid": "6c60b580-5301-4d87-83dc-691b3a34c51b",
+      "width": 0,
+      "x": 53,
+      "y": 68,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "to",
+          "type": "string",
+          "value": "prototype2"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "value": "Platformer with build"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Link",
+      "persistentUuid": "7eb24e10-daf6-4ff8-b731-88401f670486",
+      "width": 0,
+      "x": 53,
+      "y": 104,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "to",
+          "type": "string",
+          "value": "prototype3"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "value": "City builder but its a clicker"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "bold": false,
+      "italic": false,
+      "name": "Link",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "to",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "<Link>",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    }
+  ],
   "events": [
     {
       "disabled": false,
       "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "Link",
+            "=",
+            "Link.VariableString(name)"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Link",
+            "",
+            "no",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -42,8 +213,8 @@
           },
           "parameters": [
             "",
-            "\"prototype\"",
-            ""
+            "Link.VariableString(to)",
+            "yes"
           ],
           "subInstructions": []
         }
