@@ -381,6 +381,22 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "NewObject-1-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
         "file": "assets/icons/keyPressed.png",
         "kind": "image",
         "metadata": "",
@@ -621,6 +637,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/traveltorandompositions"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
