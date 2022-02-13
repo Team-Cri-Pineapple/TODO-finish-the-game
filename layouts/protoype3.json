@@ -9178,18 +9178,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Tween::IsPlaying"
-                  },
-                  "parameters": [
-                    "people",
-                    "Tween",
-                    "\"right\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
                     "inverted": false,
                     "value": "ObjectVariableAsBoolean"
                   },
@@ -9217,6 +9205,18 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "people",
+                    "Tween",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -9235,18 +9235,6 @@
                     "people",
                     "Tween",
                     "\"right\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Tween::IsPlaying"
-                  },
-                  "parameters": [
-                    "people",
-                    "Tween",
-                    "\"left\""
                   ],
                   "subInstructions": []
                 },
@@ -9277,6 +9265,18 @@
                     "\"easeInOutQuad\"",
                     "400",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "people",
+                    "Tween",
+                    "\"right\""
                   ],
                   "subInstructions": []
                 }
