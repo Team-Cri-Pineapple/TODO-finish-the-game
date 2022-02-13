@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5749999999999987,
+    "zoomFactor": 0.8249999999999988,
     "windowMask": false
   },
   "objectsGroups": [
@@ -7746,7 +7746,7 @@
       "locked": false,
       "name": "panel",
       "persistentUuid": "32a1b8ac-e57f-4edf-b2d3-110109aecab3",
-      "width": 160,
+      "width": 192,
       "x": 32,
       "y": 32,
       "zOrder": 0,
@@ -7814,6 +7814,38 @@
       "x": 64,
       "y": 74,
       "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 32,
+      "layer": "gui",
+      "locked": false,
+      "name": "sleepGui",
+      "persistentUuid": "29e35db5-cef2-4672-9fde-3b303208615a",
+      "width": 32,
+      "x": 144,
+      "y": 80,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "gui",
+      "locked": false,
+      "name": "sleepGuiNum",
+      "persistentUuid": "63f7b606-add1-4463-b6fb-9267760ebbef",
+      "width": 0,
+      "x": 160,
+      "y": 74,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -7911,20 +7943,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [
-        {
-          "effectType": "Outline",
-          "name": "Effect",
-          "doubleParameters": {
-            "padding": 10,
-            "thickness": 3
-          },
-          "stringParameters": {
-            "color": "36;46;65"
-          },
-          "booleanParameters": {}
-        }
-      ],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -8071,6 +8090,26 @@
     {
       "bold": false,
       "italic": false,
+      "name": "sleepGuiNum",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "assets\\Minecraft.ttf",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
       "name": "peopleGuiNum",
       "smoothed": true,
       "tags": "",
@@ -8165,6 +8204,51 @@
       ]
     },
     {
+      "name": "sleepGui",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewObject",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-1-20.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "peopleGui",
       "tags": "",
       "type": "Sprite",
@@ -8218,6 +8302,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 1000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -8228,9 +8314,7 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 50,
-          "name": "Pathfinding",
-          "rotateObject": false,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "rotateObject": false
         },
         {
           "name": "Tween",
@@ -8249,6 +8333,64 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "NewObject-1-18.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "people",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "people-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "xsdf",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "people-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -8354,6 +8496,18 @@
         {
           "type": {
             "inverted": false,
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "peopleWorked",
+            "=",
+            "0"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "ResetTimer"
           },
           "parameters": [
@@ -8370,7 +8524,7 @@
           "parameters": [
             "peopleTime",
             "=",
-            "RandomFloatInRange(1, 5)"
+            "RandomFloatInRange(0.1, 10)"
           ],
           "subInstructions": []
         }
@@ -8383,7 +8537,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8539,7 +8693,7 @@
               "parameters": [
                 "wood",
                 "-",
-                "10"
+                "7"
               ],
               "subInstructions": []
             },
@@ -8623,7 +8777,7 @@
               "parameters": [
                 "people",
                 "+",
-                "2"
+                "RandomInRange(1,3)"
               ],
               "subInstructions": []
             }
@@ -8674,6 +8828,18 @@
                 "\"people\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "peopleTime",
+                "=",
+                "RandomFloatInRange(0.1, 10)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": [
@@ -8685,38 +8851,95 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
+                    "value": "VarScene"
                   },
                   "parameters": [
-                    "people",
-                    "tree",
-                    "",
-                    "",
-                    ""
+                    "peopleWorked",
+                    ">",
+                    "0"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Tween::IsPlaying"
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "tree",
-                    "Tween",
-                    "\"die1\""
+                    "Random(2)",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
               ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "peopleWorked",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
               "actions": [],
               "events": [
                 {
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "tree",
-                  "conditions": [],
+                  "object": "people",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "people",
+                        "tree",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Tween::IsPlaying"
+                      },
+                      "parameters": [
+                        "tree",
+                        "Tween",
+                        "\"die1\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AjoutHasard"
+                      },
+                      "parameters": [
+                        "",
+                        "tree"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
@@ -8763,6 +8986,19 @@
                         "2"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "people",
+                        "deeds",
+                        "+",
+                        "1"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -8777,47 +9013,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "people",
-                    "camp",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "people",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "NbObjet"
                   },
                   "parameters": [
                     "people",
                     "<",
-                    "Variable(people)"
+                    "Variable(people)-Variable(peopleWorked)"
                   ],
                   "subInstructions": []
                 },
@@ -8875,6 +9076,18 @@
                     "2"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "people",
+                    "=",
+                    "Random(2)"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -8915,6 +9128,18 @@
                     "people",
                     "Tween",
                     "\"right\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "people",
+                    "sleep",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -8967,6 +9192,80 @@
                     "\"left\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "people",
+                    "sleep",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectAngleTween"
+                  },
+                  "parameters": [
+                    "people",
+                    "Tween",
+                    "\"left\"",
+                    "-20",
+                    "\"easeInOutQuad\"",
+                    "400",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": true,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "people",
+                    "Tween",
+                    "\"left\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "people",
+                    "Tween",
+                    "\"right\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "people",
+                    "sleep",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -8996,25 +9295,40 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Tween::IsPlaying"
+                    "inverted": false,
+                    "value": "CollisionNP"
                   },
                   "parameters": [
                     "people",
-                    "Tween",
-                    "\"left\""
+                    "camp",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Tween::IsPlaying"
+                    "inverted": false,
+                    "value": "VarObjet"
                   },
                   "parameters": [
                     "people",
-                    "Tween",
-                    "\"right\""
+                    "deeds",
+                    ">",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "people",
+                    "sleep",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -9023,16 +9337,75 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "Tween::AddObjectScaleTween"
+                  },
+                  "parameters": [
+                    "people",
+                    "Tween",
+                    "\"house\"",
+                    "0",
+                    "0",
+                    "\"easeInBack\"",
+                    "500",
+                    "yes",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "Tween::AddObjectAngleTween"
                   },
                   "parameters": [
                     "people",
                     "Tween",
-                    "\"left\"",
-                    "-20",
-                    "\"easeInOutQuad\"",
-                    "400",
+                    "\"house1\"",
+                    "RandomInRange(-360,360)",
+                    "\"easeInBack\"",
+                    "600",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectPositionTween"
+                  },
+                  "parameters": [
+                    "people",
+                    "Tween",
+                    "\"house2\"",
+                    "camp.X()",
+                    "camp.Y()",
+                    "\"easeInOutQuad\"",
+                    "500",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "peopleWorked",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "people",
+                    "sleep",
+                    "True"
                   ],
                   "subInstructions": []
                 }
@@ -9088,11 +9461,45 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "gui",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "sleepGuiNum",
+                "!=",
+                "VariableString(peopleWorked)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "sleepGuiNum",
+                "=",
+                "VariableString(peopleWorked)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "disabled": false,
           "folded": false,
