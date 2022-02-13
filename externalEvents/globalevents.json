@@ -798,6 +798,106 @@
                             }
                           ],
                           "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                          "iterableVariableName": "AllUsableEvents.ConditionsList",
+                          "valueIteratorVariableName": "conditionname",
+                          "keyIteratorVariableName": "conditionid",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ConditionName",
+                                "444",
+                                "42*(Count(ConditionName)+1)",
+                                "\"\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "ConditionName",
+                                "=",
+                                "100"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BBText::SetBBText"
+                              },
+                              "parameters": [
+                                "ConditionName",
+                                "=",
+                                "VariableString(conditionid)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                          "iterableVariableName": "AllUsableEvents.ActionsList",
+                          "valueIteratorVariableName": "actionname",
+                          "keyIteratorVariableName": "actionid",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ActionName",
+                                "689",
+                                "42*(Count(ActionName)+1)",
+                                "\"\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "ActionName",
+                                "=",
+                                "100"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BBText::SetBBText"
+                              },
+                              "parameters": [
+                                "ActionName",
+                                "=",
+                                "VariableString(actionid)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
                         }
                       ]
                     },

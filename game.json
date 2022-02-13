@@ -582,57 +582,7 @@
       ]
     }
   ],
-  "variables": [
-    {
-      "name": "ConditionsList",
-      "type": "structure",
-      "children": [
-        {
-          "name": "KeyPressed",
-          "type": "structure",
-          "children": [
-            {
-              "name": "ID",
-              "type": "string",
-              "value": "KeyPressed"
-            },
-            {
-              "name": "Name",
-              "type": "string",
-              "value": "Check if key [...] is pressed"
-            },
-            {
-              "name": "Parameter",
-              "type": "string",
-              "value": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "ActionsList",
-      "type": "structure",
-      "children": [
-        {
-          "name": "FlipFakeAndRealPlatforms",
-          "type": "structure",
-          "children": [
-            {
-              "name": "ID",
-              "type": "string",
-              "value": "FlipFakeAndRealPlatforms"
-            },
-            {
-              "name": "Name",
-              "type": "string",
-              "value": "Flip fake and real platforms"
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "variables": [],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -656,7 +606,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/prototype3"
+      "referenceTo": "/layouts/protoype3"
     }
   ],
   "externalEvents": [

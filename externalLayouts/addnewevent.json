@@ -5,7 +5,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 482,
+      "height": 28,
       "layer": "",
       "locked": false,
       "name": "ConditionName",
@@ -21,7 +21,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 482,
+      "height": 28,
       "layer": "",
       "locked": false,
       "name": "ActionName",
