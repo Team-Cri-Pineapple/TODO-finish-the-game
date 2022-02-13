@@ -505,6 +505,17 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "addpopupshow",
+                    "False"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "ChangeTimeScale"
                   },
                   "parameters": [
@@ -737,7 +748,7 @@
                           },
                           "parameters": [
                             "addpopupshow",
-                            "False"
+                            "True"
                           ],
                           "subInstructions": []
                         }
@@ -802,7 +813,7 @@
                           },
                           "parameters": [
                             "addpopupshow",
-                            "True"
+                            "False"
                           ],
                           "subInstructions": []
                         }
