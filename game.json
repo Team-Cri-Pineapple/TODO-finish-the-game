@@ -378,6 +378,24 @@
         "name": "NewObject-1-17.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/keyPressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\keyPressed.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/flipFakeAndRealPlatform.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\flipFakeAndRealPlatform.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -512,6 +530,9 @@
         },
         {
           "name": "popupBG"
+        },
+        {
+          "name": "EventIcon"
         }
       ]
     }
