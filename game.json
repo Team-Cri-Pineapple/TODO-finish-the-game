@@ -441,6 +441,15 @@
         "name": "people-1-0.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-21.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -656,7 +665,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/prototype3"
+      "referenceTo": "/layouts/protoype3"
     }
   ],
   "externalEvents": [
