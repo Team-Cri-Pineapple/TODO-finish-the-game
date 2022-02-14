@@ -522,6 +522,42 @@
         "name": "add-placeholder-1-2.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "EventIcon-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "EventIcon-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "floor-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "floor-1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "yes.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "yes.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "yes-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "yes-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -680,7 +716,7 @@
             {
               "name": "Name",
               "type": "string",
-              "value": "Check if key [...] is pressed"
+              "value": "Check if key [[0]] is pressed"
             },
             {
               "name": "Parameters",
@@ -691,6 +727,22 @@
                   "value": "Space"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "TriggerOnce",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "TriggerOnce"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Trgger once while true"
             }
           ]
         }
@@ -752,6 +804,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/regex"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/noise"

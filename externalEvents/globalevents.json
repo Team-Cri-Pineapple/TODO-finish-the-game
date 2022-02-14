@@ -9,7 +9,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Events executor",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -20,7 +20,7 @@
           "type": "BuiltinCommonInstructions::ForEachChildVariable",
           "iterableVariableName": "EventsList",
           "valueIteratorVariableName": "Event",
-          "keyIteratorVariableName": "",
+          "keyIteratorVariableName": "EventID",
           "conditions": [],
           "actions": [],
           "events": [
@@ -50,20 +50,8 @@
               "type": "BuiltinCommonInstructions::ForEachChildVariable",
               "iterableVariableName": "Event.ConditionsList",
               "valueIteratorVariableName": "Condition",
-              "keyIteratorVariableName": "",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "conditionReturnValue",
-                    "True"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "keyIteratorVariableName": "ConacID",
+              "conditions": [],
               "actions": [],
               "events": [
                 {
@@ -89,17 +77,97 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "VarSceneTxt"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "Condition.ID",
-                        "=",
-                        "\"KeyPressed\""
+                        "conditionReturnValue",
+                        "True"
                       ],
                       "subInstructions": []
                     }
                   ],
                   "actions": [],
+                  "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "disabled": false,
+                      "folded": false,
+                      "name": "For anything not trigger once",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarSceneTxt"
+                              },
+                              "parameters": [
+                                "Condition.ID",
+                                "=",
+                                "\"KeyPressed\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "VariableString(Condition.Parameters[0])"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SetSceneVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "conditionReturnValue",
+                                    "False"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ]
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "trigger once",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
                       "disabled": false,
@@ -108,32 +176,151 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "KeyFromTextReleased"
-                          },
-                          "parameters": [
-                            "",
-                            "VariableString(Condition.Parameters[0])"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
                             "inverted": false,
-                            "value": "SetSceneVariableAsBoolean"
+                            "value": "VarSceneTxt"
                           },
                           "parameters": [
-                            "conditionReturnValue",
-                            "False"
+                            "Condition.ID",
+                            "=",
+                            "\"TriggerOnce\""
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "conditionReturnValue",
+                                "False"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
+                                "False"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "conditionReturnValue",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SceneVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
+                                    "True"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SetSceneVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "conditionReturnValue",
+                                    "False"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SceneVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
+                                    "False"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SetSceneVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "conditionReturnValue",
+                                    "True"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SetSceneVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
+                                    "True"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        }
+                      ]
                     }
-                  ]
+                  ],
+                  "parameters": []
                 }
               ]
             },
@@ -320,7 +507,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Toggle Editor GUI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -736,6 +923,18 @@
                             "0"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "ConacCount",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": [
@@ -787,7 +986,7 @@
                                 "",
                                 "ConditionName",
                                 "444",
-                                "42*(Count(ConditionName)+1)",
+                                "42*(Variable(ConacCount)+1)",
                                 "\"\""
                               ],
                               "subInstructions": []
@@ -827,6 +1026,39 @@
                                 "True"
                               ],
                               "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "ConacCount",
+                                "+",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "ConacCount",
+                                "=",
+                                "0"
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "events": []
@@ -849,7 +1081,7 @@
                                 "",
                                 "ActionName",
                                 "689",
-                                "42*(Count(ActionName)+1)",
+                                "42*(Variable(ConacCount)+1)",
                                 "\"\""
                               ],
                               "subInstructions": []
@@ -887,6 +1119,18 @@
                                 "ActionName",
                                 "Clickable",
                                 "True"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "ConacCount",
+                                "+",
+                                "1"
                               ],
                               "subInstructions": []
                             }
@@ -1009,20 +1253,8 @@
                             "value": "JSONToVariableStructure"
                           },
                           "parameters": [
-                            "GlobalVarToJSON(ConditionsList[ConditionName.GetBBText()].Parameters)",
-                            "ConditionAdd.Parameters"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarSceneTxt"
-                          },
-                          "parameters": [
-                            "ConditionAdd.ID",
-                            "=",
-                            "ConditionName.GetBBText()"
+                            "GlobalVarToJSON(ConditionsList[ConditionName.GetBBText()])",
+                            "ConditionAdd"
                           ],
                           "subInstructions": []
                         },
@@ -1100,20 +1332,8 @@
                             "value": "JSONToVariableStructure"
                           },
                           "parameters": [
-                            "GlobalVarToJSON(ActionsList[ActionName.GetBBText()].Parameters)",
-                            "ActionAdd.Parameters"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarSceneTxt"
-                          },
-                          "parameters": [
-                            "ActionAdd.ID",
-                            "=",
-                            "ActionName.GetBBText()"
+                            "GlobalVarToJSON(ActionsList[ActionName.GetBBText()])",
+                            "ActionAdd"
                           ],
                           "subInstructions": []
                         },
@@ -1362,7 +1582,7 @@
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
                       "iterableVariableName": "Event.ConditionsList",
                       "valueIteratorVariableName": "Condition",
-                      "keyIteratorVariableName": "",
+                      "keyIteratorVariableName": "ConacID",
                       "conditions": [],
                       "actions": [
                         {
@@ -1439,6 +1659,32 @@
                             "EventTextBB.Height() + 10"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "EventTextBB",
+                            "EventID",
+                            "=",
+                            "Variable(EventID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "EventTextBB",
+                            "ConacID",
+                            "=",
+                            "Variable(ConacID)"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": [
@@ -1454,42 +1700,109 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Change text if \"supported\"",
+                          "comment": "Change text",
                           "comment2": ""
                         },
                         {
                           "disabled": false,
                           "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarSceneTxt"
-                              },
-                              "parameters": [
-                                "Condition.ID",
-                                "=",
-                                "\"KeyPressed\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
+                          "conditions": [],
                           "actions": [
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "BBText::SetBBText"
+                                "value": "ModVarSceneTxt"
                               },
                               "parameters": [
-                                "EventTextBB",
+                                "ConacName",
                                 "=",
-                                "\"Check if key [outline=green][\" + VariableString(Condition.Parameters[0]) + \"] [/outline] is pressed\""
+                                "GlobalVariableString(ConditionsList[VariableString(Condition.ID)].Name)"
                               ],
                               "subInstructions": []
                             }
                           ],
-                          "events": []
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                              "iterableVariableName": "Condition.Parameters",
+                              "valueIteratorVariableName": "Parameter",
+                              "keyIteratorVariableName": "ParamID",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "ConacName",
+                                    "=",
+                                    "RegEx::Replace(\"\\\\[\\\\[\"+VariableString(ParamID)+\"\\\\]\\\\]\", \"g\", VariableString(ConacName), \"[outline=green]<\"+VariableString(Parameter)+\">[/outline]\")"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": true,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "Condition.ID",
+                                    "=",
+                                    "\"TriggerOnce\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BBText::SetBBText"
+                                  },
+                                  "parameters": [
+                                    "EventTextBB",
+                                    "=",
+                                    "\"Trigger once\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BBText::SetBBText"
+                                  },
+                                  "parameters": [
+                                    "EventTextBB",
+                                    "=",
+                                    "VariableString(ConacName)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
                         }
                       ]
                     },
@@ -1514,7 +1827,7 @@
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
                       "iterableVariableName": "Event.ActionsList",
                       "valueIteratorVariableName": "Action",
-                      "keyIteratorVariableName": "",
+                      "keyIteratorVariableName": "ConacID",
                       "conditions": [],
                       "actions": [
                         {
@@ -1591,6 +1904,32 @@
                             "EventTextBB.Height() + 10"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "EventTextBB",
+                            "EventID",
+                            "=",
+                            "Variable(EventID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "EventTextBB",
+                            "ConacID",
+                            "=",
+                            "Variable(ConacID)"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": [
@@ -1611,6 +1950,107 @@
                         },
                         {
                           "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "ConacName",
+                                "=",
+                                "GlobalVariableString(ActionsList[VariableString(Action.ID)].Name)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                              "iterableVariableName": "Action.Parameters",
+                              "valueIteratorVariableName": "Parameter",
+                              "keyIteratorVariableName": "ParamID",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "ConacName",
+                                    "=",
+                                    "RegEx::Replace(\"\\\\[\\\\[\"+VariableString(ParamID)+\"\\\\]\\\\]\", \"g\", VariableString(ConacName), \"[outline=green]<\"+VariableString(Parameter)+\">[/outline]\")"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": true,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "Condition.ID",
+                                    "=",
+                                    "\"TriggerOnce\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BBText::SetBBText"
+                                  },
+                                  "parameters": [
+                                    "EventTextBB",
+                                    "=",
+                                    "\"Trigger once\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "BBText::SetBBText"
+                                  },
+                                  "parameters": [
+                                    "EventTextBB",
+                                    "=",
+                                    "VariableString(ConacName)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": true,
                           "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [

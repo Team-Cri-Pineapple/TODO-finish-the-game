@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.48500000000000054,
+    "zoomFactor": 0.5350000000000006,
     "windowMask": false
   },
   "objectsGroups": [
@@ -96,6 +96,11 @@
               "name": "KeyPressed",
               "type": "string",
               "value": "Key [f] is pressed"
+            },
+            {
+              "name": "TriggerOnce",
+              "type": "string",
+              "value": "Trgger once while true"
             }
           ]
         }
@@ -480,11 +485,40 @@
               ]
             }
           ]
+        },
+        {
+          "name": "TriggerOnce",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "EventIcon-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": -5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "name": "Text",
+      "name": "ParameterInput",
       "tags": "",
       "type": "TextInput::TextInputObject",
       "variables": [],
@@ -615,7 +649,7 @@
       "name": "floor",
       "rightMargin": 32,
       "tags": "",
-      "texture": "floor-1.png",
+      "texture": "yes-1.png",
       "tiled": true,
       "topMargin": 32,
       "type": "PanelSpriteObject::PanelSprite",
@@ -630,10 +664,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ]
