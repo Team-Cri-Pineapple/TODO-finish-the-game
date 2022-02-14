@@ -450,6 +450,15 @@
         "name": "NewObject-1-21.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "0-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "0-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
