@@ -131,7 +131,7 @@
       "height": 64,
       "layer": "",
       "locked": false,
-      "name": "player",
+      "name": "playerHitbox",
       "persistentUuid": "067cb58e-9470-46e8-b7d3-e08474b68002",
       "width": 64,
       "x": 704,
@@ -228,6 +228,22 @@
           "value": true
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "player",
+      "persistentUuid": "b56e3b51-97d7-464c-8ecb-b42b05b33756",
+      "width": 64,
+      "x": 736,
+      "y": 416,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -257,7 +273,7 @@
       ]
     },
     {
-      "name": "player",
+      "name": "playerHitbox",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -265,24 +281,24 @@
       "effects": [],
       "behaviors": [
         {
+          "acceleration": 3500,
+          "deceleration": 4000,
+          "maxFallingSpeed": 1200,
+          "maxSpeed": 450,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 1500,
+          "yGrabOffset": 0,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
-          "deceleration": 1500,
           "gravity": 1000,
           "ignoreDefaultControls": false,
           "jumpSpeed": 600,
           "jumpSustainTime": 0.2,
           "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 700,
-          "maxSpeed": 250,
           "slopeMaxAngle": 60,
           "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
+          "xGrabTolerance": 10
         }
       ],
       "animations": [
@@ -526,6 +542,57 @@
         "readOnly": false,
         "disabled": false
       }
+    },
+    {
+      "name": "player",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ThreeDFlip",
+          "type": "ThreeDFlip::ThreeDFlip",
+          "Duration": 500,
+          "IsFlipped": false,
+          "IsFlipping": false,
+          "Width": 0,
+          "ElapsedTime": 0,
+          "Toggle": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewObject",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -602,6 +669,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "ThreeDFlip",
+      "type": "ThreeDFlip::ThreeDFlip"
     }
   ]
 }
