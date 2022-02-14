@@ -503,6 +503,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Text",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "assets\\Minecraft.ttf",
+        "fontSize": 30,
+        "inputType": "text area",
+        "textColor": "6;19;24",
+        "fillColor": "255;255;255",
+        "fillOpacity": 100,
+        "borderColor": "255;255;255",
+        "borderOpacity": 100,
+        "borderWidth": 2,
+        "readOnly": false,
+        "disabled": false
+      }
     }
   ],
   "events": [
