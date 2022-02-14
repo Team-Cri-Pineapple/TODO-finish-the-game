@@ -507,7 +507,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Editor GUI code",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1923,6 +1923,18 @@
                             "max(Variable(ConditionsOffset), Variable(ActionsOffset))"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreY"
+                          },
+                          "parameters": [
+                            "add",
+                            "=",
+                            "Variable(YOffset)"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -1942,7 +1954,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Game logic",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1953,7 +1965,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "fake floor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1992,7 +2004,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TiledSpriteObject::SetOpacity"
+                    "value": "PanelSpriteObject::SetOpacity"
                   },
                   "parameters": [
                     "floor",
@@ -2038,7 +2050,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TiledSpriteObject::SetOpacity"
+                    "value": "PanelSpriteObject::SetOpacity"
                   },
                   "parameters": [
                     "floor",
@@ -2295,7 +2307,7 @@
                         "playerHitbox",
                         "PlatformerObject",
                         ">",
-                        "4"
+                        "40"
                       ],
                       "subInstructions": []
                     }
@@ -2310,7 +2322,7 @@
                         "playerHitbox",
                         "tilt",
                         "=",
-                        "lerp(playerHitbox.Variable(tilt), 20, 0.07)"
+                        "lerp(playerHitbox.Variable(tilt), 20+(50*Noise::Perlin2(playerHitbox.Variable(sin), 0)), 0.07)"
                       ],
                       "subInstructions": []
                     },
@@ -2325,6 +2337,33 @@
                         "no",
                         "100",
                         ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                      },
+                      "parameters": [
+                        "cape",
+                        "ThreeDFlip",
+                        "no",
+                        "100",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "playerHitbox",
+                        "sin",
+                        "+",
+                        "0.2"
                       ],
                       "subInstructions": []
                     }
@@ -2345,7 +2384,7 @@
                         "playerHitbox",
                         "PlatformerObject",
                         "<",
-                        "-4"
+                        "-40"
                       ],
                       "subInstructions": []
                     }
@@ -2360,7 +2399,7 @@
                         "playerHitbox",
                         "tilt",
                         "=",
-                        "lerp(playerHitbox.Variable(tilt), -20, 0.07)"
+                        "lerp(playerHitbox.Variable(tilt), -20+(50*Noise::Perlin2(playerHitbox.Variable(sin), 0)), 0.07)"
                       ],
                       "subInstructions": []
                     },
@@ -2375,6 +2414,33 @@
                         "yes",
                         "100",
                         ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                      },
+                      "parameters": [
+                        "cape",
+                        "ThreeDFlip",
+                        "yes",
+                        "100",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "playerHitbox",
+                        "sin",
+                        "+",
+                        "0.2"
                       ],
                       "subInstructions": []
                     }
@@ -2395,7 +2461,7 @@
                         "playerHitbox",
                         "PlatformerObject",
                         "<=",
-                        "4"
+                        "40"
                       ],
                       "subInstructions": []
                     },
@@ -2408,7 +2474,7 @@
                         "playerHitbox",
                         "PlatformerObject",
                         ">=",
-                        "-4"
+                        "-40"
                       ],
                       "subInstructions": []
                     }
@@ -2423,7 +2489,73 @@
                         "playerHitbox",
                         "tilt",
                         "=",
-                        "lerp(playerHitbox.Variable(tilt), 0, 0.4)"
+                        "lerp(playerHitbox.Variable(tilt), 0, 0.05)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "cape"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "playerHitbox",
+                        "fallTilt",
+                        "=",
+                        "lerp(playerHitbox.Variable(fallTilt),playerHitbox.PlatformerObject::CurrentFallSpeed(), 0.05)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "cape"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "playerHitbox",
+                        "fallTilt",
+                        "=",
+                        "lerp(playerHitbox.Variable(fallTilt), -playerHitbox.PlatformerObject::CurrentFallSpeed(), 0.05)"
                       ],
                       "subInstructions": []
                     }
@@ -2444,7 +2576,20 @@
                       "parameters": [
                         "player",
                         "playerHitbox.Variable(tilt)",
-                        "720",
+                        "0",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RotateTowardAngle"
+                      },
+                      "parameters": [
+                        "cape",
+                        "playerHitbox.Variable(tilt)*3+playerHitbox.Variable(fallTilt)/25",
+                        "1720",
                         ""
                       ],
                       "subInstructions": []
@@ -2456,6 +2601,20 @@
                       },
                       "parameters": [
                         "player",
+                        "=",
+                        "playerHitbox.X()",
+                        "=",
+                        "playerHitbox.Y()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "cape",
                         "=",
                         "playerHitbox.X()",
                         "=",

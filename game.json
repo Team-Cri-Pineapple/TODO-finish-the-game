@@ -477,6 +477,51 @@
         "name": "NewObject-2.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "floor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "floor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "floor-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "floor-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "add-placeholder-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "add-placeholder-1-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "add-placeholder-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "add-placeholder-1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "add-placeholder-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "add-placeholder-1-2.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -501,7 +546,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "add-placeholder-1.png",
+                  "image": "add-placeholder-1-2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -707,6 +752,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/noise"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/threedflip"

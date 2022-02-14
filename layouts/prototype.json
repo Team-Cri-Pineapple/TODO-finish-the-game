@@ -1,16 +1,16 @@
 {
-  "b": 37,
+  "b": 58,
   "disableInputWhenNotFocused": true,
   "mangledName": "prototype",
   "name": "prototype",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
-  "r": 37,
+  "r": 73,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 37,
+  "v": 43,
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6100000000000003,
+    "zoomFactor": 0.48500000000000054,
     "windowMask": false
   },
   "objectsGroups": [
@@ -109,28 +109,6 @@
       "height": 64,
       "layer": "",
       "locked": false,
-      "name": "floor",
-      "persistentUuid": "8ed495f8-80c2-4d14-a828-b877962d8db0",
-      "width": 448,
-      "x": 0,
-      "y": 128,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "isFake",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
       "name": "playerHitbox",
       "persistentUuid": "067cb58e-9470-46e8-b7d3-e08474b68002",
       "width": 64,
@@ -147,21 +125,31 @@
       "height": 64,
       "layer": "",
       "locked": false,
-      "name": "floor",
-      "persistentUuid": "f8744322-9de3-4298-a00e-c9d32658218d",
-      "width": 384,
-      "x": 512,
-      "y": 512,
-      "zOrder": 1,
+      "name": "player",
+      "persistentUuid": "b56e3b51-97d7-464c-8ecb-b42b05b33756",
+      "width": 64,
+      "x": 736,
+      "y": 416,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "isFake",
-          "type": "boolean",
-          "value": false
-        }
-      ]
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "cape",
+      "persistentUuid": "980fa00c-91a9-4dd7-8f85-671c6cdb56ab",
+      "width": 64,
+      "x": 736,
+      "y": 416,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     },
     {
       "angle": 0,
@@ -170,55 +158,11 @@
       "layer": "",
       "locked": false,
       "name": "floor",
-      "persistentUuid": "f57fc2cb-4b1e-4a71-a0ba-9285f3dd66d7",
-      "width": 128,
-      "x": 384,
-      "y": 512,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "isFake",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "floor",
-      "persistentUuid": "01eb0ec5-20fd-4e1b-a37d-d65ec36d597d",
-      "width": 256,
-      "x": 256,
-      "y": 256,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "isFake",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "floor",
-      "persistentUuid": "1fc630a0-5e45-49f8-8f93-dab6cb7ac305",
-      "width": 256,
-      "x": 320,
-      "y": 384,
-      "zOrder": 1,
+      "persistentUuid": "be186194-9eec-4a1a-9b8c-91a4ef8987af",
+      "width": 512,
+      "x": -128,
+      "y": 128,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -235,43 +179,62 @@
       "height": 64,
       "layer": "",
       "locked": false,
-      "name": "player",
-      "persistentUuid": "b56e3b51-97d7-464c-8ecb-b42b05b33756",
-      "width": 64,
-      "x": 736,
-      "y": 416,
-      "zOrder": 5,
+      "name": "floor",
+      "persistentUuid": "0e015505-2da8-4b0a-8631-f6ba8cffe9ba",
+      "width": 704,
+      "x": 320,
+      "y": 512,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    }
-  ],
-  "objects": [
+    },
     {
+      "angle": 0,
+      "customSize": true,
       "height": 64,
+      "layer": "",
+      "locked": false,
       "name": "floor",
-      "tags": "",
-      "texture": "placeholder-1-1.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 64,
-      "variables": [
+      "persistentUuid": "55a9fe86-ea61-4ed0-a886-9043ffdb9e7f",
+      "width": 256,
+      "x": 256,
+      "y": 384,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "isFake",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "f751ada0-a0c4-4436-8729-41bd951b8ff7",
+      "width": 256,
+      "x": 192,
+      "y": 256,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
         {
           "name": "isFake",
           "type": "boolean",
           "value": false
         }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": true,
-          "platformType": "NormalPlatform",
-          "yGrabOffset": 0
-        }
       ]
-    },
+    }
+  ],
+  "objects": [
     {
       "name": "playerHitbox",
       "tags": "",
@@ -281,12 +244,12 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 3500,
           "deceleration": 4000,
           "maxFallingSpeed": 1200,
           "maxSpeed": 450,
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "yGrabOffset": 0,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -591,6 +554,87 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "cape",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ThreeDFlip",
+          "type": "ThreeDFlip::ThreeDFlip",
+          "Duration": 500,
+          "IsFlipped": false,
+          "IsFlipping": false,
+          "Width": 0,
+          "ElapsedTime": 0,
+          "Toggle": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-1-22.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bottomMargin": 32,
+      "height": 32,
+      "leftMargin": 32,
+      "name": "floor",
+      "rightMargin": 32,
+      "tags": "",
+      "texture": "floor-1.png",
+      "tiled": true,
+      "topMargin": 32,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [
+        {
+          "name": "isFake",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
         }
       ]
     }
