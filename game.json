@@ -611,9 +611,14 @@
               "value": "Check if key [...] is pressed"
             },
             {
-              "name": "Parameter",
-              "type": "string",
-              "value": ""
+              "name": "Parameters",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Space"
+                }
+              ]
             }
           ]
         }

@@ -37,39 +37,6 @@
                   },
                   "parameters": [
                     "conditionReturnValue",
-                    "False"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Egal"
-                  },
-                  "parameters": [
-                    "VariableChildCount(Event.ConditionsList)",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "conditionReturnValue",
                     "True"
                   ],
                   "subInstructions": []
@@ -92,7 +59,7 @@
                   },
                   "parameters": [
                     "conditionReturnValue",
-                    "False"
+                    "True"
                   ],
                   "subInstructions": []
                 }
@@ -130,41 +97,43 @@
                         "\"KeyPressed\""
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "VariableString(Condition.Parameters[0])"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetSceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "conditionReturnValue",
-                        "True"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "KeyFromTextReleased"
+                          },
+                          "parameters": [
+                            "",
+                            "VariableString(Condition.Parameters[0])"
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "conditionReturnValue",
+                            "False"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
@@ -681,17 +650,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "MouseButtonReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::Or"
                       },
                       "parameters": [],
@@ -731,6 +689,18 @@
                       },
                       "parameters": [
                         "addpopupshow"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "EventIDAdd",
+                        "=",
+                        "EventTextBB.Variable(EventID)"
                       ],
                       "subInstructions": []
                     }
@@ -845,6 +815,18 @@
                                 "VariableString(conditionid)"
                               ],
                               "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "ConditionName",
+                                "Clickable",
+                                "True"
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "events": []
@@ -895,6 +877,18 @@
                                 "VariableString(actionid)"
                               ],
                               "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "ActionName",
+                                "Clickable",
+                                "True"
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "events": []
@@ -927,6 +921,264 @@
                           "parameters": [
                             "EventsListPopup",
                             ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "addpopupshow",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "addedEvent",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "ConditionName",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ConditionName",
+                            "Clickable",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addpopupshow",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "JSONToVariableStructure"
+                          },
+                          "parameters": [
+                            "GlobalVarToJSON(ConditionsList[ConditionName.GetBBText()].Parameters)",
+                            "ConditionAdd.Parameters"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "ConditionAdd.ID",
+                            "=",
+                            "ConditionName.GetBBText()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariablePush"
+                          },
+                          "parameters": [
+                            "EventsList[Variable(EventIDAdd)].ConditionsList",
+                            "ConditionAdd"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addedEvent",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "ActionName",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ActionName",
+                            "Clickable",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addpopupshow",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "JSONToVariableStructure"
+                          },
+                          "parameters": [
+                            "GlobalVarToJSON(ActionsList[ActionName.GetBBText()].Parameters)",
+                            "ActionAdd.Parameters"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "ActionAdd.ID",
+                            "=",
+                            "ActionName.GetBBText()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariablePush"
+                          },
+                          "parameters": [
+                            "EventsList[Variable(EventIDAdd)].ActionsList",
+                            "ActionAdd"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addedEvent",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addedEvent",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "EventsListPopup",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "rerenderNeeded",
+                            "True"
                           ],
                           "subInstructions": []
                         }
@@ -1038,7 +1290,7 @@
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "EventsList",
                   "valueIteratorVariableName": "Event",
-                  "keyIteratorVariableName": "",
+                  "keyIteratorVariableName": "EventID",
                   "conditions": [],
                   "actions": [
                     {
@@ -1482,6 +1734,19 @@
                             "EventTextBB.Height() + 10"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "EventTextBB",
+                            "EventID",
+                            "=",
+                            "Variable(EventID)"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -1565,6 +1830,19 @@
                             "ActionsOffset",
                             "+",
                             "EventTextBB.Height() + 10"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "EventTextBB",
+                            "EventID",
+                            "=",
+                            "Variable(EventID)"
                           ],
                           "subInstructions": []
                         }
