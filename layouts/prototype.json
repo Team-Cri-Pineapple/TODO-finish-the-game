@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4600000000000001,
+    "zoomFactor": 0.5100000000000001,
     "windowMask": false
   },
   "objectsGroups": [
@@ -170,7 +170,7 @@
       "name": "floor",
       "persistentUuid": "be186194-9eec-4a1a-9b8c-91a4ef8987af",
       "width": 512,
-      "x": -128,
+      "x": 1024,
       "y": 128,
       "zOrder": 7,
       "numberProperties": [],
@@ -192,7 +192,7 @@
       "name": "floor",
       "persistentUuid": "0e015505-2da8-4b0a-8631-f6ba8cffe9ba",
       "width": 704,
-      "x": 320,
+      "x": 384,
       "y": 512,
       "zOrder": 7,
       "numberProperties": [],
@@ -208,7 +208,7 @@
       "name": "floor",
       "persistentUuid": "55a9fe86-ea61-4ed0-a886-9043ffdb9e7f",
       "width": 256,
-      "x": 256,
+      "x": 896,
       "y": 384,
       "zOrder": 7,
       "numberProperties": [],
@@ -230,7 +230,7 @@
       "name": "floor",
       "persistentUuid": "f751ada0-a0c4-4436-8729-41bd951b8ff7",
       "width": 256,
-      "x": 192,
+      "x": 960,
       "y": 256,
       "zOrder": 7,
       "numberProperties": [],
@@ -267,10 +267,10 @@
       "locked": false,
       "name": "camplace",
       "persistentUuid": "cd98389c-4221-4c83-a3de-8091c6a713d5",
-      "width": 960,
-      "x": -672,
+      "width": 896,
+      "x": 2240,
       "y": -64,
-      "zOrder": 9,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -283,10 +283,10 @@
       "locked": false,
       "name": "camplace",
       "persistentUuid": "617b2418-58b5-4faf-8a82-90f9e379d272",
-      "width": 960,
-      "x": 480,
-      "y": 256,
-      "zOrder": 9,
+      "width": 832,
+      "x": 736,
+      "y": 384,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -300,7 +300,7 @@
       "name": "floorbrics",
       "persistentUuid": "2faa3e55-409b-47f5-ac30-77a2356c7376",
       "width": 1536,
-      "x": -1472,
+      "x": 1472,
       "y": -384,
       "zOrder": 10,
       "numberProperties": [],
@@ -316,7 +316,7 @@
       "name": "floorbrics",
       "persistentUuid": "d4f365f9-e5af-4c5c-8eee-b8e415504dca",
       "width": 128,
-      "x": -1152,
+      "x": 1792,
       "y": 0,
       "zOrder": 10,
       "numberProperties": [],
@@ -332,7 +332,7 @@
       "name": "floorbrics",
       "persistentUuid": "17e598d6-f11f-48db-96f2-1092d74356eb",
       "width": 1280,
-      "x": -1408,
+      "x": 1536,
       "y": 128,
       "zOrder": 10,
       "numberProperties": [],
@@ -348,7 +348,7 @@
       "name": "purpBack",
       "persistentUuid": "768f94c7-3ae4-4ce4-bdd9-98b6962f726d",
       "width": 64,
-      "x": -64,
+      "x": 1088,
       "y": -768,
       "zOrder": 11,
       "numberProperties": [],
@@ -460,8 +460,8 @@
       "name": "purpBack",
       "persistentUuid": "d6e24d7a-ea45-4d6c-bde3-e015016e061b",
       "width": 64,
-      "x": 192,
-      "y": -768,
+      "x": 1344,
+      "y": -704,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -476,7 +476,23 @@
       "name": "purpBack",
       "persistentUuid": "c8e2c205-6053-465d-8f07-808d56665fab",
       "width": 64,
-      "x": 64,
+      "x": 1216,
+      "y": -704,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1920,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "ad5b40d2-7663-4c85-bb51-0644104a989e",
+      "width": 64,
+      "x": 192,
       "y": -768,
       "zOrder": 11,
       "numberProperties": [],
@@ -1138,37 +1154,6 @@
     }
   ],
   "events": [
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "JSONToVariableStructure"
-          },
-          "parameters": [
-            "\"[{\n  \\\"ConditionsList\\\": [\n    {\n      \\\"ID\\\":\\\"KeyPressed\\\",\n      \\\"Parameters\\\": [\\\"f\\\"]\n    }\n  ],\n  \\\"ActionsList\\\": [\n    {\n      \\\"ID\\\": \\\"FlipFakeAndRealPlatforms\\\"    }\n  ]\n}]\"",
-            "EventsList"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
     {
       "disabled": false,
       "folded": false,
