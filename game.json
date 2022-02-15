@@ -720,6 +720,87 @@
         "name": "assets\\eventAdd.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bricos.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bricos.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bricos-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bricos-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-28.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-29.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-30.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "moves.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "moves.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "moves-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "moves-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-31.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "moveMoveableObject.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "moveMoveableObject.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -886,7 +967,7 @@
               "children": [
                 {
                   "type": "string",
-                  "value": "Space"
+                  "value": "x"
                 }
               ]
             }
@@ -943,6 +1024,22 @@
               "name": "Name",
               "type": "string",
               "value": "Flip fake and real platforms"
+            }
+          ]
+        },
+        {
+          "name": "MoveMovingPlatforms",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "MoveMovingPlatforms"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Move all moving platforms"
             }
           ]
         }

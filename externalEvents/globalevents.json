@@ -4,80 +4,55 @@
   "name": "GlobalEvents",
   "events": [
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
       "disabled": false,
       "folded": false,
-      "name": "Events executor",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "menu",
+            "False"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
       "events": [
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::ForEachChildVariable",
-          "iterableVariableName": "EventsList",
-          "valueIteratorVariableName": "Event",
-          "keyIteratorVariableName": "EventID",
-          "conditions": [],
-          "actions": [],
+          "name": "Events executor",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "conditionReturnValue",
-                    "True"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::ForEachChildVariable",
-              "iterableVariableName": "Event.ConditionsList",
-              "valueIteratorVariableName": "Condition",
-              "keyIteratorVariableName": "ConacID",
+              "iterableVariableName": "EventsList",
+              "valueIteratorVariableName": "Event",
+              "keyIteratorVariableName": "EventID",
               "conditions": [],
               "actions": [],
               "events": [
                 {
                   "disabled": false,
                   "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "The handlers for all conditions",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                  "conditions": [],
+                  "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SceneVariableAsBoolean"
+                        "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
                         "conditionReturnValue",
@@ -86,8 +61,176 @@
                       "subInstructions": []
                     }
                   ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "Event.ConditionsList",
+                  "valueIteratorVariableName": "Condition",
+                  "keyIteratorVariableName": "ConacID",
+                  "conditions": [],
                   "actions": [],
                   "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "The handlers for all conditions",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "conditionReturnValue",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "colorB": 228,
+                          "colorG": 176,
+                          "colorR": 74,
+                          "creationTime": 0,
+                          "disabled": false,
+                          "folded": false,
+                          "name": "For anything not trigger once",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "Condition.ID",
+                                    "=",
+                                    "\"PlayerJump\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "PlatformBehavior::IsJumping"
+                                      },
+                                      "parameters": [
+                                        "playerHitbox",
+                                        "PlatformerObject"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SetSceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "conditionReturnValue",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "Condition.ID",
+                                    "=",
+                                    "\"KeyPressed\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "KeyFromTextPressed"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "VariableString(Condition.Parameters[0])"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SetSceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "conditionReturnValue",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
+                            }
+                          ],
+                          "parameters": []
+                        }
+                      ]
+                    },
                     {
                       "colorB": 228,
                       "colorG": 176,
@@ -95,7 +238,7 @@
                       "creationTime": 0,
                       "disabled": false,
                       "folded": false,
-                      "name": "For anything not trigger once",
+                      "name": "trigger once",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
                       "events": [
@@ -112,182 +255,7 @@
                               "parameters": [
                                 "Condition.ID",
                                 "=",
-                                "\"PlayerJump\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "PlatformBehavior::IsJumping"
-                                  },
-                                  "parameters": [
-                                    "playerHitbox",
-                                    "PlatformerObject"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "SetSceneVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "conditionReturnValue",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarSceneTxt"
-                              },
-                              "parameters": [
-                                "Condition.ID",
-                                "=",
-                                "\"KeyPressed\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "KeyFromTextPressed"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "VariableString(Condition.Parameters[0])"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "SetSceneVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "conditionReturnValue",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
-                        }
-                      ],
-                      "parameters": []
-                    }
-                  ]
-                },
-                {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "disabled": false,
-                  "folded": false,
-                  "name": "trigger once",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "Condition.ID",
-                            "=",
-                            "\"TriggerOnce\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "SceneVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "conditionReturnValue",
-                                "False"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "SetSceneVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
-                                "False"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "SceneVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "conditionReturnValue",
-                                "True"
+                                "\"TriggerOnce\""
                               ],
                               "subInstructions": []
                             }
@@ -305,8 +273,8 @@
                                     "value": "SceneVariableAsBoolean"
                                   },
                                   "parameters": [
-                                    "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
-                                    "True"
+                                    "conditionReturnValue",
+                                    "False"
                                   ],
                                   "subInstructions": []
                                 }
@@ -318,7 +286,7 @@
                                     "value": "SetSceneVariableAsBoolean"
                                   },
                                   "parameters": [
-                                    "conditionReturnValue",
+                                    "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
                                     "False"
                                   ],
                                   "subInstructions": []
@@ -337,94 +305,119 @@
                                     "value": "SceneVariableAsBoolean"
                                   },
                                   "parameters": [
-                                    "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "SetSceneVariableAsBoolean"
-                                  },
-                                  "parameters": [
                                     "conditionReturnValue",
                                     "True"
                                   ],
                                   "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "SetSceneVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
-                                    "True"
-                                  ],
-                                  "subInstructions": []
                                 }
                               ],
-                              "events": []
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
+                                        "True"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SetSceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "conditionReturnValue",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SetSceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "conditionReturnValue",
+                                        "True"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SetSceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
+                                        "True"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
                             }
                           ]
                         }
-                      ]
+                      ],
+                      "parameters": []
                     }
-                  ],
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::ForEachChildVariable",
-              "iterableVariableName": "Event.ActionsList",
-              "valueIteratorVariableName": "Action",
-              "keyIteratorVariableName": "",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "conditionReturnValue",
-                    "True"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "The handlers for all actions",
-                  "comment2": ""
+                  ]
                 },
                 {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
                   "disabled": false,
                   "folded": false,
-                  "name": "Action handler",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "Event.ActionsList",
+                  "valueIteratorVariableName": "Action",
+                  "keyIteratorVariableName": "",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "conditionReturnValue",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
@@ -438,28 +431,19 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Flip Fake and Real platforms",
+                      "comment": "The handlers for all actions",
                       "comment2": ""
                     },
                     {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
                       "disabled": false,
                       "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "Action.ID",
-                            "=",
-                            "\"FlipFakeAndRealPlatforms\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
+                      "name": "Action handler",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
                       "events": [
                         {
                           "disabled": false,
@@ -469,11 +453,136 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "AjoutObjConcern"
+                                "value": "VarSceneTxt"
                               },
                               "parameters": [
-                                "",
-                                "floor"
+                                "Action.ID",
+                                "=",
+                                "\"MoveMovingPlatforms\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "floormoves"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SetObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "floormoves",
+                                    "move",
+                                    "True"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarSceneTxt"
+                              },
+                              "parameters": [
+                                "Action.ID",
+                                "=",
+                                "\"FlipFakeAndRealPlatforms\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "floor"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ToggleObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "floor",
+                                    "isFake"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Change player acceleration",
+                          "comment2": ""
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarSceneTxt"
+                              },
+                              "parameters": [
+                                "Action.ID",
+                                "=",
+                                "\"ChangeAcceleration\""
                               ],
                               "subInstructions": []
                             }
@@ -482,78 +591,30 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ToggleObjectVariableAsBoolean"
+                                "value": "PlatformBehavior::Acceleration"
                               },
                               "parameters": [
-                                "floor",
-                                "isFake"
+                                "playerHitbox",
+                                "PlatformerObject",
+                                "=",
+                                "Variable(Action.Parameters[0])"
                               ],
                               "subInstructions": []
                             }
                           ],
                           "events": []
                         }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Change player acceleration",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "Action.ID",
-                            "=",
-                            "\"ChangeAcceleration\""
-                          ],
-                          "subInstructions": []
-                        }
                       ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "PlatformBehavior::Acceleration"
-                          },
-                          "parameters": [
-                            "playerHitbox",
-                            "PlatformerObject",
-                            "=",
-                            "Variable(Action.Parameters[0])"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
+                      "parameters": []
                     }
-                  ],
-                  "parameters": []
+                  ]
                 }
               ]
             }
-          ]
+          ],
+          "parameters": []
         }
-      ],
-      "parameters": []
+      ]
     },
     {
       "colorB": 228,
@@ -2456,6 +2517,36 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "move"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
@@ -2562,38 +2653,112 @@
           "parameters": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "name": "move floor",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "PosY"
-              },
-              "parameters": [
-                "playerHitbox",
-                ">",
-                "SceneWindowHeight()+20"
-              ],
-              "subInstructions": []
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "floormoves",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "floormoves",
+                        "move",
+                        "",
+                        "",
+                        "no"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "floormoves",
+                        "moveAn",
+                        "=",
+                        "move.Angle()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "floormoves",
+                        "move",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "floormoves",
+                        "floormoves.Variable(moveAn)",
+                        "200",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "floormoves",
+                        "move",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "CurrentSceneName()",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -2601,7 +2766,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2630,6 +2795,40 @@
                   },
                   "parameters": [
                     "playerHitbox"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "playerHitbox",
+                    ">",
+                    "SceneWindowHeight()+20"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "CurrentSceneName()",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -3407,7 +3606,7 @@
                       "parameters": [
                         "",
                         "=",
-                        "CameraX()*0.8",
+                        "CameraX()",
                         "\"Background\"",
                         "0"
                       ],
@@ -3421,7 +3620,7 @@
                       "parameters": [
                         "",
                         "=",
-                        "CameraY()*0.8",
+                        "CameraY()",
                         "\"Background\"",
                         "0"
                       ],
@@ -3434,7 +3633,7 @@
                       },
                       "parameters": [
                         "",
-                        "CameraZoom()*(1/CameraZoom())",
+                        "CameraZoom()*0.9",
                         "\"Background\"",
                         "0"
                       ],
