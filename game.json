@@ -711,6 +711,15 @@
         "name": "EventIcon-1-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/eventAdd.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\eventAdd.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -735,7 +744,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "add-placeholder-1-2.png",
+                  "image": "assets\\eventAdd.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5100000000000001,
+    "zoomFactor": 0.5100000000000003,
     "windowMask": false
   },
   "objectsGroups": [
@@ -122,8 +122,8 @@
       "name": "playerHitbox",
       "persistentUuid": "067cb58e-9470-46e8-b7d3-e08474b68002",
       "width": 64,
-      "x": 704,
-      "y": 448,
+      "x": 608,
+      "y": 416,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -138,7 +138,7 @@
       "name": "player",
       "persistentUuid": "b56e3b51-97d7-464c-8ecb-b42b05b33756",
       "width": 64,
-      "x": 736,
+      "x": 608,
       "y": 416,
       "zOrder": 5,
       "numberProperties": [],
@@ -154,7 +154,7 @@
       "name": "cape",
       "persistentUuid": "980fa00c-91a9-4dd7-8f85-671c6cdb56ab",
       "width": 64,
-      "x": 736,
+      "x": 608,
       "y": 416,
       "zOrder": 6,
       "numberProperties": [],
@@ -169,8 +169,8 @@
       "locked": false,
       "name": "floor",
       "persistentUuid": "be186194-9eec-4a1a-9b8c-91a4ef8987af",
-      "width": 512,
-      "x": 1024,
+      "width": 256,
+      "x": 1280,
       "y": 128,
       "zOrder": 7,
       "numberProperties": [],
@@ -186,13 +186,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 64,
+      "height": 256,
       "layer": "",
       "locked": false,
       "name": "floor",
       "persistentUuid": "0e015505-2da8-4b0a-8631-f6ba8cffe9ba",
-      "width": 704,
-      "x": 384,
+      "width": 576,
+      "x": 448,
       "y": 512,
       "zOrder": 7,
       "numberProperties": [],
@@ -230,7 +230,7 @@
       "name": "floor",
       "persistentUuid": "f751ada0-a0c4-4436-8729-41bd951b8ff7",
       "width": 256,
-      "x": 960,
+      "x": 1088,
       "y": 256,
       "zOrder": 7,
       "numberProperties": [],
@@ -252,7 +252,7 @@
       "name": "gun",
       "persistentUuid": "93b68952-e7b4-4181-94ea-b2bddae61b9f",
       "width": 64,
-      "x": 800,
+      "x": 672,
       "y": 416,
       "zOrder": 8,
       "numberProperties": [],
@@ -284,8 +284,8 @@
       "name": "camplace",
       "persistentUuid": "617b2418-58b5-4faf-8a82-90f9e379d272",
       "width": 832,
-      "x": 736,
-      "y": 384,
+      "x": 928,
+      "y": 301,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -316,7 +316,7 @@
       "name": "floorbrics",
       "persistentUuid": "d4f365f9-e5af-4c5c-8eee-b8e415504dca",
       "width": 128,
-      "x": 1792,
+      "x": 2432,
       "y": 0,
       "zOrder": 10,
       "numberProperties": [],
@@ -1154,6 +1154,25 @@
     }
   ],
   "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
+      "events": []
+    },
     {
       "disabled": false,
       "folded": false,

@@ -20,15 +20,15 @@
     },
     {
       "angle": 0,
-      "customSize": true,
+      "customSize": false,
       "height": 48,
       "layer": "GUI",
       "locked": false,
       "name": "add",
       "persistentUuid": "4480ffea-db01-4428-8595-09b796c9c0bf",
       "width": 192,
-      "x": 64,
-      "y": 448,
+      "x": 41,
+      "y": 482,
       "zOrder": 51,
       "numberProperties": [],
       "stringProperties": [],
@@ -45,7 +45,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.29999999999999877,
+    "zoomFactor": 1.119999999999999,
     "windowMask": false
   }
 }
