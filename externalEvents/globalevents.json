@@ -9,7 +9,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Events executor",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -571,10 +571,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeTimeScale"
+                    "value": "ChangeLayerTimeScale"
                   },
                   "parameters": [
                     "",
+                    "\"\"",
                     "0"
                   ],
                   "subInstructions": []
@@ -672,10 +673,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeTimeScale"
+                    "value": "ChangeLayerTimeScale"
                   },
                   "parameters": [
                     "",
+                    "\"\"",
                     "1"
                   ],
                   "subInstructions": []
@@ -987,7 +989,7 @@
                                 "ConditionName",
                                 "444",
                                 "42*(Variable(ConacCount)+1)",
-                                "\"\""
+                                "\"GUI\""
                               ],
                               "subInstructions": []
                             },
@@ -1082,7 +1084,7 @@
                                 "ActionName",
                                 "689",
                                 "42*(Variable(ConacCount)+1)",
-                                "\"\""
+                                "\"GUI\""
                               ],
                               "subInstructions": []
                             },
@@ -1595,7 +1597,7 @@
                             "EventTextBB",
                             "105",
                             "Variable(YOffset) + Variable(ConditionsOffset) + 5",
-                            ""
+                            "\"GUI\""
                           ],
                           "subInstructions": []
                         },
@@ -1609,7 +1611,7 @@
                             "EventIcon",
                             "70",
                             "Variable(YOffset) + Variable(ConditionsOffset) + 5",
-                            ""
+                            "\"GUI\""
                           ],
                           "subInstructions": []
                         },
@@ -1840,7 +1842,7 @@
                             "EventTextBB",
                             "105 + 305",
                             "Variable(YOffset) + Variable(ActionsOffset) + 5",
-                            ""
+                            "\"GUI\""
                           ],
                           "subInstructions": []
                         },
@@ -1854,7 +1856,7 @@
                             "EventIcon",
                             "70 + 305",
                             "Variable(YOffset) + Variable(ActionsOffset) + 5",
-                            ""
+                            "\"GUI\""
                           ],
                           "subInstructions": []
                         },
@@ -2124,7 +2126,7 @@
                             "EventTextBB",
                             "70",
                             "Variable(YOffset) + Variable(ConditionsOffset) + 5",
-                            ""
+                            "\"GUI\""
                           ],
                           "subInstructions": []
                         },
@@ -2222,7 +2224,7 @@
                             "EventTextBB",
                             "70 + 305",
                             "Variable(YOffset) + Variable(ActionsOffset) + 5",
-                            ""
+                            "\"GUI\""
                           ],
                           "subInstructions": []
                         },
@@ -2394,7 +2396,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Game logic",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2405,7 +2407,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "fake floor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2586,7 +2588,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "WASD",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3028,7 +3030,7 @@
                       },
                       "parameters": [
                         "cape",
-                        "playerHitbox.Variable(tilt)*3+playerHitbox.Variable(fallTilt)/25",
+                        "playerHitbox.Variable(tilt)*2+playerHitbox.Variable(fallTilt)/15",
                         "1720",
                         ""
                       ],
@@ -3059,6 +3061,328 @@
                         "playerHitbox.X()",
                         "=",
                         "playerHitbox.Y()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": true,
+              "name": "gun",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "gun",
+                        "=",
+                        "lerp(gun.X(), XFromAngleAndDistance(player.AngleToPosition(MouseX(), MouseY()), 50)+player.X(), 0.5)",
+                        "=",
+                        "lerp(gun.Y(), YFromAngleAndDistance(player.AngleToPosition(MouseX(), MouseY()), 50)+player.Y(), 0.5)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "gun",
+                        "=",
+                        "player.AngleToPosition(MouseX(), MouseY())"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Angle"
+                          },
+                          "parameters": [
+                            "gun",
+                            "<",
+                            "90"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Angle"
+                          },
+                          "parameters": [
+                            "gun",
+                            ">",
+                            "-90"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "FlipY"
+                          },
+                          "parameters": [
+                            "gun",
+                            "no"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Angle"
+                              },
+                              "parameters": [
+                                "gun",
+                                "<",
+                                "-90"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Angle"
+                              },
+                              "parameters": [
+                                "gun",
+                                ">",
+                                "90"
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "FlipY"
+                          },
+                          "parameters": [
+                            "gun",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "Camera",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Not"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionPoint"
+                          },
+                          "parameters": [
+                            "camplace",
+                            "player.X()",
+                            "player.Y()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCameraX"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "lerp(CameraX(), player.X(), 0.07)",
+                        "\"\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCameraY"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "lerp(CameraY(), player.Y(), 0.07)",
+                        "\"\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "camplace",
+                        "player.X()",
+                        "player.Y()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCameraX"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "lerp(CameraX(), camplace.X(), 0.07)",
+                        "\"\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCameraY"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "lerp(CameraY(), camplace.Y(), 0.07)",
+                        "\"\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCameraX"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "CameraX()*0.8",
+                        "\"Background\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCameraY"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "CameraY()*0.8",
+                        "\"Background\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ZoomCamera"
+                      },
+                      "parameters": [
+                        "",
+                        "CameraZoom()*(1/CameraZoom())",
+                        "\"Background\"",
+                        "0"
                       ],
                       "subInstructions": []
                     }

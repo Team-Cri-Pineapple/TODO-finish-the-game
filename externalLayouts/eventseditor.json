@@ -6,7 +6,7 @@
       "angle": 0,
       "customSize": true,
       "height": 540,
-      "layer": "",
+      "layer": "GUI",
       "locked": false,
       "name": "black",
       "persistentUuid": "33e734d1-82e8-47bf-bfcb-931c3b751f2a",
@@ -22,7 +22,7 @@
       "angle": 0,
       "customSize": true,
       "height": 48,
-      "layer": "",
+      "layer": "GUI",
       "locked": false,
       "name": "add",
       "persistentUuid": "4480ffea-db01-4428-8595-09b796c9c0bf",
@@ -45,7 +45,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.024999999999999,
+    "zoomFactor": 0.29999999999999877,
     "windowMask": false
   }
 }

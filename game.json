@@ -558,6 +558,105 @@
         "name": "yes-1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-23.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-24.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-25.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-26.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-27.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "brics.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "brics.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "brics-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "brics-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "brics-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "brics-1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall-1-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
