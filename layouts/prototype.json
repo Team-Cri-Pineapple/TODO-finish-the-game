@@ -98,6 +98,11 @@
               "value": "Key [f] is pressed"
             },
             {
+              "name": "PlayerJump",
+              "type": "string",
+              "value": "Player jumped"
+            },
+            {
               "name": "TriggerOnce",
               "type": "string",
               "value": "Trgger once while true"
@@ -669,16 +674,45 @@
       "behaviors": [],
       "animations": [
         {
+          "name": "???",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "KeyPressed",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\icons\\keyPressed.png",
+                  "image": "assets\\icons\\KeyPressed-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -703,11 +737,11 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\icons\\flipFakeAndRealPlatform.png",
+                  "image": "assets\\icons\\FlipFakeAndRealPlatforms-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -736,12 +770,41 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "EventIcon-1.png",
+                  "image": "TriggerOnce-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
                     "y": -5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PlayerJump",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "EventIcon-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,

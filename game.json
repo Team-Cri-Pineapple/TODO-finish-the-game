@@ -657,6 +657,60 @@
         "name": "wall-1-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "EventIcon-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "EventIcon-1-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TriggerOnce-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TriggerOnce-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/FlipFakeAndRealPlatforms-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\FlipFakeAndRealPlatforms-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/KeyPressed-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\KeyPressed-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "EventIcon-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "EventIcon-1-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -826,6 +880,22 @@
                   "value": "Space"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "PlayerJump",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "PlayerJump"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Check if player is jumping"
             }
           ]
         },
