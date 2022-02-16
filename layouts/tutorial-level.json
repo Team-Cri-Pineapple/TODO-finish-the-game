@@ -21,8 +21,8 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5600000000000004,
-    "windowMask": false
+    "zoomFactor": 0.5560000000000012,
+    "windowMask": true
   },
   "objectsGroups": [
     {
@@ -137,8 +137,8 @@
       "name": "playerHitbox",
       "persistentUuid": "067cb58e-9470-46e8-b7d3-e08474b68002",
       "width": 64,
-      "x": 704,
-      "y": 448,
+      "x": 32,
+      "y": 160,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -153,8 +153,8 @@
       "name": "player",
       "persistentUuid": "b56e3b51-97d7-464c-8ecb-b42b05b33756",
       "width": 64,
-      "x": 736,
-      "y": 416,
+      "x": 32,
+      "y": 160,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -169,8 +169,8 @@
       "name": "cape",
       "persistentUuid": "980fa00c-91a9-4dd7-8f85-671c6cdb56ab",
       "width": 64,
-      "x": 736,
-      "y": 416,
+      "x": 32,
+      "y": 160,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -206,8 +206,8 @@
       "locked": false,
       "name": "floor",
       "persistentUuid": "0e015505-2da8-4b0a-8631-f6ba8cffe9ba",
-      "width": 704,
-      "x": 384,
+      "width": 1536,
+      "x": -448,
       "y": 512,
       "zOrder": 7,
       "numberProperties": [],
@@ -267,8 +267,8 @@
       "name": "gun",
       "persistentUuid": "93b68952-e7b4-4181-94ea-b2bddae61b9f",
       "width": 64,
-      "x": 800,
-      "y": 416,
+      "x": 96,
+      "y": 160,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -1178,10 +1178,10 @@
       "height": 96,
       "layer": "",
       "locked": false,
-      "name": "dialogFloatingText",
+      "name": "DialogueText",
       "persistentUuid": "97cf1f0f-2232-47cf-b266-b056e2416f34",
       "width": 384,
-      "x": 448,
+      "x": -128,
       "y": 256,
       "zOrder": 23,
       "numberProperties": [],
@@ -1190,7 +1190,12 @@
         {
           "name": "insideContent",
           "type": "string",
-          "value": "[color=yellow][b]DEV[b] : Welcome player on my new game ![/color]"
+          "value": "[b]DEV[b]: Hello, player. Welcome to my game."
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "Begin"
         }
       ]
     },
@@ -1200,11 +1205,11 @@
       "height": 96,
       "layer": "",
       "locked": false,
-      "name": "dialogFloatingText",
+      "name": "DialogueText",
       "persistentUuid": "cf441b0c-fbb9-4cdb-b8e8-b96c5b3226cf",
       "width": 384,
-      "x": 768,
-      "y": 512,
+      "x": 512,
+      "y": 192,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -1212,9 +1217,170 @@
         {
           "name": "insideContent",
           "type": "string",
-          "value": "[color=yellow][b]DEV[b] : Please don't mind the gap in the level. I'm sure it will fix by itself[/color]\n[color=white][i]Hint : pressed esc to show the editor menu[i][/color]"
+          "value": "[b]DEV[b]: Don't mind the gaps, I didn't have the motivation to finish programming them. Would you mind pressing [color=green]Escape[/color] for me?"
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "FirstEvents"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 512,
+      "layer": "",
+      "locked": false,
+      "name": "camplace",
+      "persistentUuid": "430af2e1-b5ec-492d-83fa-4d41cd6afa9d",
+      "width": 576,
+      "x": 32,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "gun",
+      "persistentUuid": "d26bb37c-a2b0-4cfe-96de-f8f24328af3a",
+      "width": 64,
+      "x": 96,
+      "y": 160,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "gun",
+      "persistentUuid": "a385dee4-0e08-4315-a786-2381448ccd86",
+      "width": 64,
+      "x": 96,
+      "y": 160,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "gun",
+      "persistentUuid": "083faa69-2116-4dba-8cfe-066d1b643e3f",
+      "width": 64,
+      "x": 96,
+      "y": 160,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Cri",
+      "persistentUuid": "0e5ad8af-d375-4b05-8769-880f93ab3119",
+      "width": 0,
+      "x": -576,
+      "y": 640,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueTrigger",
+      "persistentUuid": "81932389-77d6-4790-ad23-e2300bbf0882",
+      "width": 448,
+      "x": -192,
+      "y": 384,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "Begin"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 336,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueTrigger",
+      "persistentUuid": "6b51d358-3256-4c2c-846c-73c836abbc1c",
+      "width": 832,
+      "x": 384,
+      "y": 176,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "FirstEvents"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "EventsExplainer",
+      "persistentUuid": "9dc1ce58-4211-4bc7-9423-21ce19acb7d1",
+      "width": 0,
+      "x": 128,
+      "y": 289,
+      "zOrder": 60,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 576,
+      "layer": "",
+      "locked": false,
+      "name": "ThereIsNoEscape",
+      "persistentUuid": "4c484a96-7a45-444a-87bb-44d12bfce5e0",
+      "width": 1152,
+      "x": -768,
+      "y": 64,
+      "zOrder": 61,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1900,7 +2066,71 @@
       ]
     },
     {
-      "name": "dialogFloatingText",
+      "name": "DialogueTrigger",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "NULL"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "void.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EventsExplainer",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]DEV[/b]: Nice! Now, try to use the power of ✨´logic✨ to [s]finish the game for me[/s] find a way to finish this level!",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "245;211;35",
+        "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "DialogueText",
       "tags": "",
       "type": "BBText::BBText",
       "variables": [
@@ -1908,6 +2138,11 @@
           "name": "insideContent",
           "type": "string",
           "value": "content variable not set."
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "NULL"
         }
       ],
       "effects": [],
@@ -1917,11 +2152,91 @@
         "opacity": 255,
         "fontSize": 20,
         "visible": true,
-        "color": "0;0;0",
+        "color": "245;211;35",
         "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
         "align": "left",
         "wordWrap": true
       }
+    },
+    {
+      "name": "Cri",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "cri.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ThereIsNoEscape",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "void.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -1946,7 +2261,7 @@
           },
           "parameters": [
             "",
-            "dialogFloatingText"
+            "DialogueText"
           ],
           "subInstructions": []
         }
@@ -1958,14 +2273,164 @@
             "value": "BBText::SetBBText"
           },
           "parameters": [
-            "dialogFloatingText",
+            "DialogueText",
             "=",
-            "dialogFloatingText.VariableString(insideContent)"
+            "DialogueText.VariableString(insideContent)"
           ],
           "subInstructions": []
         }
       ],
       "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Cache"
+          },
+          "parameters": [
+            "EventsExplainer"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Escape"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "EventsExplainer",
+                "shown",
+                "True"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "EventsExplainer"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "EventsExplainer",
+                "shown",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "EventsExplainer",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ToggleObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "EventsExplainer",
+                "shown"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     }
   ],
   "layers": [

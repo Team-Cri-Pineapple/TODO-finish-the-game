@@ -1035,6 +1035,15 @@
         "name": "assets\\mobile-joystick\\ControllerCenter.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "cri.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cri.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
