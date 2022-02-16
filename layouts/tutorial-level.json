@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6350000000000005,
+    "zoomFactor": 0.11500000000000017,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1619,36 +1619,6 @@
       ]
     },
     {
-      "bottomMargin": 32,
-      "height": 32,
-      "leftMargin": 32,
-      "name": "floor",
-      "rightMargin": 32,
-      "tags": "",
-      "texture": "assets\\objects\\grass-platform.png",
-      "tiled": true,
-      "topMargin": 32,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [
-        {
-          "name": "isFake",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": true,
-          "platformType": "NormalPlatform",
-          "yGrabOffset": 0
-        }
-      ]
-    },
-    {
       "name": "camplace",
       "tags": "",
       "type": "Sprite",
@@ -1693,17 +1663,6 @@
       "name": "bricosBack",
       "tags": "",
       "texture": "assets\\objects\\brick-background.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "height": 32,
-      "name": "purpBack",
-      "tags": "",
-      "texture": "assets\\objects\\wall-background.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],

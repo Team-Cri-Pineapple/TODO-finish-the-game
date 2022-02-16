@@ -5,7 +5,7 @@
   "events": [
     {
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -671,12 +671,43 @@
       ]
     },
     {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "JSONToVariableStructure"
+          },
+          "parameters": [
+            "\"[{\\\"ActionsList\\\": [], \\\"ConditionsList\\\": []}]\"",
+            "EventsList"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Toggle Editor GUI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -876,7 +907,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Editor GUI code",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2643,7 +2674,7 @@
           "creationTime": 0,
           "disabled": false,
           "folded": true,
-          "name": "fake floor",
+          "name": "Fake and Real Floor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2749,7 +2780,7 @@
           "creationTime": 0,
           "disabled": false,
           "folded": true,
-          "name": "move floor",
+          "name": "Moveable Floor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2856,7 +2887,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2931,7 +2962,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "WASD",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3074,7 +3105,7 @@
               "creationTime": 0,
               "disabled": false,
               "folded": true,
-              "name": "Player tilt",
+              "name": "Player Tilt",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -3419,14 +3450,14 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Mobile Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3745,7 +3776,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -4196,22 +4227,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "AHNAFFFFFFFFFF PUT YO GUN SHIT HERE DAWG",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -4667,7 +4683,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "gun",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
