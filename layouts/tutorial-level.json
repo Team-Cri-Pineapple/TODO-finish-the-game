@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5600000000000004,
+    "zoomFactor": 0.6350000000000005,
     "windowMask": false
   },
   "objectsGroups": [
@@ -300,7 +300,7 @@
       "persistentUuid": "617b2418-58b5-4faf-8a82-90f9e379d272",
       "width": 832,
       "x": 736,
-      "y": 384,
+      "y": 320,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -1176,7 +1176,7 @@
       "angle": 0,
       "customSize": true,
       "height": 96,
-      "layer": "",
+      "layer": "Background",
       "locked": false,
       "name": "dialogFloatingText",
       "persistentUuid": "97cf1f0f-2232-47cf-b266-b056e2416f34",
@@ -1197,14 +1197,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 96,
-      "layer": "",
+      "height": 75,
+      "layer": "Background",
       "locked": false,
       "name": "dialogFloatingText",
       "persistentUuid": "cf441b0c-fbb9-4cdb-b8e8-b96c5b3226cf",
-      "width": 384,
+      "width": 320,
       "x": 768,
-      "y": 512,
+      "y": 320,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -1485,7 +1485,36 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
+                    "y": -3
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
                     "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "KeyReleased",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\icons\\keyPressed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": -3
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1933,39 +1962,6 @@
         "includeConfig": 0
       },
       "target": "GlobalEvents"
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "AjoutObjConcern"
-          },
-          "parameters": [
-            "",
-            "dialogFloatingText"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "BBText::SetBBText"
-          },
-          "parameters": [
-            "dialogFloatingText",
-            "=",
-            "dialogFloatingText.VariableString(insideContent)"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
     }
   ],
   "layers": [
@@ -2067,13 +2063,17 @@
       "ambientLightColorR": 8612592,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "name": "Mobile Controls",
+      "name": "MobileControls",
       "visibility": true,
       "cameras": [],
       "effects": []
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "AdvancedJump",
+      "type": "AdvancedJump::AdvancedJump"
+    },
     {
       "name": "Platform",
       "type": "PlatformBehavior::PlatformBehavior"

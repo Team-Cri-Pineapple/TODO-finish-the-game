@@ -1147,6 +1147,14 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "AdvancedJump",
+          "type": "AdvancedJump::AdvancedJump",
+          "CoyoteTimeFrameDuration": 0.1,
+          "PlatformerBehavior": "PlatformerObject",
+          "CanCoyoteJump": false,
+          "WasInTheAir": false
+        },
+        {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 3500,
@@ -1415,6 +1423,9 @@
         },
         {
           "name": "EventIcon"
+        },
+        {
+          "name": "dialogFloatingText"
         }
       ]
     }
@@ -1579,6 +1590,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/advancedjump"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/regex"

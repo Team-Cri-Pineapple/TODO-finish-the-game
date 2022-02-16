@@ -433,6 +433,10 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
     }

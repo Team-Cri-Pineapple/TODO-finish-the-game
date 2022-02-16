@@ -37,14 +37,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 192,
+      "height": 64,
       "layer": "GUI",
       "locked": false,
       "name": "dialogFloatingText",
       "persistentUuid": "4232fede-7c04-4328-a991-92ec191feb9c",
-      "width": 320,
-      "x": 128,
-      "y": 256,
+      "width": 832,
+      "x": 64,
+      "y": 463,
       "zOrder": 52,
       "numberProperties": [],
       "stringProperties": [],
@@ -72,7 +72,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2249999999999986,
+    "zoomFactor": 0.29999999999999827,
     "windowMask": false
   }
 }
