@@ -4299,41 +4299,6 @@
                                 }
                               ],
                               "events": []
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "SetAngle"
-                                  },
-                                  "parameters": [
-                                    "gun",
-                                    "=",
-                                    "ControllerCenter.Angle()"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreXY"
-                                  },
-                                  "parameters": [
-                                    "gun",
-                                    "=",
-                                    "lerp(gun.X(), XFromAngleAndDistance(ControllerCenter.Angle(), 50)+player.X(), 0.5)",
-                                    "=",
-                                    "lerp(gun.Y(), YFromAngleAndDistance(ControllerCenter.Angle(), 50)+player.Y(), 0.5)"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
                             }
                           ]
                         }
@@ -4655,6 +4620,63 @@
                         "lerp(gun.X(), XFromAngleAndDistance(player.AngleToPosition(MouseX(), MouseY()), 50)+player.X(), 0.5)",
                         "=",
                         "lerp(gun.Y(), YFromAngleAndDistance(player.AngleToPosition(MouseX(), MouseY()), 50)+player.Y(), 0.5)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SystemInfo::IsMobile"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "ControllerCenter",
+                        "type",
+                        "=",
+                        "\"gun\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "gun",
+                        "=",
+                        "ControllerCenter.Angle()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "gun",
+                        "=",
+                        "lerp(gun.X(), XFromAngleAndDistance(ControllerCenter.Angle(), 50)+player.X(), 0.5)",
+                        "=",
+                        "lerp(gun.Y(), YFromAngleAndDistance(ControllerCenter.Angle(), 50)+player.Y(), 0.5)"
                       ],
                       "subInstructions": []
                     }
