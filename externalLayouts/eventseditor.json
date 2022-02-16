@@ -27,8 +27,8 @@
       "name": "add",
       "persistentUuid": "e8d19964-587a-4a9d-995d-16098f442876",
       "width": 164,
-      "x": 42,
-      "y": 64,
+      "x": 92,
+      "y": 479.768798828125,
       "zOrder": 51,
       "numberProperties": [],
       "stringProperties": [],
@@ -44,7 +44,7 @@
       "persistentUuid": "4232fede-7c04-4328-a991-92ec191feb9c",
       "width": 832,
       "x": 64,
-      "y": 463,
+      "y": 448,
       "zOrder": 52,
       "numberProperties": [],
       "stringProperties": [],
@@ -72,7 +72,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.29999999999999827,
+    "zoomFactor": 0.772749999999999,
     "windowMask": false
   }
 }
