@@ -999,6 +999,42 @@
         "name": "void.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/colors/gray.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\colors\\gray.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mobile-joystick/ControllerRadius.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mobile-joystick\\ControllerRadius.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mobile-joystick/ControllerPosition.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mobile-joystick\\ControllerPosition.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mobile-joystick/ControllerCenter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mobile-joystick\\ControllerCenter.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1095,7 +1131,7 @@
       "height": 32,
       "name": "popupBG",
       "tags": "",
-      "texture": "assets\\popUp-background.png",
+      "texture": "assets\\colors\\gray.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -1310,6 +1346,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/addnewevent"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/mobile-controls"
     }
   ],
   "externalSourceFiles": []

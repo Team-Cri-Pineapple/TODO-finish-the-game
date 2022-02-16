@@ -1,0 +1,151 @@
+{
+  "associatedLayout": "Tutorial Level",
+  "name": "Mobile Controls",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Mobile Controls",
+      "locked": false,
+      "name": "TouchRadius",
+      "persistentUuid": "74fd3d9d-25e6-48be-abe2-a4d6ef9fe738",
+      "width": 0,
+      "x": -185,
+      "y": 374,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "movement"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Mobile Controls",
+      "locked": false,
+      "name": "ControllerCenter",
+      "persistentUuid": "ab9d6971-c7ea-4f2c-aa38-266bb58c29f4",
+      "width": 0,
+      "x": 119,
+      "y": 405,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "movement"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Mobile Controls",
+      "locked": false,
+      "name": "ControllerPosition",
+      "persistentUuid": "a5d95440-036f-43b8-8cfb-a294f1b8945a",
+      "width": 0,
+      "x": -111,
+      "y": 499,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "movement"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Mobile Controls",
+      "locked": false,
+      "name": "TouchRadius",
+      "persistentUuid": "f59fd76f-e391-4ff6-9c75-4c77aac51ffb",
+      "width": 0,
+      "x": 1048,
+      "y": 398,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "gun"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Mobile Controls",
+      "locked": false,
+      "name": "ControllerCenter",
+      "persistentUuid": "2b443e54-4f9b-4998-88d0-ebfbc634f74e",
+      "width": 0,
+      "x": 840,
+      "y": 405,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "gun"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Mobile Controls",
+      "locked": false,
+      "name": "ControllerPosition",
+      "persistentUuid": "0e9aac94-44a2-4087-b7d6-0df2985671bd",
+      "width": 0,
+      "x": 861,
+      "y": 462,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "gun"
+        }
+      ]
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.6000000000000001,
+    "windowMask": false
+  }
+}
