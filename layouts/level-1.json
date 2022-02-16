@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Untitled_32scene",
-  "name": "Untitled scene",
+  "mangledName": "Level_321",
+  "name": "Level 1",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -19,9 +19,9 @@
   "events": [],
   "layers": [
     {
-      "ambientLightColorB": 0,
-      "ambientLightColorG": 9219376,
-      "ambientLightColorR": 1,
+      "ambientLightColorB": 12288688,
+      "ambientLightColorG": 16777216,
+      "ambientLightColorR": 0,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "name": "",

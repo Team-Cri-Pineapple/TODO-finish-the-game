@@ -65,7 +65,7 @@
       "height": 32,
       "name": "background",
       "tags": "",
-      "texture": "NewFile-1-1.png",
+      "texture": "splashScreen-background.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],

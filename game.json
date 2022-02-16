@@ -801,6 +801,204 @@
         "name": "moveMoveableObject.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/unknown.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\unknown.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/KeyPressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\KeyPressed.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/FlipFakeAndRealPlatforms.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\FlipFakeAndRealPlatforms.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/TriggerOnce.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\TriggerOnce.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/PlayerJumped.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\PlayerJumped.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/moveMoveableObject.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\moveMoveableObject.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Player.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Player.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Player-Cape.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Player-Cape.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Pistol.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Pistol.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Bullet.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/grass-platform.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\grass-platform.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/wall-background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\wall-background.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/moveable-platform.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\moveable-platform.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/brick-background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\brick-background.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/brick-platform.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\brick-platform.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/color-black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\color-black.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/colors/black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\colors\\black.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/brick-corners.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\brick-corners.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/moveable-direction.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\moveable-direction.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/popUp-background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\popUp-background.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "splashScreen-background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "splashScreen-background.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "void.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "void.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -850,7 +1048,7 @@
       "height": 32,
       "name": "black",
       "tags": "",
-      "texture": "black-1.png",
+      "texture": "assets\\colors\\black.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -897,7 +1095,7 @@
       "height": 32,
       "name": "popupBG",
       "tags": "",
-      "texture": "popupbg-1.png",
+      "texture": "assets\\popUp-background.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -1053,23 +1251,15 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/prototype"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/ignorethat"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/main-menu"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/prototype2"
+      "referenceTo": "/layouts/tutorial-level"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/protoype3"
+      "referenceTo": "/layouts/level-1"
     }
   ],
   "externalEvents": [

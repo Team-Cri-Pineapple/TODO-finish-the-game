@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "prototype",
+  "associatedLayout": "Tutorial Level",
   "name": "AddNewEvent",
   "instances": [
     {
@@ -61,7 +61,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5500000000000195,
+    "zoomFactor": 0.8500000000000196,
     "windowMask": false
   }
 }
