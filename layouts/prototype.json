@@ -2014,7 +2014,44 @@
           "width": 0
         }
       ],
-      "effects": []
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 0.3,
+            "blur": 4,
+            "distance": 1,
+            "padding": 80,
+            "quality": 7,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        },
+        {
+          "effectType": "OldFilm",
+          "name": "Effect2",
+          "doubleParameters": {
+            "animationFrequency": 0,
+            "noise": 0,
+            "noiseSize": 0,
+            "scratch": 0,
+            "scratchDensity": 0,
+            "scratchWidth": 0,
+            "sepia": 0,
+            "vignetting": 0.3,
+            "vignettingAlpha": 0.7,
+            "vignettingBlur": 0.6
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ]
     },
     {
       "ambientLightColorB": 134217728,
