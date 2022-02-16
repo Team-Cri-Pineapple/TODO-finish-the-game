@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5100000000000002,
+    "zoomFactor": 0.5600000000000004,
     "windowMask": false
   },
   "objectsGroups": [
@@ -103,6 +103,11 @@
               "value": "Key [f] is pressed"
             },
             {
+              "name": "KeyReleased",
+              "type": "string",
+              "value": "Key [f] is released"
+            },
+            {
               "name": "PlayerJump",
               "type": "string",
               "value": "Player jumped"
@@ -115,6 +120,11 @@
           ]
         }
       ]
+    },
+    {
+      "name": "popupTutorialShowed",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -1161,70 +1171,53 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    }
-  ],
-  "objects": [
+    },
     {
-      "name": "playerHitbox",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
+      "angle": 0,
+      "customSize": true,
+      "height": 96,
+      "layer": "",
+      "locked": false,
+      "name": "dialogFloatingText",
+      "persistentUuid": "97cf1f0f-2232-47cf-b266-b056e2416f34",
+      "width": 384,
+      "x": 448,
+      "y": 256,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
         {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 3500,
-          "deceleration": 4000,
-          "maxFallingSpeed": 1200,
-          "maxSpeed": 450,
-          "yGrabOffset": 0,
-          "canGoDownFromJumpthru": true,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": true,
-          "gravity": 1000,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 600,
-          "jumpSustainTime": 0.2,
-          "ladderClimbingSpeed": 150,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10
-        }
-      ],
-      "animations": [
-        {
-          "name": "player_placeholder",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.07999999821186066,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "player_placeholder-1-0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 16,
-                    "y": 16
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
+          "name": "insideContent",
+          "type": "string",
+          "value": "[color=yellow][b]DEV[b] : Welcome player on my new game ![/color]"
         }
       ]
     },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 96,
+      "layer": "",
+      "locked": false,
+      "name": "dialogFloatingText",
+      "persistentUuid": "cf441b0c-fbb9-4cdb-b8e8-b96c5b3226cf",
+      "width": 384,
+      "x": 768,
+      "y": 512,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "[color=yellow][b]DEV[b] : Please don't mind the gap in the level. I'm sure it will fix by itself[/color]\n[color=white][i]Hint : pressed esc to show the editor menu[i][/color]"
+        }
+      ]
+    }
+  ],
+  "objects": [
     {
       "name": "Condition",
       "tags": "",
@@ -1532,108 +1525,6 @@
       }
     },
     {
-      "name": "player",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "ThreeDFlip",
-          "type": "ThreeDFlip::ThreeDFlip",
-          "Duration": 500,
-          "IsFlipped": false,
-          "IsFlipping": false,
-          "Width": 0,
-          "ElapsedTime": 0,
-          "Toggle": false
-        }
-      ],
-      "animations": [
-        {
-          "name": "NewObject",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.07999999821186066,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Player.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "cape",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "ThreeDFlip",
-          "type": "ThreeDFlip::ThreeDFlip",
-          "Duration": 500,
-          "IsFlipped": false,
-          "IsFlipping": false,
-          "Width": 0,
-          "ElapsedTime": 0,
-          "Toggle": false
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Player-Cape.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "bottomMargin": 32,
       "height": 32,
       "leftMargin": 32,
@@ -1725,86 +1616,6 @@
           "canBeGrabbed": true,
           "platformType": "NormalPlatform",
           "yGrabOffset": 0
-        }
-      ]
-    },
-    {
-      "name": "gun",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "gun",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.07999999821186066,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Pistol.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "bullet",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewObject",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.07999999821186066,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Bullet.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 4,
-                    "y": 4
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -2087,6 +1898,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "dialogFloatingText",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "content variable not set."
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "the variable content is not defined",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "events": [
@@ -2098,6 +1933,39 @@
         "includeConfig": 0
       },
       "target": "GlobalEvents"
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "AjoutObjConcern"
+          },
+          "parameters": [
+            "",
+            "dialogFloatingText"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "dialogFloatingText",
+            "=",
+            "dialogFloatingText.VariableString(insideContent)"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     }
   ],
   "layers": [

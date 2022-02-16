@@ -5,14 +5,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 540,
+      "height": 604,
       "layer": "GUI",
       "locked": false,
       "name": "black",
       "persistentUuid": "33e734d1-82e8-47bf-bfcb-931c3b751f2a",
       "width": 1916,
-      "x": 0,
-      "y": 0,
+      "x": -384,
+      "y": -28,
       "zOrder": 50,
       "numberProperties": [],
       "stringProperties": [],
@@ -33,6 +33,33 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 192,
+      "layer": "GUI",
+      "locked": false,
+      "name": "dialogFloatingText",
+      "persistentUuid": "4232fede-7c04-4328-a991-92ec191feb9c",
+      "width": 320,
+      "x": 128,
+      "y": 256,
+      "zOrder": 52,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "[i][color=white]You are on the developper's menu. Here you can create new \"rules\" for the game. These rules will be deleted in 10 seconds after you made them.[/color][/i]"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "value": "3"
+        }
+      ]
     }
   ],
   "editionSettings": {
@@ -45,7 +72,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5999999999999989,
+    "zoomFactor": 0.2249999999999986,
     "windowMask": false
   }
 }
