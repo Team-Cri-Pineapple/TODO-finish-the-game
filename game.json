@@ -1062,6 +1062,13 @@
         "name": "assets\\objects\\grass3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/MinecraftTen.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\MinecraftTen.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
