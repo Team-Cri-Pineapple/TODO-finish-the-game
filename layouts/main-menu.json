@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4165000000000011,
+    "zoomFactor": 0.316500000000001,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -167,7 +167,7 @@
       "width": 64,
       "x": 64,
       "y": -320,
-      "zOrder": 2,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -183,7 +183,7 @@
       "width": 64,
       "x": 192,
       "y": -320,
-      "zOrder": 2,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -199,7 +199,7 @@
       "width": 64,
       "x": 320,
       "y": -320,
-      "zOrder": 2,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -215,7 +215,7 @@
       "width": 64,
       "x": 448,
       "y": -320,
-      "zOrder": 2,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -231,7 +231,7 @@
       "width": 64,
       "x": 576,
       "y": -320,
-      "zOrder": 2,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -247,7 +247,7 @@
       "width": 64,
       "x": 704,
       "y": -320,
-      "zOrder": 2,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -263,7 +263,7 @@
       "width": 64,
       "x": 832,
       "y": -320,
-      "zOrder": 2,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []

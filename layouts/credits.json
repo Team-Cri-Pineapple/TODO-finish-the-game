@@ -1,0 +1,392 @@
+{
+  "b": 58,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Credits",
+  "name": "Credits",
+  "oglFOV": 90,
+  "oglZFar": 500,
+  "oglZNear": 1,
+  "r": 73,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 43,
+  "uiSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 64,
+    "gridHeight": 64,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.4400000000000002,
+    "windowMask": false
+  },
+  "objectsGroups": [
+    {
+      "name": "Group",
+      "objects": [
+        {
+          "name": "TeamLogo"
+        },
+        {
+          "name": "Credits"
+        }
+      ]
+    }
+  ],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 960,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "4f8659ff-82e4-4c34-8fe1-bb3a4121a82f",
+      "width": 64,
+      "x": 0,
+      "y": -256,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 960,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "e9bb5ecf-5812-4002-a2c9-7248741793a4",
+      "width": 64,
+      "x": 128,
+      "y": -256,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 960,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "ff5c7c1f-b840-4c28-8a0d-9ae65dbdf57c",
+      "width": 64,
+      "x": 256,
+      "y": -256,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 960,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "74263ae0-ed6b-4f78-a1a3-e339779c732a",
+      "width": 64,
+      "x": 384,
+      "y": -256,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 960,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "951d7174-066b-461c-967c-6fe1f1ef50c7",
+      "width": 64,
+      "x": 512,
+      "y": -256,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 960,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "9d281cbd-b28d-403c-8dfa-9a1b64fe8879",
+      "width": 64,
+      "x": 640,
+      "y": -256,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 960,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "27c41577-5147-48a9-81df-0efb3f8f56f3",
+      "width": 64,
+      "x": 768,
+      "y": -256,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 960,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "d1ca3f8d-f2f5-41fd-9b58-5cddaff7f4b7",
+      "width": 64,
+      "x": 896,
+      "y": -256,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 256,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "928259a8-082a-4edf-8b62-c9564de47d92",
+      "width": 192,
+      "x": -64,
+      "y": 64,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 192,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "97ae186d-0708-420a-b133-9113bb671957",
+      "width": 192,
+      "x": 832,
+      "y": 256,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 432,
+      "layer": "",
+      "locked": false,
+      "name": "Credits",
+      "persistentUuid": "3bf23e1b-83b1-47fc-af08-4fcbc7854617",
+      "width": 384,
+      "x": 256,
+      "y": 559,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 125.13103485107422,
+      "layer": "",
+      "locked": false,
+      "name": "TeamLogo",
+      "persistentUuid": "56e0e340-e21a-41cd-ab58-3715725ee4fa",
+      "width": 448,
+      "x": 256,
+      "y": 578.8689575195312,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "name": "Credits",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[outline=black]Made by\n\n\n\n\n\n\n\n\n\n\n\nMassive thanks to the GDevelop Community for their support for the game!\n\nbalalbalblalbalablablab\n\n[/outline]",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "TeamLogo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "cri-pineapple-logo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreX"
+          },
+          "parameters": [
+            "Credits",
+            "=",
+            "SceneWindowWidth()/2 - Credits.Width()/2"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Group",
+            "-",
+            "0.8"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 11387352,
+      "ambientLightColorG": 150995054,
+      "ambientLightColorR": 1869182049,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "AdvancedJump",
+      "type": "AdvancedJump::AdvancedJump"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "ThreeDFlip",
+      "type": "ThreeDFlip::ThreeDFlip"
+    }
+  ]
+}
