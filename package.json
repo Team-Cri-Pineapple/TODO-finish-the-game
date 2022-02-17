@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "git-json-merge": "^0.4.5"
-  },
-  "scripts": {
-	  "postinstall": "git config merge.json.driver \"$(npm bin)/git-json-merge %A %O %B\" && git config merge.json.name \"custom merge driver for json files\""
-  }
-}
