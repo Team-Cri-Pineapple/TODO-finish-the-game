@@ -1078,6 +1078,15 @@
         "metadata": "",
         "name": "assets\\MinecraftTen.ttf",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2153,7 +2162,31 @@
           "value": "content variable not set."
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glitch",
+          "name": "Glitch",
+          "doubleParameters": {
+            "animationFrequency": 20,
+            "blueX": 0,
+            "blueY": -1,
+            "direction": 0,
+            "fillMode": 4,
+            "greenX": 1,
+            "greenY": 0,
+            "minSize": -2,
+            "offset": 2,
+            "redX": 2,
+            "redY": 1,
+            "sampleSize": 512,
+            "slices": 2
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "average": false
+          }
+        }
+      ],
       "behaviors": [],
       "content": {
         "text": "the variable content is not defined",
@@ -2289,6 +2322,46 @@
                     "name": "origine",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "background",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewObject",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
                   },
                   "centerPoint": {
                     "automatic": true,
