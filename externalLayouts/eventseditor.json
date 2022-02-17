@@ -27,8 +27,8 @@
       "name": "add",
       "persistentUuid": "e8d19964-587a-4a9d-995d-16098f442876",
       "width": 164,
-      "x": 42,
-      "y": 64,
+      "x": 92,
+      "y": 479.768798828125,
       "zOrder": 51,
       "numberProperties": [],
       "stringProperties": [],
@@ -45,7 +45,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5793464034140083,
+    "zoomFactor": 0.772749999999999,
     "windowMask": false
   }
 }

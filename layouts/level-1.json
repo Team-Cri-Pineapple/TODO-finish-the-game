@@ -1,35 +1,425 @@
 {
-  "b": 209,
+  "b": 58,
   "disableInputWhenNotFocused": true,
   "mangledName": "Level_321",
   "name": "Level 1",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
-  "r": 209,
+  "r": 73,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
-  "title": "",
-  "v": 209,
+  "title": "Level 1",
+  "v": 43,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 64,
+    "gridHeight": 64,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 1,
+    "snap": true,
+    "zoomFactor": 0.42499999999999993,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
-  "instances": [],
+  "variables": [
+    {
+      "name": "menu",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "addpopupshow",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "popupTutorialShowed",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "name": "AllUsableEvents",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ActionsList",
+          "type": "structure",
+          "children": [
+            {
+              "name": "FlipFakeAndRealPlatforms",
+              "type": "string",
+              "value": "Flip fake and real platforms"
+            },
+            {
+              "name": "MoveMovingPlatforms",
+              "type": "string",
+              "value": "Move platforms"
+            }
+          ]
+        },
+        {
+          "name": "ConditionsList",
+          "type": "structure",
+          "children": [
+            {
+              "name": "KeyPressed",
+              "type": "string",
+              "value": "Key [f] is pressed"
+            },
+            {
+              "name": "KeyReleased",
+              "type": "string",
+              "value": "Key [f] is released"
+            },
+            {
+              "name": "PlayerJump",
+              "type": "string",
+              "value": "Player jumped"
+            },
+            {
+              "name": "TriggerOnce",
+              "type": "string",
+              "value": "Trgger once while true"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "ed00780c-e7d5-4ca8-847c-8a84afa0a857",
+      "width": 64,
+      "x": 0,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "90db1e5b-a677-4c40-9202-bce97d2ad593",
+      "width": 64,
+      "x": 128,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "6de69ecb-327b-49bd-9eda-0d3239a7f6db",
+      "width": 64,
+      "x": 256,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "73e33fcf-429d-4410-a6dc-56f093e0a061",
+      "width": 64,
+      "x": 384,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "0539a0b8-0da1-4ea7-9bd1-27eb486928b1",
+      "width": 64,
+      "x": 512,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "c38df7e9-433c-48d1-8b02-7d5410a85ae4",
+      "width": 64,
+      "x": 640,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "951a7fa5-57ca-48b2-bd82-25a9631a6721",
+      "width": 64,
+      "x": 768,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "a1df50e2-e9e6-4ef1-99f0-52d1dcc15961",
+      "width": 64,
+      "x": 896,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "10232398-0a2c-4382-8151-46c33b47bf9f",
+      "width": 64,
+      "x": 1024,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "a506f9c0-e2b1-40b6-b70b-5fd30a030145",
+      "width": 64,
+      "x": 1152,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "2b8edf68-b2b6-42d0-871a-4d964f9e2b2c",
+      "width": 64,
+      "x": 1280,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "cbd93a80-9e66-44b9-8c8f-e94add5a8018",
+      "width": 64,
+      "x": 1408,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "ec5480a9-b562-4067-b772-a703ba19f9e4",
+      "width": 64,
+      "x": 1536,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "eda0ff41-c7ab-4fdf-92ab-09fbde2d12f0",
+      "width": 64,
+      "x": 1664,
+      "y": -384,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 256,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "918ed077-38d0-436d-a7d1-2fb9e3d8dc2c",
+      "width": 960,
+      "x": 0,
+      "y": 384,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "player",
+      "persistentUuid": "51c782ee-12d6-4602-ad38-d31948233512",
+      "width": 72,
+      "x": 164,
+      "y": 352,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "cape",
+      "persistentUuid": "00f7a74d-cdb9-4dcc-a64a-67d43ccc9ba3",
+      "width": 64,
+      "x": 160,
+      "y": 352,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "gun",
+      "persistentUuid": "35212bb7-aee6-4a81-94c8-787fdf371be5",
+      "width": 64,
+      "x": 224,
+      "y": 352,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "playerHitbox",
+      "persistentUuid": "e1a4320d-1899-4494-bac5-510f5c3c671e",
+      "width": 64,
+      "x": 160,
+      "y": 352,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
   "objects": [],
-  "events": [],
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "GlobalEvents"
+    }
+  ],
   "layers": [
+    {
+      "ambientLightColorB": 11091728,
+      "ambientLightColorG": 6032016,
+      "ambientLightColorR": 8698080,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Background",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
     {
       "ambientLightColorB": 12288688,
       "ambientLightColorG": 16777216,
@@ -51,9 +441,50 @@
         }
       ],
       "effects": []
+    },
+    {
+      "ambientLightColorB": 9812864,
+      "ambientLightColorG": 6032016,
+      "ambientLightColorR": 8698080,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "GUI",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 7876824,
+      "ambientLightColorG": 6032016,
+      "ambientLightColorR": 8698080,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Layer",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 9812864,
+      "ambientLightColorG": 6032016,
+      "ambientLightColorR": 8698080,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Mobile controls",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "AdvancedJump",
+      "type": "AdvancedJump::AdvancedJump"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"

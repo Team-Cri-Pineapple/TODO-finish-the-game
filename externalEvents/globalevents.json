@@ -5,7 +5,7 @@
   "events": [
     {
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -151,6 +151,60 @@
                                       "parameters": [
                                         "playerHitbox",
                                         "PlatformerObject"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SetSceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "conditionReturnValue",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "Condition.ID",
+                                    "=",
+                                    "\"KeyReleased\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "KeyFromTextReleased"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "VariableString(Condition.Parameters[0])"
                                       ],
                                       "subInstructions": []
                                     }
@@ -617,6 +671,60 @@
       ]
     },
     {
+      "disabled": false,
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "JSONToVariableStructure"
+          },
+          "parameters": [
+            "\"[{\\\"ActionsList\\\": [], \\\"ConditionsList\\\": []}]\"",
+            "EventsList"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "grass",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "grass",
+                "=",
+                "Random(2)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -650,6 +758,29 @@
               },
               "parameters": [],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Not"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "ThereIsNoEscape",
+                    "playerHitbox",
+                    "",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
@@ -760,6 +891,17 @@
                     "False"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "EditorObjects",
+                    "\"GUI\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -865,14 +1007,6 @@
                     "Left"
                   ],
                   "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
                 }
               ],
               "actions": [],
@@ -932,6 +1066,240 @@
                     }
                   ],
                   "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "addpopupshow",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "addedEvent",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "ConditionName",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ConditionName",
+                            "Clickable",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addpopupshow",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "JSONToVariableStructure"
+                          },
+                          "parameters": [
+                            "GlobalVarToJSON(ConditionsList[ConditionName.GetBBText()])",
+                            "ConditionAdd"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariablePush"
+                          },
+                          "parameters": [
+                            "EventsList[Variable(EventIDAdd)].ConditionsList",
+                            "ConditionAdd"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addedEvent",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "ActionName",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ActionName",
+                            "Clickable",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addpopupshow",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "JSONToVariableStructure"
+                          },
+                          "parameters": [
+                            "GlobalVarToJSON(ActionsList[ActionName.GetBBText()])",
+                            "ActionAdd"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariablePush"
+                          },
+                          "parameters": [
+                            "EventsList[Variable(EventIDAdd)].ActionsList",
+                            "ActionAdd"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addedEvent",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "addedEvent",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "EventsListPopup",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "rerenderNeeded",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -1282,240 +1650,6 @@
                           "parameters": [
                             "EventsListPopup",
                             ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "addpopupshow",
-                        "True"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetSceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "addedEvent",
-                        "False"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "ConditionName",
-                            "",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "ConditionName",
-                            "Clickable",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SetSceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "addpopupshow",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "JSONToVariableStructure"
-                          },
-                          "parameters": [
-                            "GlobalVarToJSON(ConditionsList[ConditionName.GetBBText()])",
-                            "ConditionAdd"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SceneVariablePush"
-                          },
-                          "parameters": [
-                            "EventsList[Variable(EventIDAdd)].ConditionsList",
-                            "ConditionAdd"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SetSceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "addedEvent",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "ActionName",
-                            "",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "ActionName",
-                            "Clickable",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SetSceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "addpopupshow",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "JSONToVariableStructure"
-                          },
-                          "parameters": [
-                            "GlobalVarToJSON(ActionsList[ActionName.GetBBText()])",
-                            "ActionAdd"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SceneVariablePush"
-                          },
-                          "parameters": [
-                            "EventsList[Variable(EventIDAdd)].ActionsList",
-                            "ActionAdd"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SetSceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "addedEvent",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "addedEvent",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "EventsListPopup",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SetSceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "rerenderNeeded",
-                            "True"
                           ],
                           "subInstructions": []
                         }
@@ -2547,13 +2681,46 @@
           "events": []
         },
         {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "",
+                "dialogFloatingText"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "dialogFloatingText",
+                "=",
+                "dialogFloatingText.VariableString(insideContent)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "name": "fake floor",
+          "folded": true,
+          "name": "Fake and Real Floor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2658,8 +2825,8 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "name": "move floor",
+          "folded": true,
+          "name": "Moveable Floor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2841,7 +3008,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "WASD",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2984,7 +3151,7 @@
               "creationTime": 0,
               "disabled": false,
               "folded": true,
-              "name": "Player tilt",
+              "name": "Player Tilt",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -3655,7 +3822,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -3908,7 +4075,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -4107,21 +4274,6 @@
                     {
                       "disabled": false,
                       "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "AHNAFFFFFFFFFF PUT YO GUN SHIT HERE DAWG",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -4306,7 +4458,7 @@
                     },
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -5011,112 +5163,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Todo: Replace with some sort of \"chat\" (more developer-like) or at least add fade in/out animations",
-      "comment2": ""
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "player",
-            "DialogueTrigger",
-            "",
-            "",
-            "yes"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "VarObjetTxt"
-          },
-          "parameters": [
-            "DialogueText",
-            "trigger",
-            "=",
-            "DialogueTrigger.VariableString(triggerID)"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Montre"
-          },
-          "parameters": [
-            "DialogueText",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "BuiltinCommonInstructions::Not"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "player",
-                "DialogueTrigger",
-                "",
-                "",
-                "yes"
-              ],
-              "subInstructions": []
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Cache"
-          },
-          "parameters": [
-            "DialogueText"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
     }
   ]
 }
