@@ -1646,7 +1646,7 @@
                               "parameters": [
                                 "popupBG",
                                 "=",
-                                "150"
+                                "120"
                               ],
                               "subInstructions": []
                             }
@@ -1670,9 +1670,34 @@
                               "parameters": [
                                 "",
                                 "ConditionName",
-                                "444",
-                                "42*(Variable(ConacCount)+1)",
+                                "163",
+                                "175 + 42*(Variable(ConacCount)+1)",
                                 "\"GUI\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EventIcon",
+                                "127",
+                                "170 + 42*(Variable(ConacCount)+1)",
+                                "\"GUI\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "EventIcon",
+                                "VariableString(conditionid)"
                               ],
                               "subInstructions": []
                             },
@@ -1682,7 +1707,7 @@
                                 "value": "ChangePlan"
                               },
                               "parameters": [
-                                "ConditionName",
+                                "ConditionActionsAndIcon",
                                 "=",
                                 "100"
                               ],
@@ -1708,6 +1733,18 @@
                               "parameters": [
                                 "ConditionName",
                                 "Clickable",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "EventIcon",
+                                "isPopUp",
                                 "True"
                               ],
                               "subInstructions": []
@@ -1765,9 +1802,34 @@
                               "parameters": [
                                 "",
                                 "ActionName",
-                                "689",
-                                "42*(Variable(ConacCount)+1)",
+                                "540",
+                                "175 + 42*(Variable(ConacCount)+1)",
                                 "\"GUI\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EventIcon",
+                                "504",
+                                "170 + 42*(Variable(ConacCount)+1)",
+                                "\"GUI\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "EventIcon",
+                                "VariableString(actionid)"
                               ],
                               "subInstructions": []
                             },
@@ -1777,7 +1839,7 @@
                                 "value": "ChangePlan"
                               },
                               "parameters": [
-                                "ActionName",
+                                "ConditionActionsAndIcon",
                                 "=",
                                 "100"
                               ],
@@ -1803,6 +1865,18 @@
                               "parameters": [
                                 "ActionName",
                                 "Clickable",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "EventIcon",
+                                "isPopUp",
                                 "True"
                               ],
                               "subInstructions": []
@@ -1837,6 +1911,18 @@
                           "parameters": [
                             "addpopupshow",
                             "False"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "EventIcon",
+                            "isPopUp",
+                            "True"
                           ],
                           "subInstructions": []
                         }

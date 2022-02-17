@@ -1087,6 +1087,15 @@
         "name": "NewObject-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ConditionActionList.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ConditionActionList.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1151,7 +1160,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "CONDITIONS LIST",
+        "text": "yes",
         "opacity": 255,
         "fontSize": 15,
         "visible": true,
@@ -1183,7 +1192,7 @@
       "height": 32,
       "name": "popupBG",
       "tags": "",
-      "texture": "assets\\colors\\gray.png",
+      "texture": "assets\\colors\\black.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -2422,6 +2431,46 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ConditionActionList",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\ConditionActionList.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [
@@ -2460,6 +2509,9 @@
         },
         {
           "name": "dialogFloatingText"
+        },
+        {
+          "name": "ConditionActionList"
         }
       ]
     },
@@ -2485,6 +2537,12 @@
         },
         {
           "name": "popupBG"
+        },
+        {
+          "name": "ConditionActionList"
+        },
+        {
+          "name": "EventIcon"
         }
       ]
     },
@@ -2513,6 +2571,20 @@
         },
         {
           "name": "bricosBack"
+        }
+      ]
+    },
+    {
+      "name": "ConditionActionsAndIcon",
+      "objects": [
+        {
+          "name": "ConditionName"
+        },
+        {
+          "name": "ActionName"
+        },
+        {
+          "name": "EventIcon"
         }
       ]
     }

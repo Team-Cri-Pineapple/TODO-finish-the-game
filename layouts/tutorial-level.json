@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.42550000000000066,
+    "zoomFactor": 0.5455000000000005,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1308,7 +1308,12 @@
       "x": 384,
       "y": 176,
       "zOrder": 22,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
       "initialVariables": [
         {
@@ -1320,13 +1325,13 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 159,
       "layer": "GUI",
       "locked": false,
       "name": "EventsExplainer",
       "persistentUuid": "9dc1ce58-4211-4bc7-9423-21ce19acb7d1",
-      "width": 0,
+      "width": 384,
       "x": 128,
       "y": 289,
       "zOrder": 60,
