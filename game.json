@@ -1372,7 +1372,13 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\Pistol.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 13,
+                      "y": 6
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 8,
@@ -2403,6 +2409,23 @@
           "name": "Action"
         }
       ]
+    },
+    {
+      "name": "CanStopBullets",
+      "objects": [
+        {
+          "name": "floor"
+        },
+        {
+          "name": "floorbrics"
+        },
+        {
+          "name": "floormoves"
+        },
+        {
+          "name": "bricosBack"
+        }
+      ]
     }
   ],
   "variables": [
@@ -2459,6 +2482,22 @@
                   "value": "x"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "LeftClickMouse",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "LeftClickMouse"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Left button of the mouse is clicked/held"
             }
           ]
         },
@@ -2529,6 +2568,22 @@
               "name": "Name",
               "type": "string",
               "value": "Move all moving platforms"
+            }
+          ]
+        },
+        {
+          "name": "ShootBullet",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "ShootBullet"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Shoot a bullet from the gun"
             }
           ]
         }
