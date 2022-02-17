@@ -20,14 +20,14 @@
     },
     {
       "angle": 0,
-      "customSize": true,
+      "customSize": false,
       "height": 32.2312126159668,
       "layer": "GUI",
       "locked": false,
       "name": "add",
       "persistentUuid": "e8d19964-587a-4a9d-995d-16098f442876",
       "width": 164,
-      "x": 41,
+      "x": 39,
       "y": 479.768798828125,
       "zOrder": 51,
       "numberProperties": [],
@@ -60,6 +60,22 @@
           "value": "3"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "CloseEditorButton",
+      "persistentUuid": "3152f2e3-d694-4cb0-8bd5-27ac108158db",
+      "width": 0,
+      "x": 875,
+      "y": 23,
+      "zOrder": 53,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -72,7 +88,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.25274999999999886,
+    "zoomFactor": 0.49274999999999936,
     "windowMask": false
   }
 }

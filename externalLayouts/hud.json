@@ -1,0 +1,35 @@
+{
+  "associatedLayout": "Tutorial Level",
+  "name": "HUD",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "OpenEditorButton",
+      "persistentUuid": "b82d7f62-18ec-4abd-8871-e986feae08b6",
+      "width": 0,
+      "x": 21,
+      "y": 12,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.3799999999999998,
+    "windowMask": false
+  }
+}
