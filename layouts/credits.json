@@ -339,7 +339,7 @@
           "parameters": [
             "Group",
             "-",
-            "0.8"
+            "0.8*TimeDelta()*60"
           ],
           "subInstructions": []
         }

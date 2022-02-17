@@ -2941,6 +2941,44 @@
                     "playerHitbox"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "background",
+                    "0",
+                    "0",
+                    "\"Background\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "background",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "background",
+                    "=",
+                    "70"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3473,7 +3511,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Mobile Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4706,7 +4744,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "gun",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5078,6 +5116,20 @@
                         "CameraZoom()*0.9",
                         "\"Background\"",
                         "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "background",
+                        "=",
+                        "CameraX()",
+                        "=",
+                        "CameraY()"
                       ],
                       "subInstructions": []
                     }
