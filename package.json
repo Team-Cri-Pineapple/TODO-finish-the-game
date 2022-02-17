@@ -1,0 +1,14 @@
+{
+  "name": "GDevelop-game-jam",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Team-Cri-Pineapple/GDevelop-game-jam",
+  "author": "Arthur Pacaud <arthur.pacaud@hotmail.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "gdexporter": "^3.2.6"
+  },
+  "scripts": {
+	  "upload": "gdexport -p ./game.json -o ./build && ./butler/butler.exe push ./build arthuro5555/gdev-jam-1:html5"
+  }
+}
