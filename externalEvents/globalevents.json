@@ -279,6 +279,60 @@
                                   "events": []
                                 }
                               ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "Condition.ID",
+                                    "=",
+                                    "\"LeftClickMouse\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "MouseButtonPressed"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Left"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SetSceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "conditionReturnValue",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
                             }
                           ],
                           "parameters": []
@@ -611,6 +665,152 @@
                         {
                           "disabled": false,
                           "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarSceneTxt"
+                              },
+                              "parameters": [
+                                "Action.ID",
+                                "=",
+                                "\"ShootBullet\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "bullet",
+                                "gun.PointX(\"Shoot\")",
+                                "gun.PointY(\"Shoot\")",
+                                "\"\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangeWidth"
+                              },
+                              "parameters": [
+                                "bullet",
+                                "=",
+                                "16"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangeHeight"
+                              },
+                              "parameters": [
+                                "bullet",
+                                "=",
+                                "16"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "AddForceAL"
+                              },
+                              "parameters": [
+                                "bullet",
+                                "gun.Angle()",
+                                "800",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "RotateTowardAngle"
+                              },
+                              "parameters": [
+                                "bullet",
+                                "gun.Angle()",
+                                "0",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "playerHitbox",
+                                "PlatformerObject",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "AddForceAL"
+                              },
+                              "parameters": [
+                                "playerHitbox",
+                                "gun.Angle()+180",
+                                "500",
+                                "0"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "playerHitbox",
+                                "PlatformerObject",
+                                "yes"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "bullet",
+                                "=",
+                                "4"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "bullet",
+                                "\"lifetimer\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
                           "type": "BuiltinCommonInstructions::Comment",
                           "color": {
                             "b": 109,
@@ -672,7 +872,7 @@
     },
     {
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -772,11 +972,11 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
+                    "player",
                     "ThereIsNoEscape",
-                    "playerHitbox",
                     "",
                     "",
-                    "yes"
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -2933,7 +3133,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4971,6 +5171,63 @@
                     }
                   ],
                   "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "bullet",
+                            "CanStopBullets",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "bullet",
+                            "\"lifetimer\"",
+                            ">=",
+                            "5"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "bullet",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ],
               "parameters": []
@@ -5011,7 +5268,7 @@
                       "parameters": [
                         "",
                         "=",
-                        "Player.X()",
+                        "player.X()",
                         "\"\"",
                         "0"
                       ],
@@ -5025,7 +5282,7 @@
                       "parameters": [
                         "",
                         "=",
-                        "Player.Y()",
+                        "player.Y()",
                         "\"\"",
                         "0"
                       ],

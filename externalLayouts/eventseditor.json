@@ -33,6 +33,33 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "GUI",
+      "locked": false,
+      "name": "dialogFloatingText",
+      "persistentUuid": "4232fede-7c04-4328-a991-92ec191feb9c",
+      "width": 832,
+      "x": 64,
+      "y": 448,
+      "zOrder": 52,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "[i][color=white]You are on the developper's menu. Here you can create new \"rules\" for the game. These rules will be deleted in 10 seconds after you made them.[/color][/i]"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "value": "3"
+        }
+      ]
     }
   ],
   "editionSettings": {

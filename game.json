@@ -831,6 +831,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "cri.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cri.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/icons/TriggerOnce.png",
         "kind": "image",
         "metadata": "",
@@ -1033,15 +1042,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\mobile-joystick\\ControllerCenter.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "cri.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "cri.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -1381,7 +1381,13 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\Pistol.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 13,
+                      "y": 6
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 8,
@@ -1974,6 +1980,46 @@
       ]
     },
     {
+      "name": "ThereIsNoEscape",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "void.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "move",
       "tags": "",
       "type": "Sprite",
@@ -2298,7 +2344,7 @@
       ]
     },
     {
-      "name": "ThereIsNoEscape",
+      "name": "background",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -2307,21 +2353,21 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "NewObject",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "void.png",
+                  "image": "NewObject-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 8
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2452,6 +2498,23 @@
           "name": "Action"
         }
       ]
+    },
+    {
+      "name": "CanStopBullets",
+      "objects": [
+        {
+          "name": "floor"
+        },
+        {
+          "name": "floorbrics"
+        },
+        {
+          "name": "floormoves"
+        },
+        {
+          "name": "bricosBack"
+        }
+      ]
     }
   ],
   "variables": [
@@ -2508,6 +2571,22 @@
                   "value": "x"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "LeftClickMouse",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "LeftClickMouse"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Left button of the mouse is clicked/held"
             }
           ]
         },
@@ -2578,6 +2657,22 @@
               "name": "Name",
               "type": "string",
               "value": "Move all moving platforms"
+            }
+          ]
+        },
+        {
+          "name": "ShootBullet",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "ShootBullet"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Shoot a bullet from the gun"
             }
           ]
         }
