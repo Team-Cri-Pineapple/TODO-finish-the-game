@@ -21,18 +21,21 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.16000000000000017,
+    "zoomFactor": 0.6300000000000004,
     "windowMask": false
   },
   "objectsGroups": [
     {
-      "name": "Group",
+      "name": "CreditList",
       "objects": [
         {
           "name": "TeamLogo"
         },
         {
           "name": "Credits"
+        },
+        {
+          "name": "Team"
         }
       ]
     }
@@ -177,7 +180,7 @@
       "persistentUuid": "928259a8-082a-4edf-8b62-c9564de47d92",
       "width": 192,
       "x": -64,
-      "y": 64,
+      "y": 128,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -208,8 +211,8 @@
       "name": "Credits",
       "persistentUuid": "3bf23e1b-83b1-47fc-af08-4fcbc7854617",
       "width": 384,
-      "x": 256,
-      "y": 559,
+      "x": 320,
+      "y": 574,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -225,8 +228,232 @@
       "persistentUuid": "56e0e340-e21a-41cd-ab58-3715725ee4fa",
       "width": 448,
       "x": 256,
-      "y": 578.8689575195312,
-      "zOrder": 5,
+      "y": 604.8689575195312,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Team",
+      "persistentUuid": "448a3ffb-d6ce-4ea7-8902-e7a0410d01a2",
+      "width": 0,
+      "x": 121,
+      "y": 823,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "8f67ee57-8cbd-4ea4-bede-e034442a8801",
+      "width": 0,
+      "x": 0,
+      "y": 64,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "0d460141-154b-49a7-86a8-53da9117e26f",
+      "width": 0,
+      "x": 64,
+      "y": 64,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "d9b91bc3-eb17-4b7e-a7ed-4b3966d4690d",
+      "width": 0,
+      "x": 128,
+      "y": 128,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "3b86f43a-4dcc-430e-8167-635e9ea43667",
+      "width": 0,
+      "x": 128,
+      "y": 192,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "5ea44b93-fc80-42fc-9c77-46facdbb2374",
+      "width": 0,
+      "x": 128,
+      "y": 256,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "c2934f8d-520f-46d2-94e0-69af8ae40b57",
+      "width": 0,
+      "x": 832,
+      "y": 192,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "2cfa3fa4-d6d5-4408-bec7-1988d3118c75",
+      "width": 0,
+      "x": 768,
+      "y": 256,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "9b344449-63b0-4b2d-b9dc-2d1faacead96",
+      "width": 0,
+      "x": 896,
+      "y": 192,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "b8e8eda3-143e-4354-af2b-d3c162abafde",
+      "width": 0,
+      "x": 0,
+      "y": 384,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "1dd9cb9a-7dc9-40fc-b3f3-cf54814b3c9b",
+      "width": 0,
+      "x": 832,
+      "y": 448,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "248e30e0-9305-4fec-a33b-c0802de031e1",
+      "width": 0,
+      "x": 896,
+      "y": 448,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 10.341645240783691,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "player",
+      "persistentUuid": "7c4ef90f-0ff7-40c8-8441-84dfb3b15c43",
+      "width": 64,
+      "x": 111,
+      "y": 94,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 10.341645240783691,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "cape",
+      "persistentUuid": "2dc8181f-9352-4bb6-84a8-93a6991c3799",
+      "width": 64,
+      "x": 111,
+      "y": 94,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -241,7 +468,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[outline=black]Made by\n\n\n\n\n\n\n\n\n\n\n\nMassive thanks to the GDevelop Community for their support for the game!\n\nbalalbalblalbalablablab\n\n[/outline]",
+        "text": "[outline=black]Made by\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTesters:\n\nDreechu#7480\nether#1133\n\n\n\n\n\n\nMassive thanks to the GDevelop Game Jam organizers for giving us this opportunity to show what we can do under 2 weeks.\n\n\n\n\nThanks for playing the game and we hope that you've enjoyed it :)\n\n[/outline]",
         "opacity": 255,
         "fontSize": 20,
         "visible": true,
@@ -271,6 +498,46 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "cri-pineapple-logo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\the-team.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -323,7 +590,30 @@
           "subInstructions": []
         }
       ],
-      "events": []
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "grass",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "grass",
+                "=",
+                "Random(2)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     },
     {
       "disabled": false,
@@ -337,9 +627,43 @@
             "value": "MettreY"
           },
           "parameters": [
-            "ConditionActionsAndIcon",
+            "CreditList",
             "-",
-            "0.8*TimeDelta()*60"
+            "0.4*TimeDelta()*60"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "PosY"
+          },
+          "parameters": [
+            "Credits",
+            "<",
+            "-1088"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Main Menu\"",
+            ""
           ],
           "subInstructions": []
         }

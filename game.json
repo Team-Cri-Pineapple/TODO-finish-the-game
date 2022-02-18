@@ -405,6 +405,15 @@
         "name": "assets\\eventAdd.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/the-team.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\the-team.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

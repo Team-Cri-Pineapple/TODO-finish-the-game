@@ -72,7 +72,7 @@
         {
           "name": "to",
           "type": "string",
-          "value": "credit"
+          "value": "Credits"
         },
         {
           "name": "name",
