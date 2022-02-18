@@ -9,6 +9,6 @@
     "gdexporter": "^3.2.6"
   },
   "scripts": {
-	  "upload": "gdexport -p ./game.json -o ./build && ./butler/butler.exe push ./build arthuro5555/gdev-jam-1:html5"
+	  "upload": "gdexport -p ./game.json -o ./build && ./butler/butler.exe push ./build arthuro5555/todo-finishthegame:html5"
   }
 }
