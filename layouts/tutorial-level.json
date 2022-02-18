@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4055000000000004,
+    "zoomFactor": 0.2555000000000018,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -106,7 +106,7 @@
       "persistentUuid": "067cb58e-9470-46e8-b7d3-e08474b68002",
       "width": 64,
       "x": 32,
-      "y": 160,
+      "y": 224,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -122,7 +122,7 @@
       "persistentUuid": "b56e3b51-97d7-464c-8ecb-b42b05b33756",
       "width": 64,
       "x": 32,
-      "y": 160,
+      "y": 224,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -138,7 +138,7 @@
       "persistentUuid": "980fa00c-91a9-4dd7-8f85-671c6cdb56ab",
       "width": 64,
       "x": 32,
-      "y": 160,
+      "y": 224,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -236,7 +236,7 @@
       "persistentUuid": "93b68952-e7b4-4181-94ea-b2bddae61b9f",
       "width": 64,
       "x": 96,
-      "y": 160,
+      "y": 224,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -437,14 +437,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 1920,
+      "height": 1984,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
       "persistentUuid": "d6e24d7a-ea45-4d6c-bde3-e015016e061b",
       "width": 64,
       "x": 1344,
-      "y": -704,
+      "y": -768,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -453,14 +453,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 1920,
+      "height": 1984,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
       "persistentUuid": "c8e2c205-6053-465d-8f07-808d56665fab",
       "width": 64,
       "x": 1216,
-      "y": -704,
+      "y": -768,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1220,7 +1220,7 @@
       "persistentUuid": "d26bb37c-a2b0-4cfe-96de-f8f24328af3a",
       "width": 64,
       "x": 96,
-      "y": 160,
+      "y": 224,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -1236,7 +1236,7 @@
       "persistentUuid": "a385dee4-0e08-4315-a786-2381448ccd86",
       "width": 64,
       "x": 96,
-      "y": 160,
+      "y": 224,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -1252,7 +1252,7 @@
       "persistentUuid": "083faa69-2116-4dba-8cfe-066d1b643e3f",
       "width": 64,
       "x": 96,
-      "y": 160,
+      "y": 224,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -1342,14 +1342,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 576,
+      "height": 1472,
       "layer": "",
       "locked": false,
       "name": "ThereIsNoEscape",
       "persistentUuid": "4c484a96-7a45-444a-87bb-44d12bfce5e0",
       "width": 1152,
       "x": -768,
-      "y": 64,
+      "y": -832,
       "zOrder": 61,
       "numberProperties": [],
       "stringProperties": [],
@@ -2682,6 +2682,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "computer",
+      "persistentUuid": "62ef8bfb-bc82-4009-a38c-d15bab84d015",
+      "width": 64,
+      "x": 608,
+      "y": 480,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2736,10 +2752,34 @@
       "tags": "",
       "type": "BBText::BBText",
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glitch",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "blueX": 1,
+            "blueY": 1,
+            "direction": 0,
+            "fillMode": 0,
+            "greenX": 1,
+            "greenY": 0,
+            "minSize": 0,
+            "offset": 2,
+            "redX": 2,
+            "redY": -1,
+            "sampleSize": 512,
+            "slices": 5
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "average": false
+          }
+        }
+      ],
       "behaviors": [],
       "content": {
-        "text": "[b]DEV[/b]: Nice! Now, try to use the power of ✨´logic✨ to [s]finish the game for me[/s] find a way to finish this level!",
+        "text": "[b]DEV[/b]: Nice! Now, try to use the power of ✨´logic✨ to [color=#F5a343][size=30][i]finish the game for me[/i][/size][/color] find a way to finish this level!",
         "opacity": 255,
         "fontSize": 20,
         "visible": true,
@@ -2765,7 +2805,31 @@
           "value": "NULL"
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glitch",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "blueX": 1,
+            "blueY": 1,
+            "direction": 0,
+            "fillMode": 0,
+            "greenX": 1,
+            "greenY": 0,
+            "minSize": 0,
+            "offset": 2,
+            "redX": 2,
+            "redY": -1,
+            "sampleSize": 512,
+            "slices": 5
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "average": false
+          }
+        }
+      ],
       "behaviors": [],
       "content": {
         "text": "the variable content is not defined",
@@ -2803,6 +2867,46 @@
                     "name": "origine",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "computer",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\computa.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3026,6 +3130,20 @@
             {
               "type": {
                 "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "computer",
+                "",
+                "",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "KeyPressed"
               },
               "parameters": [
@@ -3109,7 +3227,7 @@
                   "parameters": [
                     "DialogueText",
                     "=",
-                    "\"[b]DEV[/b]: Nice! Good luck with this game, I gave up on it months ago lmao\""
+                    "\"[b]DEV[/b]: Nice! Good luck with this game, I gave up on it months ago... lmao\""
                   ],
                   "subInstructions": []
                 }
@@ -3306,6 +3424,10 @@
     {
       "name": "ThreeDFlip",
       "type": "ThreeDFlip::ThreeDFlip"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

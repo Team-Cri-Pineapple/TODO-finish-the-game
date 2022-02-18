@@ -872,7 +872,7 @@
     },
     {
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -948,6 +948,402 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Not"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "player",
+                    "computer",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "OpenEditorButton",
+                "Tween",
+                "\"Out\"",
+                "1.2",
+                "0.2",
+                "\"easeInOutQuart\"",
+                "50",
+                "",
+                "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "computer",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "OpenEditorButton",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "OpenEditorButton",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "OpenEditorButton",
+                "Tween",
+                "\"In\"",
+                "1.2",
+                "0.2",
+                "\"easeInOutQuart\"",
+                "50",
+                "",
+                "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Tween",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"Out1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectScaleTween"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"Out2\"",
+                    "0",
+                    "0",
+                    "\"easeInOutQuart\"",
+                    "150",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"Out1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "OpenEditorButton"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"Out\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectScaleTween"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"Out1\"",
+                    "0.2",
+                    "4",
+                    "\"easeInOutQuart\"",
+                    "50",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"Out\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"In1\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectScaleTween"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"In2\"",
+                    "1",
+                    "1",
+                    "\"easeOutBack\"",
+                    "150",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"In1\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"In\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectScaleTween"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"In1\"",
+                    "0.2",
+                    "4",
+                    "\"easeInOutQuart\"",
+                    "50",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "OpenEditorButton",
+                    "Tween",
+                    "\"In\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -1042,6 +1438,28 @@
             {
               "type": {
                 "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "computer",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Not"
               },
               "parameters": [],
@@ -1061,14 +1479,6 @@
                   "subInstructions": []
                 }
               ]
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
             }
           ],
           "actions": [
@@ -3313,126 +3723,32 @@
           "parameters": []
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
           "disabled": false,
-          "folded": true,
-          "name": "Player",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "menu",
+                "False"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
           "events": [
             {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "playerHitbox"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "background",
-                    "0",
-                    "0",
-                    "\"Background\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "background",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeScale"
-                  },
-                  "parameters": [
-                    "background",
-                    "=",
-                    "70"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PosY"
-                  },
-                  "parameters": [
-                    "playerHitbox",
-                    ">",
-                    "SceneWindowHeight()+20"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentSceneName()",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
               "colorB": 228,
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
               "folded": true,
-              "name": "WASD",
+              "name": "Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -3444,524 +3760,110 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "KeyPressed"
+                        "value": "DepartScene"
                       },
                       "parameters": [
-                        "",
-                        "s"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::SimulateDownKey"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "d"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::SimulateRightKey"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "a"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::SimulateLeftKey"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "w"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::SimulateJumpKey"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": []
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": true,
-              "name": "Player Tilt",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::CurrentSpeed"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject",
-                        ">",
-                        "40"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "tilt",
-                        "=",
-                        "lerp(playerHitbox.Variable(tilt), 20+(50*Noise::Perlin2(playerHitbox.Variable(sin), 0)), 0.07)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ThreeDFlip::ThreeDFlip::FlipTo"
-                      },
-                      "parameters": [
-                        "player",
-                        "ThreeDFlip",
-                        "no",
-                        "100",
                         ""
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ThreeDFlip::ThreeDFlip::FlipTo"
-                      },
-                      "parameters": [
-                        "cape",
-                        "ThreeDFlip",
-                        "no",
-                        "100",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "sin",
-                        "+",
-                        "0.2"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::CurrentSpeed"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject",
-                        "<",
-                        "-40"
-                      ],
-                      "subInstructions": []
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "tilt",
-                        "=",
-                        "lerp(playerHitbox.Variable(tilt), -20+(50*Noise::Perlin2(playerHitbox.Variable(sin), 0)), 0.07)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ThreeDFlip::ThreeDFlip::FlipTo"
-                      },
-                      "parameters": [
-                        "player",
-                        "ThreeDFlip",
-                        "yes",
-                        "100",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ThreeDFlip::ThreeDFlip::FlipTo"
-                      },
-                      "parameters": [
-                        "cape",
-                        "ThreeDFlip",
-                        "yes",
-                        "100",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "sin",
-                        "+",
-                        "0.2"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::CurrentSpeed"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject",
-                        "<=",
-                        "40"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::CurrentSpeed"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject",
-                        ">=",
-                        "-40"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "tilt",
-                        "=",
-                        "lerp(playerHitbox.Variable(tilt), 0, 0.05)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "cape"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "fallTilt",
-                        "=",
-                        "lerp(playerHitbox.Variable(fallTilt),playerHitbox.PlatformerObject::CurrentFallSpeed(), 0.05)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "cape"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "fallTilt",
-                        "=",
-                        "lerp(playerHitbox.Variable(fallTilt), -playerHitbox.PlatformerObject::CurrentFallSpeed(), 0.05)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "RotateTowardAngle"
-                      },
-                      "parameters": [
-                        "player",
-                        "playerHitbox.Variable(tilt)",
-                        "0",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "RotateTowardAngle"
-                      },
-                      "parameters": [
-                        "cape",
-                        "playerHitbox.Variable(tilt)*2+playerHitbox.Variable(fallTilt)/15",
-                        "1720",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "player",
-                        "=",
-                        "playerHitbox.X()",
-                        "=",
-                        "playerHitbox.Y()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "cape",
-                        "=",
-                        "playerHitbox.X()",
-                        "=",
-                        "playerHitbox.Y()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": []
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": true,
-              "name": "Mobile Controls",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SystemInfo::IsMobile"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Opacity"
-                      },
-                      "parameters": [
-                        "TouchRadius",
-                        "=",
-                        "50"
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
                         "value": "Cache"
                       },
                       "parameters": [
-                        "ControllerCenter"
+                        "playerHitbox"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "background",
+                        "0",
+                        "0",
+                        "\"Background\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "background",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "background",
+                        "=",
+                        "70"
                       ],
                       "subInstructions": []
                     }
                   ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "playerHitbox",
+                        ">",
+                        "SceneWindowHeight()+20"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "CurrentSceneName()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": true,
+                  "name": "WASD",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
                       "disabled": false,
@@ -3971,39 +3873,11 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarObjetTxt"
+                            "value": "KeyPressed"
                           },
                           "parameters": [
-                            "ControllerCenter",
-                            "type",
-                            "=",
-                            "\"gun\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "TouchRadius",
-                            "type",
-                            "=",
-                            "\"gun\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "ControllerPosition",
-                            "type",
-                            "=",
-                            "\"gun\""
+                            "",
+                            "s"
                           ],
                           "subInstructions": []
                         }
@@ -4012,215 +3886,10 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "MettreXY"
+                            "value": "PlatformBehavior::SimulateDownKey"
                           },
                           "parameters": [
-                            "TouchRadius",
-                            "=",
-                            "ControllerCenter.X()",
-                            "=",
-                            "ControllerCenter.Y()"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "ControllerPosition",
-                            "=",
-                            "ControllerCenter.X()",
-                            "=",
-                            "ControllerCenter.Y()"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "ControllerCenter",
-                            "type",
-                            "=",
-                            "\"movement\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "TouchRadius",
-                            "type",
-                            "=",
-                            "\"movement\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "ControllerPosition",
-                            "type",
-                            "=",
-                            "\"movement\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "TouchRadius",
-                            "=",
-                            "ControllerCenter.X()",
-                            "=",
-                            "ControllerCenter.Y()"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "ControllerPosition",
-                            "=",
-                            "ControllerCenter.X()",
-                            "=",
-                            "ControllerCenter.Y()"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": [],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Mobile Controls\"",
-                            "0",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Jump",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": true,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "JumpButton",
-                            "",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "GunInUse",
-                            "=",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MouseButtonPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "Left"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": [],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "PlatformBehavior::SimulateJumpKey"
-                          },
-                          "parameters": [
-                            "Player1",
+                            "playerHitbox",
                             "PlatformerObject"
                           ],
                           "subInstructions": []
@@ -4231,35 +3900,497 @@
                     {
                       "disabled": false,
                       "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Rotates the gun",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "PopStartedTouch"
+                            "value": "KeyPressed"
                           },
                           "parameters": [
-                            ""
+                            "",
+                            "d"
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "a"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "w"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::SimulateJumpKey"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": true,
+                  "name": "Player Tilt",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::CurrentSpeed"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject",
+                            ">",
+                            "40"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "tilt",
+                            "=",
+                            "lerp(playerHitbox.Variable(tilt), 20+(50*Noise::Perlin2(playerHitbox.Variable(sin), 0)), 0.07)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                          },
+                          "parameters": [
+                            "player",
+                            "ThreeDFlip",
+                            "no",
+                            "100",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                          },
+                          "parameters": [
+                            "cape",
+                            "ThreeDFlip",
+                            "no",
+                            "100",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "sin",
+                            "+",
+                            "0.2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::CurrentSpeed"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject",
+                            "<",
+                            "-40"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "tilt",
+                            "=",
+                            "lerp(playerHitbox.Variable(tilt), -20+(50*Noise::Perlin2(playerHitbox.Variable(sin), 0)), 0.07)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                          },
+                          "parameters": [
+                            "player",
+                            "ThreeDFlip",
+                            "yes",
+                            "100",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                          },
+                          "parameters": [
+                            "cape",
+                            "ThreeDFlip",
+                            "yes",
+                            "100",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "sin",
+                            "+",
+                            "0.2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::CurrentSpeed"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject",
+                            "<=",
+                            "40"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::CurrentSpeed"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject",
+                            ">=",
+                            "-40"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "tilt",
+                            "=",
+                            "lerp(playerHitbox.Variable(tilt), 0, 0.05)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "cape"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "fallTilt",
+                            "=",
+                            "lerp(playerHitbox.Variable(fallTilt),playerHitbox.PlatformerObject::CurrentFallSpeed(), 0.05)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "cape"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "fallTilt",
+                            "=",
+                            "lerp(playerHitbox.Variable(fallTilt), -playerHitbox.PlatformerObject::CurrentFallSpeed(), 0.05)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RotateTowardAngle"
+                          },
+                          "parameters": [
+                            "player",
+                            "playerHitbox.Variable(tilt)",
+                            "0",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RotateTowardAngle"
+                          },
+                          "parameters": [
+                            "cape",
+                            "playerHitbox.Variable(tilt)*2+playerHitbox.Variable(fallTilt)/15",
+                            "1720",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "player",
+                            "=",
+                            "playerHitbox.X()",
+                            "=",
+                            "playerHitbox.Y()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "cape",
+                            "=",
+                            "playerHitbox.X()",
+                            "=",
+                            "playerHitbox.Y()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": true,
+                  "name": "Mobile Controls",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SystemInfo::IsMobile"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Opacity"
+                          },
+                          "parameters": [
+                            "TouchRadius",
+                            "=",
+                            "50"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "ControllerCenter"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "events": [
                         {
                           "disabled": false,
@@ -4269,14 +4400,542 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "TouchY"
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "ControllerCenter",
+                                "type",
+                                "=",
+                                "\"gun\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "TouchRadius",
+                                "type",
+                                "=",
+                                "\"gun\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "ControllerPosition",
+                                "type",
+                                "=",
+                                "\"gun\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "TouchRadius",
+                                "=",
+                                "ControllerCenter.X()",
+                                "=",
+                                "ControllerCenter.Y()"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "ControllerPosition",
+                                "=",
+                                "ControllerCenter.X()",
+                                "=",
+                                "ControllerCenter.Y()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "ControllerCenter",
+                                "type",
+                                "=",
+                                "\"movement\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "TouchRadius",
+                                "type",
+                                "=",
+                                "\"movement\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "ControllerPosition",
+                                "type",
+                                "=",
+                                "\"movement\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "TouchRadius",
+                                "=",
+                                "ControllerCenter.X()",
+                                "=",
+                                "ControllerCenter.Y()"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "ControllerPosition",
+                                "=",
+                                "ControllerCenter.X()",
+                                "=",
+                                "ControllerCenter.Y()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": [],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
                               },
                               "parameters": [
                                 "",
-                                "LastTouchId()",
-                                ">=",
-                                "400",
-                                "\"UI\"",
+                                "\"Mobile Controls\"",
+                                "0",
+                                "0"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Jump",
+                          "comment2": ""
+                        },
+                        {
+                          "disabled": true,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "JumpButton",
+                                "",
+                                "",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "GunInUse",
+                                "=",
+                                "0"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": [],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PlatformBehavior::SimulateJumpKey"
+                              },
+                              "parameters": [
+                                "Player1",
+                                "PlatformerObject"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Rotates the gun",
+                          "comment2": ""
+                        },
+                        {
+                          "disabled": false,
+                          "folded": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PopStartedTouch"
+                              },
+                              "parameters": [
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "TouchY"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "LastTouchId()",
+                                    ">=",
+                                    "400",
+                                    "\"UI\"",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Movement\n",
+                                  "comment2": ""
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "TouchX"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "LastTouchId()",
+                                        "<=",
+                                        "SceneWindowWidth()/2",
+                                        "\"UI\"",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "TouchRadius",
+                                        "type",
+                                        "=",
+                                        "\"movement\""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "ControllerCenter",
+                                        "type",
+                                        "=",
+                                        "\"movement\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarScene"
+                                      },
+                                      "parameters": [
+                                        "MovementInUse",
+                                        "=",
+                                        "1"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarScene"
+                                      },
+                                      "parameters": [
+                                        "MovementTouchID",
+                                        "=",
+                                        "LastTouchId()"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "MettreXY"
+                                      },
+                                      "parameters": [
+                                        "TouchRadius",
+                                        "=",
+                                        "ControllerCenter.X()",
+                                        "=",
+                                        "ControllerCenter.Y()"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Gun",
+                                  "comment2": ""
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "TouchX"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "LastTouchId()",
+                                        ">=",
+                                        "SceneWindowWidth()/2",
+                                        "\"UI\"",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "TouchRadius",
+                                        "type",
+                                        "=",
+                                        "\"gun\""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "ControllerCenter",
+                                        "type",
+                                        "=",
+                                        "\"gun\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarScene"
+                                      },
+                                      "parameters": [
+                                        "GunInUse",
+                                        "=",
+                                        "1"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarScene"
+                                      },
+                                      "parameters": [
+                                        "GunTouchID",
+                                        "=",
+                                        "LastTouchId()"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "MettreXY"
+                                      },
+                                      "parameters": [
+                                        "TouchRadius",
+                                        "=",
+                                        "ControllerCenter.X()",
+                                        "=",
+                                        "ControllerCenter.Y()"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PopEndedTouch"
+                              },
+                              "parameters": [
                                 ""
                               ],
                               "subInstructions": []
@@ -4296,7 +4955,7 @@
                                 "textG": 0,
                                 "textR": 0
                               },
-                              "comment": "Movement\n",
+                              "comment": "Reset the joystick when not being used",
                               "comment2": ""
                             },
                             {
@@ -4307,15 +4966,12 @@
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "TouchX"
+                                    "value": "Egal"
                                   },
                                   "parameters": [
-                                    "",
-                                    "LastTouchId()",
-                                    "<=",
-                                    "SceneWindowWidth()/2",
-                                    "\"UI\"",
-                                    ""
+                                    "LastEndedTouchId()",
+                                    "=",
+                                    "Variable(MovementTouchID)"
                                   ],
                                   "subInstructions": []
                                 },
@@ -4325,7 +4981,7 @@
                                     "value": "VarObjetTxt"
                                   },
                                   "parameters": [
-                                    "TouchRadius",
+                                    "ControllerPosition",
                                     "type",
                                     "=",
                                     "\"movement\""
@@ -4355,19 +5011,7 @@
                                   "parameters": [
                                     "MovementInUse",
                                     "=",
-                                    "1"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "MovementTouchID",
-                                    "=",
-                                    "LastTouchId()"
+                                    "0"
                                   ],
                                   "subInstructions": []
                                 },
@@ -4377,7 +5021,7 @@
                                     "value": "MettreXY"
                                   },
                                   "parameters": [
-                                    "TouchRadius",
+                                    "ControllerPosition",
                                     "=",
                                     "ControllerCenter.X()",
                                     "=",
@@ -4391,35 +5035,17 @@
                             {
                               "disabled": false,
                               "folded": false,
-                              "type": "BuiltinCommonInstructions::Comment",
-                              "color": {
-                                "b": 109,
-                                "g": 230,
-                                "r": 255,
-                                "textB": 0,
-                                "textG": 0,
-                                "textR": 0
-                              },
-                              "comment": "Gun",
-                              "comment2": ""
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "TouchX"
+                                    "value": "Egal"
                                   },
                                   "parameters": [
-                                    "",
-                                    "LastTouchId()",
-                                    ">=",
-                                    "SceneWindowWidth()/2",
-                                    "\"UI\"",
-                                    ""
+                                    "LastEndedTouchId()",
+                                    "=",
+                                    "Variable(GunTouchID)"
                                   ],
                                   "subInstructions": []
                                 },
@@ -4429,7 +5055,7 @@
                                     "value": "VarObjetTxt"
                                   },
                                   "parameters": [
-                                    "TouchRadius",
+                                    "ControllerPosition",
                                     "type",
                                     "=",
                                     "\"gun\""
@@ -4459,19 +5085,7 @@
                                   "parameters": [
                                     "GunInUse",
                                     "=",
-                                    "1"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "GunTouchID",
-                                    "=",
-                                    "LastTouchId()"
+                                    "0"
                                   ],
                                   "subInstructions": []
                                 },
@@ -4481,7 +5095,7 @@
                                     "value": "MettreXY"
                                   },
                                   "parameters": [
-                                    "TouchRadius",
+                                    "ControllerPosition",
                                     "=",
                                     "ControllerCenter.X()",
                                     "=",
@@ -4493,27 +5107,7 @@
                               "events": []
                             }
                           ]
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "PopEndedTouch"
-                          },
-                          "parameters": [
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
+                        },
                         {
                           "disabled": false,
                           "folded": false,
@@ -4526,7 +5120,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Reset the joystick when not being used",
+                          "comment": "When the joystick is used",
                           "comment2": ""
                         },
                         {
@@ -4537,481 +5131,18 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "Egal"
-                              },
-                              "parameters": [
-                                "LastEndedTouchId()",
-                                "=",
-                                "Variable(MovementTouchID)"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControllerPosition",
-                                "type",
-                                "=",
-                                "\"movement\""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControllerCenter",
-                                "type",
-                                "=",
-                                "\"movement\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "MovementInUse",
-                                "=",
-                                "0"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreXY"
-                              },
-                              "parameters": [
-                                "ControllerPosition",
-                                "=",
-                                "ControllerCenter.X()",
-                                "=",
-                                "ControllerCenter.Y()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Egal"
-                              },
-                              "parameters": [
-                                "LastEndedTouchId()",
-                                "=",
-                                "Variable(GunTouchID)"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControllerPosition",
-                                "type",
-                                "=",
-                                "\"gun\""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControllerCenter",
-                                "type",
-                                "=",
-                                "\"gun\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarScene"
+                                "value": "VarScene"
                               },
                               "parameters": [
                                 "GunInUse",
                                 "=",
-                                "0"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreXY"
-                              },
-                              "parameters": [
-                                "ControllerPosition",
-                                "=",
-                                "ControllerCenter.X()",
-                                "=",
-                                "ControllerCenter.Y()"
+                                "1"
                               ],
                               "subInstructions": []
                             }
                           ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "When the joystick is used",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "GunInUse",
-                            "=",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControllerCenter",
-                                "type",
-                                "=",
-                                "\"gun\""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControllerPosition",
-                                "type",
-                                "=",
-                                "\"gun\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "RotateTowardPosition"
-                              },
-                              "parameters": [
-                                "ControllerCenter",
-                                "TouchX(Variable(GunTouchID),\"Mobile Controls\",0)",
-                                "TouchY(Variable(GunTouchID),\"Mobile Controls\",0)",
-                                "0",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "GunAngle",
-                                "=",
-                                "ControllerCenter.Angle()"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "SetAngle"
-                              },
-                              "parameters": [
-                                "gun",
-                                "=",
-                                "player.AngleToPosition(ControllerPosition.X(), ControllerPosition.Y(),)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
+                          "actions": [],
                           "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Comment",
-                              "color": {
-                                "b": 109,
-                                "g": 230,
-                                "r": 255,
-                                "textB": 0,
-                                "textG": 0,
-                                "textR": 0
-                              },
-                              "comment": "Keeps the joystick around the circle",
-                              "comment2": ""
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "Distance"
-                                  },
-                                  "parameters": [
-                                    "ControllerPosition",
-                                    "ControllerCenter",
-                                    "80",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreXY"
-                                  },
-                                  "parameters": [
-                                    "ControllerPosition",
-                                    "=",
-                                    "TouchX(Variable(GunTouchID),\"Mobile Controls\",0)",
-                                    "=",
-                                    "TouchY(Variable(GunTouchID),\"Mobile Controls\",0)"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "Distance"
-                                  },
-                                  "parameters": [
-                                    "ControllerPosition",
-                                    "ControllerCenter",
-                                    "80",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreAutour"
-                                  },
-                                  "parameters": [
-                                    "ControllerPosition",
-                                    "ControllerCenter",
-                                    "80",
-                                    "ControllerCenter.Angle()"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "MovementInUse",
-                            "=",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControllerCenter",
-                                "type",
-                                "=",
-                                "\"movement\""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControllerPosition",
-                                "type",
-                                "=",
-                                "\"movement\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "RotateTowardPosition"
-                              },
-                              "parameters": [
-                                "ControllerCenter",
-                                "TouchX(Variable(MovementTouchID),\"Mobile Controls\",0)",
-                                "TouchY(Variable(MovementTouchID),\"Mobile Controls\",0)",
-                                "0",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "MovementAngle",
-                                "=",
-                                "ControllerCenter.Angle()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Comment",
-                              "color": {
-                                "b": 109,
-                                "g": 230,
-                                "r": 255,
-                                "textB": 0,
-                                "textG": 0,
-                                "textR": 0
-                              },
-                              "comment": "Keeps the joystick around the circle",
-                              "comment2": ""
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "Distance"
-                                  },
-                                  "parameters": [
-                                    "ControllerPosition",
-                                    "ControllerCenter",
-                                    "80",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreXY"
-                                  },
-                                  "parameters": [
-                                    "ControllerPosition",
-                                    "=",
-                                    "TouchX(Variable(MovementTouchID),\"Mobile Controls\",0)",
-                                    "=",
-                                    "TouchY(Variable(MovementTouchID),\"Mobile Controls\",0)"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            },
                             {
                               "disabled": false,
                               "folded": false,
@@ -5023,16 +5154,83 @@
                                     "value": "VarObjetTxt"
                                   },
                                   "parameters": [
-                                    "TouchRadius",
+                                    "ControllerCenter",
                                     "type",
                                     "=",
-                                    "\"movement\""
+                                    "\"gun\""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "ControllerPosition",
+                                    "type",
+                                    "=",
+                                    "\"gun\""
                                   ],
                                   "subInstructions": []
                                 }
                               ],
-                              "actions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "RotateTowardPosition"
+                                  },
+                                  "parameters": [
+                                    "ControllerCenter",
+                                    "TouchX(Variable(GunTouchID),\"Mobile Controls\",0)",
+                                    "TouchY(Variable(GunTouchID),\"Mobile Controls\",0)",
+                                    "0",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "GunAngle",
+                                    "=",
+                                    "ControllerCenter.Angle()"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "SetAngle"
+                                  },
+                                  "parameters": [
+                                    "gun",
+                                    "=",
+                                    "player.AngleToPosition(ControllerPosition.X(), ControllerPosition.Y(),)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
                               "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Keeps the joystick around the circle",
+                                  "comment2": ""
+                                },
                                 {
                                   "disabled": false,
                                   "folded": false,
@@ -5041,12 +5239,13 @@
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "PosX"
+                                        "value": "Distance"
                                       },
                                       "parameters": [
                                         "ControllerPosition",
-                                        "<=",
-                                        "TouchRadius.CenterX() - 5"
+                                        "ControllerCenter",
+                                        "80",
+                                        ""
                                       ],
                                       "subInstructions": []
                                     }
@@ -5055,11 +5254,187 @@
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "PlatformBehavior::SimulateLeftKey"
+                                        "value": "MettreXY"
                                       },
                                       "parameters": [
-                                        "playerHitbox",
-                                        "PlatformerObject"
+                                        "ControllerPosition",
+                                        "=",
+                                        "TouchX(Variable(GunTouchID),\"Mobile Controls\",0)",
+                                        "=",
+                                        "TouchY(Variable(GunTouchID),\"Mobile Controls\",0)"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "Distance"
+                                      },
+                                      "parameters": [
+                                        "ControllerPosition",
+                                        "ControllerCenter",
+                                        "80",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "MettreAutour"
+                                      },
+                                      "parameters": [
+                                        "ControllerPosition",
+                                        "ControllerCenter",
+                                        "80",
+                                        "ControllerCenter.Angle()"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "MovementInUse",
+                                "=",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "ControllerCenter",
+                                    "type",
+                                    "=",
+                                    "\"movement\""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "ControllerPosition",
+                                    "type",
+                                    "=",
+                                    "\"movement\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "RotateTowardPosition"
+                                  },
+                                  "parameters": [
+                                    "ControllerCenter",
+                                    "TouchX(Variable(MovementTouchID),\"Mobile Controls\",0)",
+                                    "TouchY(Variable(MovementTouchID),\"Mobile Controls\",0)",
+                                    "0",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "MovementAngle",
+                                    "=",
+                                    "ControllerCenter.Angle()"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Keeps the joystick around the circle",
+                                  "comment2": ""
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "Distance"
+                                      },
+                                      "parameters": [
+                                        "ControllerPosition",
+                                        "ControllerCenter",
+                                        "80",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "MettreXY"
+                                      },
+                                      "parameters": [
+                                        "ControllerPosition",
+                                        "=",
+                                        "TouchX(Variable(MovementTouchID),\"Mobile Controls\",0)",
+                                        "=",
+                                        "TouchY(Variable(MovementTouchID),\"Mobile Controls\",0)"
                                       ],
                                       "subInstructions": []
                                     }
@@ -5074,12 +5449,102 @@
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "PosX"
+                                        "value": "VarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "TouchRadius",
+                                        "type",
+                                        "=",
+                                        "\"movement\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "disabled": false,
+                                      "folded": false,
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "inverted": false,
+                                            "value": "PosX"
+                                          },
+                                          "parameters": [
+                                            "ControllerPosition",
+                                            "<=",
+                                            "TouchRadius.CenterX() - 5"
+                                          ],
+                                          "subInstructions": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "inverted": false,
+                                            "value": "PlatformBehavior::SimulateLeftKey"
+                                          },
+                                          "parameters": [
+                                            "playerHitbox",
+                                            "PlatformerObject"
+                                          ],
+                                          "subInstructions": []
+                                        }
+                                      ],
+                                      "events": []
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "folded": false,
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "inverted": false,
+                                            "value": "PosX"
+                                          },
+                                          "parameters": [
+                                            "ControllerPosition",
+                                            ">=",
+                                            "TouchRadius.CenterX() + 5"
+                                          ],
+                                          "subInstructions": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "inverted": false,
+                                            "value": "PlatformBehavior::SimulateRightKey"
+                                          },
+                                          "parameters": [
+                                            "playerHitbox",
+                                            "PlatformerObject"
+                                          ],
+                                          "subInstructions": []
+                                        }
+                                      ],
+                                      "events": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "Distance"
                                       },
                                       "parameters": [
                                         "ControllerPosition",
-                                        ">=",
-                                        "TouchRadius.CenterX() + 5"
+                                        "ControllerCenter",
+                                        "80",
+                                        ""
                                       ],
                                       "subInstructions": []
                                     }
@@ -5088,11 +5553,13 @@
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "PlatformBehavior::SimulateRightKey"
+                                        "value": "MettreAutour"
                                       },
                                       "parameters": [
-                                        "playerHitbox",
-                                        "PlatformerObject"
+                                        "ControllerPosition",
+                                        "ControllerCenter",
+                                        "80",
+                                        "ControllerCenter.Angle()"
                                       ],
                                       "subInstructions": []
                                     }
@@ -5100,221 +5567,131 @@
                                   "events": []
                                 }
                               ]
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "Distance"
-                                  },
-                                  "parameters": [
-                                    "ControllerPosition",
-                                    "ControllerCenter",
-                                    "80",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreAutour"
-                                  },
-                                  "parameters": [
-                                    "ControllerPosition",
-                                    "ControllerCenter",
-                                    "80",
-                                    "ControllerCenter.Angle()"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
                             }
                           ]
                         }
                       ]
                     }
-                  ]
-                }
-              ],
-              "parameters": []
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": true,
-              "name": "gun",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "SystemInfo::IsMobile"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "gun",
-                        "=",
-                        "player.AngleToPosition(MouseX(), MouseY())"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "gun",
-                        "=",
-                        "lerp(gun.X(), XFromAngleAndDistance(player.AngleToPosition(MouseX(), MouseY()), 50)+player.X(), 0.5)",
-                        "=",
-                        "lerp(gun.Y(), YFromAngleAndDistance(player.AngleToPosition(MouseX(), MouseY()), 50)+player.Y(), 0.5)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
+                  "parameters": []
                 },
                 {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                  "folded": true,
+                  "name": "gun",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "SystemInfo::IsMobile"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "SystemInfo::IsMobile"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "gun",
+                            "=",
+                            "player.AngleToPosition(MouseX(), MouseY())"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "gun",
+                            "=",
+                            "lerp(gun.X(), XFromAngleAndDistance(player.AngleToPosition(MouseX(), MouseY()), 50)+player.X(), 0.5)",
+                            "=",
+                            "lerp(gun.Y(), YFromAngleAndDistance(player.AngleToPosition(MouseX(), MouseY()), 50)+player.Y(), 0.5)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     },
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "ControllerCenter",
-                        "type",
-                        "=",
-                        "\"gun\""
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SystemInfo::IsMobile"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "ControllerCenter",
+                            "type",
+                            "=",
+                            "\"gun\""
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "gun",
-                        "=",
-                        "ControllerCenter.Angle()"
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "gun",
+                            "=",
+                            "ControllerCenter.Angle()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "gun",
+                            "=",
+                            "lerp(gun.X(), XFromAngleAndDistance(ControllerCenter.Angle(), 50)+player.X(), 0.5)",
+                            "=",
+                            "lerp(gun.Y(), YFromAngleAndDistance(ControllerCenter.Angle(), 50)+player.Y(), 0.5)"
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "events": []
                     },
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "gun",
-                        "=",
-                        "lerp(gun.X(), XFromAngleAndDistance(ControllerCenter.Angle(), 50)+player.X(), 0.5)",
-                        "=",
-                        "lerp(gun.Y(), YFromAngleAndDistance(ControllerCenter.Angle(), 50)+player.Y(), 0.5)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Angle"
-                      },
-                      "parameters": [
-                        "gun",
-                        "<",
-                        "90"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Angle"
-                      },
-                      "parameters": [
-                        "gun",
-                        ">",
-                        "-90"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlipY"
-                      },
-                      "parameters": [
-                        "gun",
-                        "no"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
                         {
                           "type": {
                             "inverted": false,
@@ -5323,7 +5700,7 @@
                           "parameters": [
                             "gun",
                             "<",
-                            "-90"
+                            "90"
                           ],
                           "subInstructions": []
                         },
@@ -5335,159 +5712,263 @@
                           "parameters": [
                             "gun",
                             ">",
-                            "90"
+                            "-90"
                           ],
                           "subInstructions": []
                         }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlipY"
-                      },
-                      "parameters": [
-                        "gun",
-                        "yes"
                       ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
+                      "actions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "CollisionNP"
+                            "value": "FlipY"
+                          },
+                          "parameters": [
+                            "gun",
+                            "no"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Angle"
+                              },
+                              "parameters": [
+                                "gun",
+                                "<",
+                                "-90"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Angle"
+                              },
+                              "parameters": [
+                                "gun",
+                                ">",
+                                "90"
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "FlipY"
+                          },
+                          "parameters": [
+                            "gun",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "bullet",
+                                "CanStopBullets",
+                                "",
+                                "",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "bullet",
+                                "\"lifetimer\"",
+                                ">=",
+                                "5"
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Delete"
                           },
                           "parameters": [
                             "bullet",
-                            "CanStopBullets",
-                            "",
-                            "",
                             ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "Camera",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "DepartScene"
+                          },
+                          "parameters": [
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCameraX"
+                          },
+                          "parameters": [
+                            "",
+                            "=",
+                            "player.X()",
+                            "\"\"",
+                            "0"
                           ],
                           "subInstructions": []
                         },
                         {
                           "type": {
                             "inverted": false,
-                            "value": "CompareObjectTimer"
+                            "value": "SetCameraY"
                           },
                           "parameters": [
-                            "bullet",
-                            "\"lifetimer\"",
-                            ">=",
-                            "5"
+                            "",
+                            "=",
+                            "player.Y()",
+                            "\"\"",
+                            "0"
                           ],
                           "subInstructions": []
                         }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "bullet",
-                        ""
                       ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": []
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": false,
-              "name": "Camera",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "DepartScene"
-                      },
-                      "parameters": [
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCameraX"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "player.X()",
-                        "\"\"",
-                        "0"
-                      ],
-                      "subInstructions": []
+                      "events": []
                     },
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCameraY"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "player.Y()",
-                        "\"\"",
-                        "0"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Not"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "camplace",
+                                "player.X()",
+                                "player.Y()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
                       ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCameraX"
+                          },
+                          "parameters": [
+                            "",
+                            "=",
+                            "lerp(CameraX(), player.X(), 0.07)",
+                            "\"\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCameraY"
+                          },
+                          "parameters": [
+                            "",
+                            "=",
+                            "lerp(CameraY(), player.Y(), 0.07)",
+                            "\"\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Not"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
                         {
                           "type": {
                             "inverted": false,
@@ -5500,160 +5981,110 @@
                           ],
                           "subInstructions": []
                         }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCameraX"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "lerp(CameraX(), player.X(), 0.07)",
-                        "\"\"",
-                        "0"
                       ],
-                      "subInstructions": []
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCameraX"
+                          },
+                          "parameters": [
+                            "",
+                            "=",
+                            "lerp(CameraX(), camplace.X(), 0.07)",
+                            "\"\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCameraY"
+                          },
+                          "parameters": [
+                            "",
+                            "=",
+                            "lerp(CameraY(), camplace.Y(), 0.07)",
+                            "\"\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     },
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCameraY"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "lerp(CameraY(), player.Y(), 0.07)",
-                        "\"\"",
-                        "0"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCameraX"
+                          },
+                          "parameters": [
+                            "",
+                            "=",
+                            "CameraX()",
+                            "\"Background\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCameraY"
+                          },
+                          "parameters": [
+                            "",
+                            "=",
+                            "CameraY()",
+                            "\"Background\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ZoomCamera"
+                          },
+                          "parameters": [
+                            "",
+                            "CameraZoom()*0.9",
+                            "\"Background\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "background",
+                            "=",
+                            "CameraX()",
+                            "=",
+                            "CameraY()"
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "events": []
                     }
                   ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionPoint"
-                      },
-                      "parameters": [
-                        "camplace",
-                        "player.X()",
-                        "player.Y()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCameraX"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "lerp(CameraX(), camplace.X(), 0.07)",
-                        "\"\"",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCameraY"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "lerp(CameraY(), camplace.Y(), 0.07)",
-                        "\"\"",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCameraX"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "CameraX()",
-                        "\"Background\"",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCameraY"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "CameraY()",
-                        "\"Background\"",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ZoomCamera"
-                      },
-                      "parameters": [
-                        "",
-                        "CameraZoom()*0.9",
-                        "\"Background\"",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "background",
-                        "=",
-                        "CameraX()",
-                        "=",
-                        "CameraY()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
+                  "parameters": []
                 }
               ],
               "parameters": []
             }
-          ],
-          "parameters": []
+          ]
         }
       ],
       "parameters": []

@@ -11,8 +11,8 @@
       "name": "OpenEditorButton",
       "persistentUuid": "b82d7f62-18ec-4abd-8871-e986feae08b6",
       "width": 0,
-      "x": 21,
-      "y": 12,
+      "x": 115.5,
+      "y": 29.5,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -29,7 +29,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3799999999999998,
+    "zoomFactor": 0.68,
     "windowMask": false
   }
 }
