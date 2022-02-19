@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.24625000000000002,
+    "zoomFactor": 0.13,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -414,8 +414,8 @@
       "name": "computer",
       "persistentUuid": "ff938fba-46f1-4a26-9edf-83627c712654",
       "width": 64,
-      "x": 3040,
-      "y": -1568,
+      "x": 352,
+      "y": 352,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -863,7 +863,7 @@
       "persistentUuid": "d44781a6-0414-47cf-9da5-32f3a52f1a28",
       "width": 64,
       "x": 3424,
-      "y": -1568,
+      "y": -1248,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -1750,82 +1750,9 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Cri",
-      "persistentUuid": "d5d129cf-bd33-4c13-872f-c6133cc90188",
-      "width": 0,
-      "x": 1856,
-      "y": -1536,
-      "zOrder": 23,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "computer",
-      "persistentUuid": "b722239f-39e1-45dc-9bfc-a1e03de92d35",
-      "width": 64,
-      "x": 480,
-      "y": 352,
-      "zOrder": 24,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
-  "objects": [
-    {
-      "name": "Cri",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "cri.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "objects": [],
   "events": [
     {
       "disabled": false,

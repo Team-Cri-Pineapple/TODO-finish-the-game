@@ -4010,7 +4010,7 @@
                   "parameters": [
                     "floor",
                     "isFake",
-                    "True"
+                    "False"
                   ],
                   "subInstructions": []
                 }
@@ -4056,7 +4056,7 @@
                   "parameters": [
                     "floor",
                     "isFake",
-                    "False"
+                    "True"
                   ],
                   "subInstructions": []
                 }
@@ -4202,7 +4202,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4383,7 +4383,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4579,7 +4579,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "Player sounds",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -5207,11 +5207,9 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SystemInfo::HasTouchScreen"
+                            "value": "SystemInfo::IsMobile"
                           },
-                          "parameters": [
-                            ""
-                          ],
+                          "parameters": [],
                           "subInstructions": []
                         }
                       ],
@@ -5522,7 +5520,7 @@
                         },
                         {
                           "disabled": false,
-                          "folded": false,
+                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -6429,7 +6427,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "gun",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
