@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.11000000000000001,
+    "zoomFactor": 0.3802499999999997,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -853,7 +853,7 @@
       "persistentUuid": "d44781a6-0414-47cf-9da5-32f3a52f1a28",
       "width": 64,
       "x": 3424,
-      "y": -1248,
+      "y": -1568,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -1762,6 +1762,38 @@
           "value": "2"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "computer",
+      "persistentUuid": "012eb96d-fe0e-4eb7-bc79-78093b811828",
+      "width": 64,
+      "x": 3104,
+      "y": -1568,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Cri",
+      "persistentUuid": "91c60b18-b2e3-48f3-86d9-44241b015d2a",
+      "width": 0,
+      "x": 1856,
+      "y": -1536,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [],
