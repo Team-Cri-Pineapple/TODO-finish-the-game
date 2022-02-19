@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2555000000000018,
+    "zoomFactor": 1.2805000000000022,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1185,7 +1185,7 @@
         {
           "name": "insideContent",
           "type": "string",
-          "value": "[b]DEV[b]: Don't mind the gaps, I didn't have the motivation to finish programming them. Would you mind pressing [color=green]Escape[/color] for me?"
+          "value": "Don't mind the gaps, I didn't have the motivation to finish programming them. Would you mind pressing [color=green]Escape[/color] for me?"
         },
         {
           "name": "trigger",
@@ -2133,28 +2133,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 192,
-      "layer": "",
-      "locked": false,
-      "name": "floor",
-      "persistentUuid": "c9f9c2cc-c150-468d-be63-758fff9d4ed5",
-      "width": 64,
-      "x": 5440,
-      "y": -576,
-      "zOrder": 28,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "isFake",
-          "type": "boolean",
-          "value": true
-        }
-      ]
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 128,
       "layer": "",
@@ -2210,7 +2188,7 @@
       "name": "floor",
       "persistentUuid": "c9f9c2cc-c150-468d-be63-758fff9d4ed5",
       "width": 64,
-      "x": 5440,
+      "x": 5312,
       "y": -576,
       "zOrder": 28,
       "numberProperties": [],
@@ -2286,28 +2264,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 128,
-      "layer": "",
-      "locked": false,
-      "name": "floormoves",
-      "persistentUuid": "6f8ae8ce-fdcf-4eb1-b476-1afbffa7328f",
-      "width": 64,
-      "x": 5184,
-      "y": -576,
-      "zOrder": 23,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "moveAn",
-          "type": "number",
-          "value": 90
-        }
-      ]
     },
     {
       "angle": 0,
@@ -2546,22 +2502,6 @@
       "layer": "",
       "locked": false,
       "name": "grass",
-      "persistentUuid": "9ba6b4b8-6e18-4a26-83b2-f59daa614d74",
-      "width": 0,
-      "x": 5440,
-      "y": -640,
-      "zOrder": 32,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "grass",
       "persistentUuid": "bcae9d61-3530-425d-9f53-e588d7f22590",
       "width": 0,
       "x": -384,
@@ -2779,7 +2719,7 @@
       ],
       "behaviors": [],
       "content": {
-        "text": "[b]DEV[/b]: Nice! Now, try to use the power of ✨´logic✨ to [color=#F5a343][size=30][i]finish the game for me[/i][/size][/color] find a way to finish this level!",
+        "text": "Nice! Now, try to use the power of ✨´logic✨ to [color=#F5a343][size=30][i]finish the game for me[/i][/size][/color] find a way to finish this level!",
         "opacity": 255,
         "fontSize": 20,
         "visible": true,
@@ -2947,169 +2887,6 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "DialogueText",
-                "=",
-                "DialogueText.VariableString(insideContent)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "EventsExplainer"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Show and hide the dialogues as the player enters their trigger zones",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Todo: Replace with some sort of \"chat\" (more developer-like) or at least add fade in/out animations",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "player",
-                "DialogueTrigger",
-                "",
-                "",
-                "yes"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarObjetTxt"
-              },
-              "parameters": [
-                "DialogueText",
-                "trigger",
-                "=",
-                "DialogueTrigger.VariableString(triggerID)"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Montre"
-              },
-              "parameters": [
-                "DialogueText",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Not"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "player",
-                    "DialogueTrigger",
-                    "",
-                    "",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "DialogueText"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -3130,25 +2907,11 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionNP"
+                "value": "SceneVariableAsBoolean"
               },
               "parameters": [
-                "player",
-                "computer",
-                "",
-                "",
-                "yes"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Escape"
+                "menu",
+                "False"
               ],
               "subInstructions": []
             },
@@ -3227,13 +2990,56 @@
                   "parameters": [
                     "DialogueText",
                     "=",
-                    "\"[b]DEV[/b]: Nice! Good luck with this game, I gave up on it months ago... lmao\""
+                    "\"Nice! Good luck with this game, I gave up on it months ago... [i]lmao[/i]\""
                   ],
                   "subInstructions": []
                 }
               ],
               "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "menu",
+                "True"
+              ],
+              "subInstructions": []
             },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "ThereIsNoEscape",
+                "playerHitbox",
+                "",
+                "",
+                "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
             {
               "disabled": false,
               "folded": false,
@@ -3267,11 +3073,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ToggleObjectVariableAsBoolean"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "EventsExplainer",
-                    "shown"
+                    "shown",
+                    "True"
                   ],
                   "subInstructions": []
                 }
