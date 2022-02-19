@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3100000000000005,
+    "zoomFactor": 0.8100000000000006,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1914,52 +1914,6 @@
   ],
   "objects": [
     {
-      "name": "DialogueTrigger",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "triggerID",
-          "type": "string",
-          "value": "NULL"
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "void.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "EventsExplainer",
       "tags": "",
       "type": "BBText::BBText",
@@ -1991,60 +1945,7 @@
       ],
       "behaviors": [],
       "content": {
-        "text": "Nice! Now, try to use the power of ✨´logic✨ to [color=#F5a343][size=30][i]finish the game for me[/i][/size][/color] find a way to finish this level!",
-        "opacity": 255,
-        "fontSize": 20,
-        "visible": true,
-        "color": "245;211;35",
-        "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
-    },
-    {
-      "name": "DialogueText",
-      "tags": "",
-      "type": "BBText::BBText",
-      "variables": [
-        {
-          "name": "insideContent",
-          "type": "string",
-          "value": "content variable not set."
-        },
-        {
-          "name": "trigger",
-          "type": "string",
-          "value": "NULL"
-        }
-      ],
-      "effects": [
-        {
-          "effectType": "Glitch",
-          "name": "Effect",
-          "doubleParameters": {
-            "animationFrequency": 60,
-            "blueX": 1,
-            "blueY": 1,
-            "direction": 0,
-            "fillMode": 0,
-            "greenX": 1,
-            "greenY": 0,
-            "minSize": 0,
-            "offset": 2,
-            "redX": 2,
-            "redY": -1,
-            "sampleSize": 512,
-            "slices": 5
-          },
-          "stringParameters": {},
-          "booleanParameters": {
-            "average": false
-          }
-        }
-      ],
-      "behaviors": [],
-      "content": {
-        "text": "the variable content is not defined",
+        "text": "Nice! Now, try to use the power of ✨´logic✨ to [color=#F5a343][size=10][i]finish the game for me[/i][/size][/color] find a way to finish this level!",
         "opacity": 255,
         "fontSize": 20,
         "visible": true,

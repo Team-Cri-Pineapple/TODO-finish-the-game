@@ -432,6 +432,33 @@
         "name": "assets\\icons\\logo.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/ShootBullet-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\ShootBullet-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/EventIcon-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\EventIcon-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-0.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1149,6 +1176,64 @@
                     "name": "origine",
                     "x": 0,
                     "y": -3
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ShootBullet",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\icons\\ShootBullet-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LeftClickMouse",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\icons\\EventIcon-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1951,6 +2036,145 @@
           ]
         }
       ]
+    },
+    {
+      "name": "DialogueText",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "content variable not set."
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "NULL"
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Glitch",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "blueX": 1,
+            "blueY": 1,
+            "direction": 0,
+            "fillMode": 0,
+            "greenX": 1,
+            "greenY": 0,
+            "minSize": 0,
+            "offset": 2,
+            "redX": 2,
+            "redY": -1,
+            "sampleSize": 512,
+            "slices": 5
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "average": false
+          }
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "text": "the variable content is not defined",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "245;211;35",
+        "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "DialogueTrigger",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "NULL"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "void.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ListMask",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewObject",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [
@@ -2051,9 +2275,6 @@
         },
         {
           "name": "floormoves"
-        },
-        {
-          "name": "bricosBack"
         }
       ]
     },
@@ -2097,7 +2318,7 @@
               "children": [
                 {
                   "type": "string",
-                  "value": "x"
+                  "value": "g"
                 }
               ]
             }
@@ -2123,7 +2344,7 @@
               "children": [
                 {
                   "type": "string",
-                  "value": "x"
+                  "value": "g"
                 }
               ]
             }
@@ -2268,6 +2489,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemasking"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/advancedjump"

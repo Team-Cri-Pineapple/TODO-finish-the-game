@@ -33,6 +33,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 192,
+      "layer": "GUI",
+      "locked": false,
+      "name": "ListMask",
+      "persistentUuid": "e099f569-3783-4b8b-829f-e35d44a66ad6",
+      "width": 760,
+      "x": 479,
+      "y": 298,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -45,7 +61,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3500000000000194,
+    "zoomFactor": 0.6250000000000194,
     "windowMask": false
   }
 }
