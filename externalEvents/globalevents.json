@@ -640,7 +640,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "LaserBeam"
+                                    "LaserBlock"
                                   ],
                                   "subInstructions": []
                                 }
@@ -652,7 +652,7 @@
                                     "value": "ToggleObjectVariableAsBoolean"
                                   },
                                   "parameters": [
-                                    "LaserBeam",
+                                    "LaserBlock",
                                     "isFired"
                                   ],
                                   "subInstructions": []
@@ -1742,6 +1742,26 @@
               },
               "comment": "Handle events",
               "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "OnIcon",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -2939,6 +2959,18 @@
                             "Variable(ConacID)"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "EventIcon",
+                            "EventTextBB"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": [
@@ -3182,6 +3214,18 @@
                             "ConacID",
                             "=",
                             "Variable(ConacID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "EventIcon",
+                            "EventTextBB"
                           ],
                           "subInstructions": []
                         }
@@ -3900,7 +3944,7 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Fake and Real Floor",
+          "name": "Fakeos",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -3917,7 +3961,7 @@
                   "parameters": [
                     "floor",
                     "isFake",
-                    "True"
+                    "False"
                   ],
                   "subInstructions": []
                 }
@@ -3931,7 +3975,7 @@
                   "parameters": [
                     "floor",
                     "Platform",
-                    ""
+                    "no"
                   ],
                   "subInstructions": []
                 },
@@ -3963,7 +4007,7 @@
                   "parameters": [
                     "floor",
                     "isFake",
-                    "False"
+                    "True"
                   ],
                   "subInstructions": []
                 }
@@ -3990,85 +4034,6 @@
                     "floor",
                     "=",
                     "255"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Toggle Laser",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "LaserBeam",
-                    "isFired",
-                    "True"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "LaserBeam",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "LaserBeam",
-                    "isFired",
-                    "False"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "LaserBeam"
                   ],
                   "subInstructions": []
                 }
@@ -4205,6 +4170,164 @@
           ],
           "actions": [],
           "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "Lazer",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "LaserBeam",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "LaserBlock",
+                        "isFired",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "LaserBlock",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Raycast"
+                          },
+                          "parameters": [
+                            "CanStopBullets",
+                            "LaserBlock.X()",
+                            "LaserBlock.Y()",
+                            "LaserBlock.Angle()",
+                            "3000",
+                            "laserX",
+                            "laserY",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "LaserBeam",
+                            "LaserBlock.X()",
+                            "LaserBlock.Y()",
+                            "\"\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "LaserBeam",
+                            "=",
+                            "LaserBlock.ZOrder()-1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeScale"
+                          },
+                          "parameters": [
+                            "LaserBeam",
+                            "=",
+                            "4"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "LaserBeam",
+                            "=",
+                            "LaserBlock.AngleToPosition(Variable(laserX), Variable(laserY))"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeWidth"
+                          },
+                          "parameters": [
+                            "LaserBeam",
+                            "=",
+                            "LaserBlock.DistanceToPosition(Variable(laserX), Variable(laserY))"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeHeight"
+                          },
+                          "parameters": [
+                            "LaserBeam",
+                            "+",
+                            "RandomInRange(-10,10)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
             {
               "colorB": 228,
               "colorG": 176,
@@ -6102,7 +6225,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "gun",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -6373,7 +6496,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Camera",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -6527,6 +6650,85 @@
                             "",
                             "=",
                             "lerp(CameraY(), camplace.Y(), 0.07)",
+                            "\"\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Not"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "camplace2x",
+                                "player.X()",
+                                "player.Y()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ZoomCamera"
+                          },
+                          "parameters": [
+                            "",
+                            "lerp(CameraZoom(), 1, 0.07)",
+                            "\"\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionPoint"
+                          },
+                          "parameters": [
+                            "camplace2x",
+                            "player.X()",
+                            "player.Y()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ZoomCamera"
+                          },
+                          "parameters": [
+                            "",
+                            "lerp(CameraZoom(), camplace2x.Variable(zoom), 0.07)",
                             "\"\"",
                             "0"
                           ],

@@ -52,7 +52,7 @@
         {
           "name": "insideContent",
           "type": "string",
-          "value": "[i][color=white]You are on the developper's menu. Here you can create new \"rules\" for the game. These rules will be deleted in 10 seconds after you made them.[/color][/i]"
+          "value": "[i][color=white]You are on the developper's menu. Here you can create new \"rules\" for the game.[/color][/i]"
         },
         {
           "name": "id",
