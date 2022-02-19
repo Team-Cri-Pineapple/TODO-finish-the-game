@@ -1,0 +1,10 @@
+on: push
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      BUTLER_API_KEY: ${{secrets.BUTLER_API_KEY}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: ./upload.bat
