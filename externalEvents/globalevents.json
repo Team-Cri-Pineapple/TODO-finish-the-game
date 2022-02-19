@@ -36,10 +36,30 @@
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "eventTriggersOnce",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::ForEachChildVariable",
               "iterableVariableName": "EventsList",
               "valueIteratorVariableName": "Event",
-              "keyIteratorVariableName": "EventID",
+              "keyIteratorVariableName": "",
               "conditions": [],
               "actions": [],
               "events": [
@@ -56,7 +76,7 @@
                       },
                       "parameters": [
                         "conditionReturnValue",
-                        "True"
+                        "False"
                       ],
                       "subInstructions": []
                     }
@@ -65,11 +85,11 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "Event.ConditionsList",
                   "valueIteratorVariableName": "Condition",
-                  "keyIteratorVariableName": "ConacID",
+                  "keyIteratorVariableName": "",
                   "conditions": [],
                   "actions": [],
                   "events": [
@@ -96,6 +116,377 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "Condition.ID",
+                            "=",
+                            "\"PlayerJump\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PlatformBehavior::IsJumping"
+                              },
+                              "parameters": [
+                                "playerHitbox",
+                                "PlatformerObject"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "conditionReturnValue",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "Condition.ID",
+                            "=",
+                            "\"KeyReleased\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "KeyFromTextReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "VariableString(Condition.Parameters[0])"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "conditionReturnValue",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "Condition.ID",
+                            "=",
+                            "\"KeyPressed\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "VariableString(Condition.Parameters[0])"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "conditionReturnValue",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "Condition.ID",
+                            "=",
+                            "\"LeftClickMouse\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "conditionReturnValue",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "Condition.ID",
+                            "=",
+                            "\"RightClickMouse\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Right"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "conditionReturnValue",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "Condition.ID",
+                            "=",
+                            "\"TriggerOnce\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "eventTriggersOnce",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Check trigger once at the end so that it is position independent",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "eventTriggersOnce",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "conditionReturnValue",
+                            "False"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Event.TriggeredLastFrame",
+                            "False"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "SceneVariableAsBoolean"
                           },
                           "parameters": [
@@ -108,302 +499,37 @@
                       "actions": [],
                       "events": [
                         {
-                          "colorB": 228,
-                          "colorG": 176,
-                          "colorR": 74,
-                          "creationTime": 0,
                           "disabled": false,
                           "folded": false,
-                          "name": "For anything not trigger once",
-                          "source": "",
-                          "type": "BuiltinCommonInstructions::Group",
-                          "events": [
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
                             {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarSceneTxt"
-                                  },
-                                  "parameters": [
-                                    "Condition.ID",
-                                    "=",
-                                    "\"PlayerJump\""
-                                  ],
-                                  "subInstructions": []
-                                }
+                              "type": {
+                                "inverted": false,
+                                "value": "SceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "Event.TriggeredLastFrame",
+                                "True"
                               ],
-                              "actions": [],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": true,
-                                        "value": "PlatformBehavior::IsJumping"
-                                      },
-                                      "parameters": [
-                                        "playerHitbox",
-                                        "PlatformerObject"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SetSceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "conditionReturnValue",
-                                        "False"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                }
-                              ]
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarSceneTxt"
-                                  },
-                                  "parameters": [
-                                    "Condition.ID",
-                                    "=",
-                                    "\"KeyReleased\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": true,
-                                        "value": "KeyFromTextReleased"
-                                      },
-                                      "parameters": [
-                                        "",
-                                        "VariableString(Condition.Parameters[0])"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SetSceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "conditionReturnValue",
-                                        "False"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                }
-                              ]
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarSceneTxt"
-                                  },
-                                  "parameters": [
-                                    "Condition.ID",
-                                    "=",
-                                    "\"KeyPressed\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": true,
-                                        "value": "KeyFromTextPressed"
-                                      },
-                                      "parameters": [
-                                        "",
-                                        "VariableString(Condition.Parameters[0])"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SetSceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "conditionReturnValue",
-                                        "False"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                }
-                              ]
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarSceneTxt"
-                                  },
-                                  "parameters": [
-                                    "Condition.ID",
-                                    "=",
-                                    "\"LeftClickMouse\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": true,
-                                        "value": "MouseButtonPressed"
-                                      },
-                                      "parameters": [
-                                        "",
-                                        "Left"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SetSceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "conditionReturnValue",
-                                        "False"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                }
-                              ]
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarSceneTxt"
-                                  },
-                                  "parameters": [
-                                    "Condition.ID",
-                                    "=",
-                                    "\"RightClickMouse\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": true,
-                                        "value": "MouseButtonPressed"
-                                      },
-                                      "parameters": [
-                                        "",
-                                        "Right"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SetSceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "conditionReturnValue",
-                                        "False"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                }
-                              ]
+                              "subInstructions": []
                             }
                           ],
-                          "parameters": []
-                        }
-                      ]
-                    },
-                    {
-                      "colorB": 228,
-                      "colorG": 176,
-                      "colorR": 74,
-                      "creationTime": 0,
-                      "disabled": false,
-                      "folded": false,
-                      "name": "trigger once",
-                      "source": "",
-                      "type": "BuiltinCommonInstructions::Group",
-                      "events": [
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "conditionReturnValue",
+                                "False"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
                         {
                           "disabled": false,
                           "folded": false,
@@ -412,150 +538,31 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "VarSceneTxt"
+                                "value": "SceneVariableAsBoolean"
                               },
                               "parameters": [
-                                "Condition.ID",
-                                "=",
-                                "\"TriggerOnce\""
+                                "Event.TriggeredLastFrame",
+                                "False"
                               ],
                               "subInstructions": []
                             }
                           ],
-                          "actions": [],
-                          "events": [
+                          "actions": [
                             {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "SceneVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "conditionReturnValue",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "Event.TriggeredLastFrame",
+                                "True"
                               ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "SetSceneVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
-                                    "False"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "SceneVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "conditionReturnValue",
-                                    "True"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
-                                        "True"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SetSceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "conditionReturnValue",
-                                        "False"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                },
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
-                                        "False"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SetSceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "conditionReturnValue",
-                                        "True"
-                                      ],
-                                      "subInstructions": []
-                                    },
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "SetSceneVariableAsBoolean"
-                                      },
-                                      "parameters": [
-                                        "EventsList[Variable(EventID)].ConditionList[Variable(ConacID)].Triggered",
-                                        "True"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                }
-                              ]
+                              "subInstructions": []
                             }
-                          ]
+                          ],
+                          "events": []
                         }
-                      ],
-                      "parameters": []
+                      ]
                     }
                   ]
                 },
@@ -740,19 +747,7 @@
                               "disabled": false,
                               "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "AjoutObjConcern"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "floor"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
+                              "conditions": [],
                               "actions": [
                                 {
                                   "type": {
@@ -1088,7 +1083,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Toggle Editor GUI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1807,7 +1802,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Editor GUI code",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3795,7 +3790,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Game logic",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3879,7 +3874,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Tutorial dialogues",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4056,7 +4051,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Fakeos",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4289,7 +4284,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Lazer",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4447,7 +4442,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4687,7 +4682,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Player sounds",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -6535,7 +6530,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "gun",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
