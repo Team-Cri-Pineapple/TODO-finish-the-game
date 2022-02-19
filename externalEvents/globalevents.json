@@ -113,7 +113,7 @@
                           "colorR": 74,
                           "creationTime": 0,
                           "disabled": false,
-                          "folded": false,
+                          "folded": true,
                           "name": "For anything not trigger once",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -621,6 +621,60 @@
                               "parameters": [
                                 "Action.ID",
                                 "=",
+                                "\"ToggleLasers\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "LaserBeam"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ToggleObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "LaserBeam",
+                                    "isFired"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarSceneTxt"
+                              },
+                              "parameters": [
+                                "Action.ID",
+                                "=",
                                 "\"FlipFakeAndRealPlatforms\""
                               ],
                               "subInstructions": []
@@ -931,7 +985,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Toggle Editor GUI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1985,34 +2039,11 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SpriteMasking::Unmask"
-                          },
-                          "parameters": [
-                            "",
-                            "EventsListPopup",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "SetSceneVariableAsBoolean"
                           },
                           "parameters": [
                             "rerenderNeeded",
                             "True"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "ListMask",
-                            "\"rules\""
                           ],
                           "subInstructions": []
                         }
@@ -2191,7 +2222,7 @@
                                 "",
                                 "ConditionName",
                                 "163",
-                                "175 + 42*(Variable(ConacCount)+1)",
+                                "105 + 42*(Variable(ConacCount)+1)",
                                 "\"GUI\""
                               ],
                               "subInstructions": []
@@ -2205,7 +2236,7 @@
                                 "",
                                 "EventIcon",
                                 "127",
-                                "170 + 42*(Variable(ConacCount)+1)",
+                                "100 + 42*(Variable(ConacCount)+1)",
                                 "\"GUI\""
                               ],
                               "subInstructions": []
@@ -2361,7 +2392,7 @@
                                 "",
                                 "ActionName",
                                 "540",
-                                "175 + 42*(Variable(ConacCount)+1)",
+                                "105 + 42*(Variable(ConacCount)+1)",
                                 "\"GUI\""
                               ],
                               "subInstructions": []
@@ -2375,7 +2406,7 @@
                                 "",
                                 "EventIcon",
                                 "504",
-                                "170 + 42*(Variable(ConacCount)+1)",
+                                "100 + 42*(Variable(ConacCount)+1)",
                                 "\"GUI\""
                               ],
                               "subInstructions": []
@@ -2629,242 +2660,6 @@
                       "events": []
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "OnListItem",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "IsMouseWheelScrollingUp"
-                      },
-                      "parameters": [
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "IsMouseWheelScrollingDown"
-                      },
-                      "parameters": [
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "OnListItem",
-                    "+",
-                    "MouseWheelDelta()"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
-                },
-                {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "disabled": false,
-                  "folded": false,
-                  "name": "Chnage Pos",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "ConditionName",
-                            "Clickable",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::ForEach",
-                          "object": "ConditionName",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreY"
-                              },
-                              "parameters": [
-                                "ConditionName",
-                                "=",
-                                "175 + 42*(ConditionName.Variable(ConacCount)+1)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "EventIcon",
-                            "isPopUp",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::ForEach",
-                          "object": "EventIcon",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreY"
-                              },
-                              "parameters": [
-                                "EventIcon",
-                                "=",
-                                "175 + 42*(EventIcon.Variable(ConacCount)+1)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "ActionName",
-                            "Clickable",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::ForEach",
-                          "object": "ActionName",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreY"
-                              },
-                              "parameters": [
-                                "ActionName",
-                                "=",
-                                "175 + 42*(ActionName.Variable(ConacCount)+1)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    }
-                  ],
-                  "parameters": []
                 }
               ]
             },
@@ -4104,7 +3899,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Fake and Real Floor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4195,6 +3990,85 @@
                     "floor",
                     "=",
                     "255"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Toggle Laser",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "LaserBeam",
+                    "isFired",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "LaserBeam",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "LaserBeam",
+                    "isFired",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "LaserBeam"
                   ],
                   "subInstructions": []
                 }
@@ -4413,19 +4287,76 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Death",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "PosY"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "playerHitbox",
-                        ">",
-                        "SceneWindowHeight()+20"
-                      ],
-                      "subInstructions": []
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PosY"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            ">",
+                            "SceneWindowHeight()+20"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "playerHitbox",
+                                "LaserBeam",
+                                "",
+                                "",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "LaserBeam"
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "actions": [

@@ -372,15 +372,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/ConditionActionList.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ConditionActionList.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/openEditorButton.png",
         "kind": "image",
         "metadata": "",
@@ -457,6 +448,69 @@
         "kind": "image",
         "metadata": "",
         "name": "NewObject-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/LeftMouseClick.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\LeftMouseClick.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/ShootBullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\ShootBullet.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ConditionActionList.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ConditionActionList.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ConditionActionList-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ConditionActionList-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ConditionActionList-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ConditionActionList-1-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/laser-block.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\laser-block.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/laser-beam.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\laser-beam.png",
         "smoothed": false,
         "userAdded": true
       }
@@ -1199,7 +1253,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\icons\\ShootBullet-1.png",
+                  "image": "assets\\icons\\ShootBullet.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1228,7 +1282,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\icons\\EventIcon-1.png",
+                  "image": "assets\\icons\\LeftMouseClick.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1882,16 +1936,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "ConditionActionList",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\ConditionActionList.png",
+                  "image": "assets\\ConditionActionList-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2161,6 +2215,92 @@
                     "name": "origine",
                     "x": 8,
                     "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LaserBeam",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "isFired",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\objects\\laser-beam.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LaserBlock",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\objects\\laser-block.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2451,6 +2591,22 @@
               "value": "Shoot a bullet from the gun"
             }
           ]
+        },
+        {
+          "name": "ToggleLasers",
+          "type": "structure",
+          "children": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "ToggleLasers"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Toggles the lasers"
+            }
+          ]
         }
       ]
     },
@@ -2476,6 +2632,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/level-1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level-2"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
