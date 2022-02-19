@@ -180,7 +180,13 @@
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "isFake",
+          "type": "boolean",
+          "value": false
+        }
+      ]
     },
     {
       "angle": 0,
