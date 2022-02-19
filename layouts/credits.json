@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5550000000000006,
+    "zoomFactor": 0.35500000000000065,
     "windowMask": false
   },
   "objectsGroups": [
@@ -29,7 +29,7 @@
       "name": "CreditList",
       "objects": [
         {
-          "name": "TeamLogo"
+          "name": "Logos"
         },
         {
           "name": "Credits"
@@ -45,7 +45,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 960,
+      "height": 1024,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
@@ -61,7 +61,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 960,
+      "height": 1024,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
@@ -77,7 +77,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 960,
+      "height": 1024,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
@@ -93,7 +93,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 960,
+      "height": 1024,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
@@ -109,7 +109,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 960,
+      "height": 1024,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
@@ -125,7 +125,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 960,
+      "height": 1024,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
@@ -141,7 +141,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 960,
+      "height": 1024,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
@@ -157,7 +157,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 960,
+      "height": 1024,
       "layer": "Background",
       "locked": false,
       "name": "purpBack",
@@ -212,7 +212,7 @@
       "persistentUuid": "3bf23e1b-83b1-47fc-af08-4fcbc7854617",
       "width": 384,
       "x": 320,
-      "y": 574,
+      "y": 675,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -224,11 +224,11 @@
       "height": 125.13103485107422,
       "layer": "",
       "locked": false,
-      "name": "TeamLogo",
+      "name": "Logos",
       "persistentUuid": "56e0e340-e21a-41cd-ab58-3715725ee4fa",
       "width": 448,
       "x": 256,
-      "y": 604.8689575195312,
+      "y": 705.8689575195312,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -244,7 +244,7 @@
       "persistentUuid": "448a3ffb-d6ce-4ea7-8902-e7a0410d01a2",
       "width": 0,
       "x": 121,
-      "y": 823,
+      "y": 924,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -921,6 +921,155 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 91.03394317626953,
+      "layer": "",
+      "locked": false,
+      "name": "Logos",
+      "persistentUuid": "1ad37a3c-92a8-4869-8b96-c1c1abb5ded2",
+      "width": 447,
+      "x": 257,
+      "y": 547.966064453125,
+      "zOrder": 9,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "e8960a97-b8d5-4991-9cc5-e1582ab02939",
+      "width": 0,
+      "x": -64,
+      "y": 64,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "98553e19-34b9-4838-b43e-bcba514e2165",
+      "width": 0,
+      "x": -128,
+      "y": 128,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "345266ea-ba01-422a-b03d-9bc3ab66d3ec",
+      "width": 0,
+      "x": -128,
+      "y": 256,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "6eee576e-7190-494d-a35d-9b660fa48e01",
+      "width": 0,
+      "x": -128,
+      "y": 320,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "18c4fa5d-c893-4236-bbbb-5602c83f1846",
+      "width": 0,
+      "x": -64,
+      "y": 384,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "dc813313-3930-489b-8ea7-7a30eba937e5",
+      "width": 0,
+      "x": 960,
+      "y": 193.73159790039062,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "c95158a2-32d9-4fe3-8f6a-bd053c602ef0",
+      "width": 0,
+      "x": 1024,
+      "y": 256,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "b3923ff0-760a-449b-9442-5773926325f3",
+      "width": 0,
+      "x": 1024,
+      "y": 384,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -943,7 +1092,7 @@
       }
     },
     {
-      "name": "TeamLogo",
+      "name": "Logos",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -962,6 +1111,35 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "cri-pineapple-logo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\icons\\logo.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

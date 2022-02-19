@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4765000000000021,
+    "zoomFactor": 0.576500000000002,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -37,7 +37,7 @@
       "persistentUuid": "c3c59d52-cd0c-4ec4-a0e9-21961ada0fe6",
       "width": 0,
       "x": 402,
-      "y": 165,
+      "y": 204,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -64,7 +64,7 @@
       "persistentUuid": "6c60b580-5301-4d87-83dc-691b3a34c51b",
       "width": 0,
       "x": 402,
-      "y": 227,
+      "y": 266,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -78,33 +78,6 @@
           "name": "name",
           "type": "string",
           "value": "CREDITS"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Button",
-      "persistentUuid": "7eb24e10-daf6-4ff8-b731-88401f670486",
-      "width": 0,
-      "x": 402,
-      "y": 289,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "to",
-          "type": "string",
-          "value": "leaderboard"
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "value": "TOP"
         }
       ]
     },
@@ -923,6 +896,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 91.03394317626953,
+      "layer": "",
+      "locked": false,
+      "name": "Logo",
+      "persistentUuid": "97f7c30f-ae65-4e18-bd25-b9069cbb9ee7",
+      "width": 447,
+      "x": 257,
+      "y": 45.96605682373047,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -961,6 +950,46 @@
         "g": 61,
         "r": 159
       }
+    },
+    {
+      "name": "Logo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\icons\\logo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [

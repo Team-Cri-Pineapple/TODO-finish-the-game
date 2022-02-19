@@ -17,9 +17,9 @@
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "coolpineaplecri",
+    "name": "//TO:DO",
     "description": "",
-    "author": "cripineapple",
+    "author": "Team Cri Pineapple",
     "windowWidth": 960,
     "windowHeight": 540,
     "latestCompilationDirectory": "",
@@ -421,6 +421,15 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\computa.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\logo.png",
         "smoothed": false,
         "userAdded": true
       }
@@ -1888,6 +1897,46 @@
                     "name": "origine",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "computer",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\computa.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
                   },
                   "centerPoint": {
                     "automatic": true,
