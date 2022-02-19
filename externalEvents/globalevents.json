@@ -59,7 +59,7 @@
               "type": "BuiltinCommonInstructions::ForEachChildVariable",
               "iterableVariableName": "EventsList",
               "valueIteratorVariableName": "Event",
-              "keyIteratorVariableName": "EventID",
+              "keyIteratorVariableName": "",
               "conditions": [],
               "actions": [],
               "events": [
@@ -85,11 +85,11 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "Event.ConditionsList",
                   "valueIteratorVariableName": "Condition",
-                  "keyIteratorVariableName": "ConacID",
+                  "keyIteratorVariableName": "",
                   "conditions": [],
                   "actions": [],
                   "events": [
@@ -430,7 +430,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -747,19 +747,7 @@
                               "disabled": false,
                               "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "AjoutObjConcern"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "floor"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
+                              "conditions": [],
                               "actions": [
                                 {
                                   "type": {

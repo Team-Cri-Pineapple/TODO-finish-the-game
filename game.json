@@ -30,7 +30,7 @@
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "",
+      "backgroundImageResourceName": "Splash.png",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0.2,
@@ -603,6 +603,15 @@
         "name": "assets\\icons\\RightMouseClick.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Splash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Splash.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
