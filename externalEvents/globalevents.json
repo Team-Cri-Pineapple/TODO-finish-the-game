@@ -333,6 +333,60 @@
                                   "events": []
                                 }
                               ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "Condition.ID",
+                                    "=",
+                                    "\"RightClickMouse\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "MouseButtonPressed"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Right"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "SetSceneVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "conditionReturnValue",
+                                        "False"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
                             }
                           ],
                           "parameters": []
@@ -1034,7 +1088,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Toggle Editor GUI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3772,6 +3826,16 @@
                 "move"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "move"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -4010,7 +4074,7 @@
                   "parameters": [
                     "floor",
                     "isFake",
-                    "False"
+                    "True"
                   ],
                   "subInstructions": []
                 }
@@ -4056,7 +4120,7 @@
                   "parameters": [
                     "floor",
                     "isFake",
-                    "True"
+                    "False"
                   ],
                   "subInstructions": []
                 }
@@ -4551,6 +4615,50 @@
                       "parameters": [
                         "",
                         "CurrentSceneName()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "playerHitbox",
+                        "Gate",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Level \" + Gate.VariableString(LevelToGo)",
                         ""
                       ],
                       "subInstructions": []
@@ -5193,7 +5301,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "disabled": false,
+                  "disabled": true,
                   "folded": true,
                   "name": "Mobile Controls",
                   "source": "",

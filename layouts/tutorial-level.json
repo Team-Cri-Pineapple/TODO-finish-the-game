@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3050000000000005,
+    "zoomFactor": 0.2899999999999999,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -48,11 +48,6 @@
               "name": "FlipFakeAndRealPlatforms",
               "type": "string",
               "value": "Flip fake and real platforms"
-            },
-            {
-              "name": "MoveMovingPlatforms",
-              "type": "string",
-              "value": "Move platforms"
             }
           ]
         },
@@ -78,7 +73,7 @@
             {
               "name": "TriggerOnce",
               "type": "string",
-              "value": "Trgger once while true"
+              "value": "Trigger once while true"
             }
           ]
         }
@@ -251,7 +246,7 @@
       "name": "camplace",
       "persistentUuid": "cd98389c-4221-4c83-a3de-8091c6a713d5",
       "width": 832,
-      "x": 2272,
+      "x": 2336,
       "y": -64,
       "zOrder": 0,
       "numberProperties": [],
@@ -1591,7 +1586,7 @@
         {
           "name": "isFake",
           "type": "boolean",
-          "value": true
+          "value": false
         }
       ]
     },
@@ -1904,12 +1899,98 @@
       "name": "camplace",
       "persistentUuid": "a1bd06ca-d11c-47d0-ba6d-b6233bec629d",
       "width": 832,
-      "x": 3168,
+      "x": 3424,
       "y": -64,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "76967f18-d54e-4230-b1db-fefdd11cd7f1",
+      "width": 64,
+      "x": 1472,
+      "y": -768,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "a983b8c4-c0ea-4a32-94a6-2800f02b83d3",
+      "width": 64,
+      "x": 1600,
+      "y": -768,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "f7b373ef-f847-4c28-8b34-b21ccf55b343",
+      "width": 64,
+      "x": 1856,
+      "y": -768,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": false,
+      "name": "purpBack",
+      "persistentUuid": "00002d85-dbbd-4db9-ba8f-8e2971349649",
+      "width": 64,
+      "x": 1728,
+      "y": -768,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 192,
+      "layer": "",
+      "locked": false,
+      "name": "Gate",
+      "persistentUuid": "d7fafe51-f295-4484-9f7e-3ae1ed344e32",
+      "width": 128,
+      "x": 4032,
+      "y": -128,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "LevelToGo",
+          "type": "string",
+          "value": "1"
+        }
+      ]
     }
   ],
   "objects": [
