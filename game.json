@@ -558,6 +558,33 @@
         "name": "Delete-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/step.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\step.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Jump.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Jump.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Shoot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Shoot.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

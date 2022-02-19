@@ -113,7 +113,7 @@
                           "colorR": 74,
                           "creationTime": 0,
                           "disabled": false,
-                          "folded": true,
+                          "folded": false,
                           "name": "For anything not trigger once",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -732,6 +732,19 @@
                                 "\"ShootBullet\""
                               ],
                               "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"shootTimer\"",
+                                ">",
+                                "0.1"
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "actions": [
@@ -846,6 +859,31 @@
                                 "\"lifetimer\""
                               ],
                               "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\Shoot.wav",
+                                "",
+                                "60",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"shootTimer\""
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "events": []
@@ -950,6 +988,17 @@
             "\"HUD\"",
             "",
             ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"shootTimer\""
           ],
           "subInstructions": []
         }
@@ -4403,6 +4452,17 @@
                         "70"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"stepSound\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -4497,6 +4557,148 @@
                     }
                   ],
                   "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Player sounds",
+                  "comment2": ""
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "Player sounds",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::IsOnFloor"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::IsMoving"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CompareTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"stepSound\"",
+                            ">",
+                            "0.2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\step.wav",
+                            "",
+                            "60",
+                            "RandomInRange(0.8,1.2)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"stepSound\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::IsJumping"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\Jump.wav",
+                            "",
+                            "60",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
+                  "parameters": []
                 },
                 {
                   "colorB": 228,
@@ -6225,7 +6427,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "gun",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
