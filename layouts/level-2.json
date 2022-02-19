@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.35975000000000007,
+    "zoomFactor": 0.3028908524513237,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1703,34 +1703,12 @@
       "name": "LaserBlock",
       "persistentUuid": "2077c9d5-f8e8-4f89-8399-12a96641194e",
       "width": 64,
-      "x": 3104,
+      "x": 3232,
       "y": -1504,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "LaserBlock",
-      "persistentUuid": "0549994e-a90b-4de3-aefc-49aedc969ac4",
-      "width": 64,
-      "x": 3296,
-      "y": -1504,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "isFired",
-          "type": "boolean",
-          "value": true
-        }
-      ]
     },
     {
       "angle": 90,
@@ -1741,34 +1719,12 @@
       "name": "LaserBlock",
       "persistentUuid": "7467b3c7-36a3-4e0c-a083-6a2a2bdfab4f",
       "width": 64,
-      "x": 3616,
+      "x": 3744,
       "y": -1504,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "LaserBlock",
-      "persistentUuid": "fc21b0ad-cbcf-48de-9900-fbfae1a2cfcc",
-      "width": 64,
-      "x": 3808,
-      "y": -1504,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "isFired",
-          "type": "boolean",
-          "value": true
-        }
-      ]
     },
     {
       "angle": 0,
@@ -1795,7 +1751,7 @@
       "name": "LaserBlock",
       "persistentUuid": "9dd873d6-cedd-44a9-a4c2-3967816037b2",
       "width": 64,
-      "x": 4128,
+      "x": 4192,
       "y": -1504,
       "zOrder": 10,
       "numberProperties": [],
