@@ -4941,173 +4941,6 @@
                 {
                   "disabled": false,
                   "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::IsMoving"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::IsOnFloor"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CompareTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"stepSound\"",
-                        ">",
-                        "0.2"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets\\step.wav",
-                        "no",
-                        "5",
-                        "RandomInRange(0.8,1.2)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"stepSound\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::IsOnFloor"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets\\fallingback.wav",
-                        "no",
-                        "15",
-                        "2"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlatformBehavior::IsJumping"
-                      },
-                      "parameters": [
-                        "playerHitbox",
-                        "PlatformerObject"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets\\Jump.wav",
-                        "no",
-                        "30",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"stepSound\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
                     "b": 109,
@@ -5361,7 +5194,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "PlatformBehavior::IsOnFloor"
+                            "value": "PlatformBehavior::IsMoving"
                           },
                           "parameters": [
                             "playerHitbox",
@@ -5372,7 +5205,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "PlatformBehavior::IsMoving"
+                            "value": "PlatformBehavior::IsOnFloor"
                           },
                           "parameters": [
                             "playerHitbox",
@@ -5402,10 +5235,10 @@
                           },
                           "parameters": [
                             "",
-                            "assets\\step2.wav",
-                            "",
-                            "2",
-                            "RandomFloatInRange(0.5,1)"
+                            "assets\\step.wav",
+                            "no",
+                            "5",
+                            "RandomInRange(0.8,1.2)"
                           ],
                           "subInstructions": []
                         },
@@ -5417,6 +5250,49 @@
                           "parameters": [
                             "",
                             "\"stepSound\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlatformBehavior::IsOnFloor"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            "PlatformerObject"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\fallingback.wav",
+                            "no",
+                            "10",
+                            "2"
                           ],
                           "subInstructions": []
                         }
@@ -5456,10 +5332,21 @@
                           },
                           "parameters": [
                             "",
-                            "assets\\step2.wav",
+                            "assets\\Jump.wav",
+                            "no",
+                            "15",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
                             "",
-                            "6",
-                            "RandomFloatInRange(0.8,1.2)"
+                            "\"stepSound\""
                           ],
                           "subInstructions": []
                         }
