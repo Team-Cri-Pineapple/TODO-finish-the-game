@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.22749999999999904,
+    "zoomFactor": 0.6100000000000002,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1298,7 +1298,7 @@
       "name": "VoidBlock",
       "persistentUuid": "0adc1001-a621-4feb-b6f6-8c002f001c6f",
       "width": 1664,
-      "x": 2624,
+      "x": 4544,
       "y": -768,
       "zOrder": 26,
       "numberProperties": [],
@@ -1491,14 +1491,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 192,
+      "height": 128,
       "layer": "",
       "locked": false,
       "name": "Gate",
       "persistentUuid": "0387e1be-01a9-4d05-bcd3-fdfd7e3d63bc",
       "width": 128,
       "x": 6016,
-      "y": -1408,
+      "y": -1280,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -1553,6 +1553,38 @@
           "value": true
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "locked": false,
+      "name": "VoidBlock",
+      "persistentUuid": "b4bf8301-1e24-42f6-9014-15ef93599075",
+      "width": 1664,
+      "x": 2624,
+      "y": -768,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "locked": false,
+      "name": "FakeGate",
+      "persistentUuid": "e3e8e5e5-4b57-40ae-99dc-22bc59bd01ac",
+      "width": 128,
+      "x": -128,
+      "y": 384,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [],

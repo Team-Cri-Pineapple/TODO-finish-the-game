@@ -612,6 +612,33 @@
         "name": "Splash.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/step2.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Explosion 44\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0,\\\"sustainPunch\\\":10,\\\"decay\\\":0.08788934438441642,\\\"tremoloDepth\\\":18,\\\"tremoloFrequency\\\":14.773733573104856,\\\"frequency\\\":8200,\\\"frequencySweep\\\":-4800,\\\"frequencyDeltaSweep\\\":-3300,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"pinknoise\\\",\\\"interpolateNoise\\\":false,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"step2\"}}",
+        "name": "assets\\step2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/gate.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\gate.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/objects/gate-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\gate-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2531,6 +2558,11 @@
           "name": "isFired",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "permanent",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -2608,6 +2640,52 @@
       ]
     },
     {
+      "name": "FakeGate",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "LevelToGo",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "gate",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\objects\\gate-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Gate",
       "tags": "",
       "type": "Sprite",
@@ -2632,12 +2710,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\colors\\black.png",
+                  "image": "assets\\objects\\gate.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 16
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2811,6 +2889,17 @@
           "name": "EventIcon"
         }
       ]
+    },
+    {
+      "name": "Bad",
+      "objects": [
+        {
+          "name": "VoidBlock"
+        },
+        {
+          "name": "LaserBeam"
+        }
+      ]
     }
   ],
   "variables": [
@@ -2882,7 +2971,7 @@
             {
               "name": "Name",
               "type": "string",
-              "value": "Left button of the mouse is clicked/held"
+              "value": "Left button of the mouse is clicked"
             }
           ]
         },
@@ -2914,7 +3003,7 @@
             {
               "name": "Name",
               "type": "string",
-              "value": "Right button of the mouse is clicked/held"
+              "value": "Right button of the mouse is clicked"
             }
           ]
         },

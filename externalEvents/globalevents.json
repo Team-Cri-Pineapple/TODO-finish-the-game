@@ -59,7 +59,7 @@
               "type": "BuiltinCommonInstructions::ForEachChildVariable",
               "iterableVariableName": "EventsList",
               "valueIteratorVariableName": "Event",
-              "keyIteratorVariableName": "",
+              "keyIteratorVariableName": "EventID",
               "conditions": [],
               "actions": [],
               "events": [
@@ -430,7 +430,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -471,7 +471,7 @@
                             "value": "SetSceneVariableAsBoolean"
                           },
                           "parameters": [
-                            "Event.TriggeredLastFrame",
+                            "EventList[Variable(EventID)].TriggeredLastFrame",
                             "False"
                           ],
                           "subInstructions": []
@@ -509,7 +509,7 @@
                                 "value": "SceneVariableAsBoolean"
                               },
                               "parameters": [
-                                "Event.TriggeredLastFrame",
+                                "EventList[Variable(EventID)].TriggeredLastFrame",
                                 "True"
                               ],
                               "subInstructions": []
@@ -541,7 +541,7 @@
                                 "value": "SceneVariableAsBoolean"
                               },
                               "parameters": [
-                                "Event.TriggeredLastFrame",
+                                "EventList[Variable(EventID)].TriggeredLastFrame",
                                 "False"
                               ],
                               "subInstructions": []
@@ -554,7 +554,7 @@
                                 "value": "SetSceneVariableAsBoolean"
                               },
                               "parameters": [
-                                "Event.TriggeredLastFrame",
+                                "EventList[Variable(EventID)].TriggeredLastFrame",
                                 "True"
                               ],
                               "subInstructions": []
@@ -3790,7 +3790,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Game logic",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4284,7 +4284,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Lazer",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4317,14 +4317,35 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ObjectVariableAsBoolean"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "LaserBlock",
-                        "isFired",
-                        "True"
-                      ],
-                      "subInstructions": []
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "LaserBlock",
+                            "permanent",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "LaserBlock",
+                            "isFired",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
                     }
                   ],
                   "actions": [],
@@ -4335,6 +4356,18 @@
                       "type": "BuiltinCommonInstructions::ForEach",
                       "object": "LaserBlock",
                       "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "floor",
+                            "isFake",
+                            "False"
+                          ],
+                          "subInstructions": []
+                        },
                         {
                           "type": {
                             "inverted": false,
@@ -4442,7 +4475,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4464,6 +4497,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "VoidBlock"
+                      ],
+                      "subInstructions": []
+                    },
                     {
                       "type": {
                         "inverted": false,
@@ -4556,18 +4599,6 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "PosY"
-                          },
-                          "parameters": [
-                            "playerHitbox",
-                            ">",
-                            "SceneWindowHeight()+20"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "BuiltinCommonInstructions::And"
                           },
                           "parameters": [],
@@ -4579,20 +4610,10 @@
                               },
                               "parameters": [
                                 "playerHitbox",
-                                "LaserBeam",
+                                "Bad",
                                 "",
                                 "",
                                 ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Visible"
-                              },
-                              "parameters": [
-                                "LaserBeam"
                               ],
                               "subInstructions": []
                             }
@@ -4625,14 +4646,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "CollisionNP"
+                        "value": "CollisionPoint"
                       },
                       "parameters": [
-                        "playerHitbox",
                         "Gate",
-                        "",
-                        "",
-                        ""
+                        "player.X()",
+                        "player.Y()"
                       ],
                       "subInstructions": []
                     },
@@ -4682,7 +4701,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "Player sounds",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -4736,10 +4755,10 @@
                           },
                           "parameters": [
                             "",
-                            "assets\\step.wav",
+                            "assets\\step2.wav",
                             "",
-                            "60",
-                            "RandomInRange(0.8,1.2)"
+                            "2",
+                            "RandomFloatInRange(0.8,1.2)"
                           ],
                           "subInstructions": []
                         },
@@ -4790,10 +4809,10 @@
                           },
                           "parameters": [
                             "",
-                            "assets\\Jump.wav",
+                            "assets\\step2.wav",
                             "",
-                            "60",
-                            "1"
+                            "6",
+                            "RandomFloatInRange(0.8,1.2)"
                           ],
                           "subInstructions": []
                         }
