@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.35500000000000065,
+    "zoomFactor": 0.33500000000000046,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1373,7 +1373,7 @@
           "parameters": [
             "Credits",
             "<",
-            "-1088"
+            "-1264"
           ],
           "subInstructions": []
         }
