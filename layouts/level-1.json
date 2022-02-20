@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.1952499999999996,
+    "zoomFactor": 0.26999999999999996,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -83,7 +83,7 @@
             {
               "name": "TriggerOnce",
               "type": "string",
-              "value": "Trgger once while true"
+              "value": "Trigger once while true"
             }
           ]
         }
