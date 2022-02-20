@@ -559,7 +559,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "Event.ActionsList",
                   "valueIteratorVariableName": "Action",
@@ -4914,7 +4914,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "Player sounds",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -4971,7 +4971,7 @@
                             "assets\\step2.wav",
                             "",
                             "2",
-                            "RandomFloatInRange(0.8,1.2)"
+                            "RandomFloatInRange(0.5,1)"
                           ],
                           "subInstructions": []
                         },
