@@ -693,6 +693,15 @@
         "name": "assets\\icons\\logo-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2921,12 +2930,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\colors\\gray-1.png",
+                  "image": "assets\\enemy.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,

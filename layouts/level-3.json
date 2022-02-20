@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2799999999999999,
+    "zoomFactor": 0.15500000000000005,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2250,41 +2250,9 @@
       "layer": "",
       "locked": false,
       "name": "Enemy",
-      "persistentUuid": "a4f261f5-c5c5-492a-8bde-2e89bba9c002",
-      "width": 64,
-      "x": 2624,
-      "y": -1344,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "Enemy",
       "persistentUuid": "17b653da-5ba8-4364-a560-fb91181a08a4",
       "width": 64,
       "x": 2688,
-      "y": -1344,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "Enemy",
-      "persistentUuid": "b5a46e99-2743-411d-89e9-cc10918045b6",
-      "width": 64,
-      "x": 2752,
       "y": -1344,
       "zOrder": 5,
       "numberProperties": [],
@@ -2719,6 +2687,22 @@
           "value": true
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "computer",
+      "persistentUuid": "25b195df-9b16-49aa-aa00-974565c17b32",
+      "width": 64,
+      "x": 1760,
+      "y": -1312,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [],
