@@ -28,7 +28,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Events executor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1001,7 +1001,7 @@
     },
     {
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
