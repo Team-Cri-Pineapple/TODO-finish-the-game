@@ -2008,7 +2008,7 @@
       "content": {
         "text": "the variable content is not defined",
         "opacity": 255,
-        "fontSize": 20,
+        "fontSize": 18,
         "visible": true,
         "color": "0;0;0",
         "fontFamily": "assets\\F77MinecraftRegular-0VYv.ttf",
@@ -2846,6 +2846,42 @@
           ]
         }
       ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "CompleteText",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "to",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Text",
+      "font": "assets\\MinecraftTen.ttf",
+      "characterSize": 65,
+      "color": {
+        "b": 107,
+        "g": 61,
+        "r": 159
+      }
     }
   ],
   "objectsGroups": [
@@ -3271,6 +3307,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/hud"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/game-complete"
     }
   ],
   "externalSourceFiles": []

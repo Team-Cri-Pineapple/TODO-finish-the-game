@@ -1,0 +1,63 @@
+{
+  "associatedLayout": "Level 3",
+  "name": " Complete Screen",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "GUI",
+      "locked": false,
+      "name": "CompleteText",
+      "persistentUuid": "43ffbe34-5d04-4b22-b84d-001593add64d",
+      "width": 160,
+      "x": 416,
+      "y": 244,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "play again"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "GUI",
+      "locked": false,
+      "name": "CompleteText",
+      "persistentUuid": "9a139115-cead-4ec2-b7bd-c58cc862ff12",
+      "width": 160,
+      "x": 416,
+      "y": 317,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "main menu"
+        }
+      ]
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 64,
+    "gridHeight": 64,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.46000000000000113,
+    "windowMask": false
+  }
+}

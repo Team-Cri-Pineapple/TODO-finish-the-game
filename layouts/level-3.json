@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.32999999999999996,
+    "zoomFactor": 0.09000000000000015,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -280,7 +280,7 @@
       "name": "playerHitbox",
       "persistentUuid": "e1a4320d-1899-4494-bac5-510f5c3c671e",
       "width": 64,
-      "x": -96,
+      "x": -160,
       "y": 416,
       "zOrder": 1,
       "numberProperties": [],
@@ -570,7 +570,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 2624,
+      "height": 2944,
       "layer": "",
       "locked": false,
       "name": "floorbrics",
@@ -785,7 +785,7 @@
       "persistentUuid": "4dbb703f-35d9-4898-bc6c-dc6221136519",
       "width": 64,
       "x": 5504,
-      "y": -1664,
+      "y": -1856,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -1000,7 +1000,7 @@
       "name": "Gate",
       "persistentUuid": "0387e1be-01a9-4d05-bcd3-fdfd7e3d63bc",
       "width": 128,
-      "x": 9280,
+      "x": 9216,
       "y": -2880,
       "zOrder": 3,
       "numberProperties": [],
@@ -1009,7 +1009,7 @@
         {
           "name": "LevelToGo",
           "type": "string",
-          "value": "3"
+          "value": "4"
         }
       ]
     },
@@ -1082,7 +1082,7 @@
       "name": "FakeGate",
       "persistentUuid": "e3e8e5e5-4b57-40ae-99dc-22bc59bd01ac",
       "width": 128,
-      "x": -128,
+      "x": -192,
       "y": 384,
       "zOrder": 3,
       "numberProperties": [],
@@ -1899,7 +1899,7 @@
       "locked": false,
       "name": "bricosBack",
       "persistentUuid": "fed98e4d-2b07-4a55-9410-6d8346cda22c",
-      "width": 2944,
+      "width": 3200,
       "x": 6400,
       "y": -3392,
       "zOrder": 23,
@@ -2179,8 +2179,8 @@
       "locked": false,
       "name": "camplace",
       "persistentUuid": "d20c9108-e47d-413f-aad9-15b8fe35ac60",
-      "width": 2368,
-      "x": 7840,
+      "width": 2240,
+      "x": 7776,
       "y": -2848,
       "zOrder": 1,
       "numberProperties": [],
@@ -2195,8 +2195,8 @@
       "locked": false,
       "name": "camplace2x",
       "persistentUuid": "bef8252c-a8ba-4008-b1d7-a5bdd0d4f928",
-      "width": 2304,
-      "x": 7872,
+      "width": 2176,
+      "x": 7808,
       "y": -2848,
       "zOrder": 0,
       "numberProperties": [],
@@ -2286,7 +2286,7 @@
       "width": 64,
       "x": 2624,
       "y": -1344,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2302,7 +2302,7 @@
       "width": 64,
       "x": 2688,
       "y": -1344,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2318,7 +2318,7 @@
       "width": 64,
       "x": 2752,
       "y": -1344,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2334,7 +2334,7 @@
       "width": 64,
       "x": 3584,
       "y": -1344,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2350,7 +2350,7 @@
       "width": 64,
       "x": 3648,
       "y": -1344,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2366,7 +2366,7 @@
       "width": 64,
       "x": 4672,
       "y": -1344,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2382,7 +2382,7 @@
       "width": 64,
       "x": 4608,
       "y": -1344,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2398,7 +2398,7 @@
       "width": 64,
       "x": 6464,
       "y": -2880,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2414,7 +2414,7 @@
       "width": 64,
       "x": 6528,
       "y": -2880,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2430,7 +2430,7 @@
       "width": 64,
       "x": 6592,
       "y": -2880,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2446,7 +2446,7 @@
       "width": 64,
       "x": 6656,
       "y": -2880,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2462,7 +2462,7 @@
       "width": 64,
       "x": 6400,
       "y": -2880,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2478,7 +2478,7 @@
       "width": 64,
       "x": 7616,
       "y": -2432,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2494,23 +2494,7 @@
       "width": 64,
       "x": 8000,
       "y": -3136,
-      "zOrder": 27,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "Enemy",
-      "persistentUuid": "b79c1ed7-d419-4e9e-90cc-52bac39634f4",
-      "width": 64,
-      "x": 9024,
-      "y": -2880,
-      "zOrder": 27,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2591,6 +2575,17 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "name": "Mobile controls",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": -2147483632,
+      "ambientLightColorG": 6032016,
+      "ambientLightColorR": 7859808,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Game Complete",
       "visibility": true,
       "cameras": [],
       "effects": []

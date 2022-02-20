@@ -1,0 +1,63 @@
+{
+  "associatedLayout": "Tutorial Level",
+  "name": " Game Complete",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Game Complete",
+      "locked": false,
+      "name": "CompleteText",
+      "persistentUuid": "6ee4c947-147f-445c-98ae-ce4f22c58454",
+      "width": 0,
+      "x": 422,
+      "y": 248,
+      "zOrder": 101,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "Play Again"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Game Complete",
+      "locked": false,
+      "name": "CompleteText",
+      "persistentUuid": "a65c4814-e04f-426d-8c56-8f68ae07517e",
+      "width": 0,
+      "x": 422,
+      "y": 320,
+      "zOrder": 101,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "Main Menu"
+        }
+      ]
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 64,
+    "gridHeight": 64,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.5000000000000011,
+    "windowMask": false
+  }
+}

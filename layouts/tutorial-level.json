@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3500000000000004,
+    "zoomFactor": 0.11000000000000049,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2384,6 +2384,17 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "name": "MobileControls",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": -2147483632,
+      "ambientLightColorG": 6032016,
+      "ambientLightColorR": 12796984,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Game Complete",
       "visibility": true,
       "cameras": [],
       "effects": []
