@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.07,
+    "zoomFactor": 0.2299999999999999,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -825,7 +825,7 @@
         {
           "name": "isFired",
           "type": "boolean",
-          "value": true
+          "value": false
         }
       ]
     },
@@ -965,7 +965,7 @@
         {
           "name": "isFired",
           "type": "boolean",
-          "value": true
+          "value": false
         }
       ]
     },
@@ -987,7 +987,7 @@
         {
           "name": "isFired",
           "type": "boolean",
-          "value": false
+          "value": true
         }
       ]
     },
@@ -2716,7 +2716,7 @@
         {
           "name": "isFired",
           "type": "boolean",
-          "value": false
+          "value": true
         }
       ]
     }
