@@ -1096,7 +1096,7 @@
         {
           "name": "msg",
           "type": "string",
-          "value": "Press ESCAPE to go back to the main menu"
+          "value": "Press E to go back to the main menu"
         }
       ]
     },

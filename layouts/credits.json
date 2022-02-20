@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.38500000000000056,
+    "zoomFactor": 0.5262499999999984,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1089,6 +1089,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "UCanExitBTW",
+      "persistentUuid": "871cf447-037d-4b31-98a7-77efffafaf87",
+      "width": 0,
+      "x": 5,
+      "y": 5,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1258,6 +1274,31 @@
           ]
         }
       ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "UCanExitBTW",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "(Press E to return to the menu)",
+      "font": "assets\\F77MinecraftRegular-0VYv.ttf",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
     }
   ],
   "events": [
@@ -1469,6 +1510,34 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "TextObject::Opacity"
+                  },
+                  "parameters": [
+                    "UCanExitBTW",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectOpacityTween"
+                  },
+                  "parameters": [
+                    "UCanExitBTW",
+                    "Tween",
+                    "\"fadein\"",
+                    "240",
+                    "\"easeInOutCirc\"",
+                    "5000",
+                    "800"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "PlaySound"
                   },
                   "parameters": [
@@ -1534,6 +1603,106 @@
           "parameters": [
             "transitionbubble",
             ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "UCanExitBTW",
+            "Tween",
+            "\"fadein\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::RemoveTween"
+          },
+          "parameters": [
+            "UCanExitBTW",
+            "Tween",
+            "\"fadein\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectOpacityTween"
+          },
+          "parameters": [
+            "UCanExitBTW",
+            "Tween",
+            "\"fadeout\"",
+            "150",
+            "\"easeInOutCirc\"",
+            "2500",
+            "800"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "UCanExitBTW",
+            "Tween",
+            "\"fadeout\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::RemoveTween"
+          },
+          "parameters": [
+            "UCanExitBTW",
+            "Tween",
+            "\"fadeout\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectOpacityTween"
+          },
+          "parameters": [
+            "UCanExitBTW",
+            "Tween",
+            "\"fadein\"",
+            "240",
+            "\"easeInOutCirc\"",
+            "2500",
+            "800"
           ],
           "subInstructions": []
         }
@@ -1874,6 +2043,150 @@
         }
       ],
       "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "e"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "transitioned",
+                "True"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "transitionbg",
+                "0",
+                "0",
+                "\"GUI\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "transitionbg",
+                "=",
+                "1000"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "transitionbg",
+                "=",
+                "4"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "transitionbubble",
+                "transitionbg.CenterX()",
+                "transitionbg.CenterY()",
+                "\"GUI\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "transitionbubble",
+                "=",
+                "800"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "transitionbubble",
+                "Tween",
+                "\"next\"",
+                "8",
+                "8",
+                "\"easeInOutCirc\"",
+                "800",
+                "",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SpriteMasking::Mask"
+              },
+              "parameters": [
+                "",
+                "transitionbg",
+                "transitionbubble",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     },
     {
       "disabled": false,
