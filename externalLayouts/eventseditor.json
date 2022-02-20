@@ -52,7 +52,7 @@
         {
           "name": "insideContent",
           "type": "string",
-          "value": "[i][color=white]You are on the developper's menu. Here you can create new \"rules\" for the game.[/color][/i]"
+          "value": "[i][color=white]You are on the developer's menu. Here you can create new \"rules\" for the game.[/color][/i]"
         },
         {
           "name": "id",
@@ -88,7 +88,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4527499999999993,
+    "zoomFactor": 0.3527499999999993,
     "windowMask": false
   }
 }

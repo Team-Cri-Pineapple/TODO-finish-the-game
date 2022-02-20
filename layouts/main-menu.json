@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.45650000000000346,
+    "zoomFactor": 0.4165000000000031,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1036,7 +1036,7 @@
       "width": 128,
       "x": 0,
       "y": 128,
-      "zOrder": 14,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1405,6 +1405,22 @@
       "x": 1024,
       "y": 0,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "grass",
+      "persistentUuid": "97fc403f-56ae-41e8-ba9b-c29ed6d6f17a",
+      "width": 0,
+      "x": 0,
+      "y": 128,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
