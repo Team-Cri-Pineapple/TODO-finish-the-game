@@ -4811,6 +4811,18 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "NbObjet"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": [],
