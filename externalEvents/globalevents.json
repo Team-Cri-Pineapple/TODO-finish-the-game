@@ -28,31 +28,11 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Events executor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "eventTriggersOnce",
-                    "False"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -69,6 +49,17 @@
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "eventTriggersOnce",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    },
                     {
                       "type": {
                         "inverted": false,
@@ -471,7 +462,7 @@
                             "value": "SetSceneVariableAsBoolean"
                           },
                           "parameters": [
-                            "EventList[Variable(EventID)].TriggeredLastFrame",
+                            "Event.TriggeredLastFrame",
                             "False"
                           ],
                           "subInstructions": []
@@ -509,7 +500,7 @@
                                 "value": "SceneVariableAsBoolean"
                               },
                               "parameters": [
-                                "EventList[Variable(EventID)].TriggeredLastFrame",
+                                "Event.TriggeredLastFrame",
                                 "True"
                               ],
                               "subInstructions": []
@@ -541,7 +532,7 @@
                                 "value": "SceneVariableAsBoolean"
                               },
                               "parameters": [
-                                "EventList[Variable(EventID)].TriggeredLastFrame",
+                                "Event.TriggeredLastFrame",
                                 "False"
                               ],
                               "subInstructions": []
@@ -554,7 +545,7 @@
                                 "value": "SetSceneVariableAsBoolean"
                               },
                               "parameters": [
-                                "EventList[Variable(EventID)].TriggeredLastFrame",
+                                "Event.TriggeredLastFrame",
                                 "True"
                               ],
                               "subInstructions": []
@@ -568,7 +559,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
                   "iterableVariableName": "Event.ActionsList",
                   "valueIteratorVariableName": "Action",
