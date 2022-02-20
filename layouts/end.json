@@ -1,8 +1,8 @@
 {
   "b": 58,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Help",
-  "name": "Help",
+  "mangledName": "End",
+  "name": "End",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8950000000000028,
+    "zoomFactor": 0.5200000000000025,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1010,9 +1010,9 @@
       "locked": false,
       "name": "floormoves",
       "persistentUuid": "a24c4a7c-a570-45a4-8596-4fa3231ca2d0",
-      "width": 192,
-      "x": 128,
-      "y": 205,
+      "width": 128,
+      "x": 384,
+      "y": 384,
       "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
@@ -1027,41 +1027,9 @@
       "name": "LaserBlock",
       "persistentUuid": "69d2e924-3283-4f00-b842-664e7ddf8349",
       "width": 64,
-      "x": 160,
-      "y": 365,
+      "x": 96,
+      "y": 352,
       "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "LaserBeam",
-      "persistentUuid": "beac7809-522f-4c15-9803-43a74a0a0c23",
-      "width": 192,
-      "x": 128,
-      "y": 365,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "floor",
-      "persistentUuid": "4e413f4d-537e-4839-9014-3e07a30bc542",
-      "width": 192,
-      "x": 128,
-      "y": -2,
-      "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1075,8 +1043,8 @@
       "name": "notes",
       "persistentUuid": "6795520d-a22e-4be4-98c8-46fde1e5f6b0",
       "width": 377,
-      "x": 384,
-      "y": 14,
+      "x": 128,
+      "y": 256,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -1084,7 +1052,7 @@
         {
           "name": "msg",
           "type": "string",
-          "value": "This is a fake and real platform. Use the \"Flip Fake and Real Platform\" action for it toggle from real to fake and vice versa."
+          "value": "[color=#F5D323]It wasn't hard, was it :)[/color]"
         }
       ]
     },
@@ -1097,8 +1065,8 @@
       "name": "notes",
       "persistentUuid": "f0e1621d-d0bc-415d-b8d5-cc59e7a004e7",
       "width": 384,
-      "x": 384,
-      "y": 205,
+      "x": 192,
+      "y": 159,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -1106,29 +1074,7 @@
         {
           "name": "msg",
           "type": "string",
-          "value": "This is a move-able platform. Use the \"Move moving platform\" action for it start moving."
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 33,
-      "layer": "",
-      "locked": false,
-      "name": "notes",
-      "persistentUuid": "f25de82f-5268-4e62-a388-34727b6ccd70",
-      "width": 384,
-      "x": 384,
-      "y": 333,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "msg",
-          "type": "string",
-          "value": "This is a laser beam, obviously it can hurt the player. You can switch it off and on by using the \"Toggle lasers\" action."
+          "value": "[size=30]Thanks for playing the game!\nWe hope that you had fun :D[/size]"
         }
       ]
     },
@@ -1141,8 +1087,8 @@
       "name": "notes",
       "persistentUuid": "bb400c18-eba9-41fe-bc08-be1a03b26c70",
       "width": 256,
-      "x": 434,
-      "y": 469,
+      "x": 576,
+      "y": 415,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -1163,8 +1109,8 @@
       "name": "floor",
       "persistentUuid": "9464422a-c0a0-489a-8b50-55a67f741eff",
       "width": 192,
-      "x": 128,
-      "y": 77,
+      "x": 576,
+      "y": 256,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],

@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.05,
+    "zoomFactor": 0.5500000000000002,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -726,7 +726,7 @@
         {
           "name": "insideContent",
           "type": "string",
-          "value": "Don't mind the gaps, I didn't have the motivation to finish programming them. Would you mind pressing [color=green]Escape[/color] for me?"
+          "value": "Don't mind the gaps, I didn't have the motivation to finish programming them. Would you mind pressing [color=green]E[/color] for me?"
         },
         {
           "name": "trigger",
@@ -2007,6 +2007,55 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 75,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueText",
+      "persistentUuid": "7c0b42c0-63d1-482d-b435-97f7346f3978",
+      "width": 320,
+      "x": 1600,
+      "y": -64,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": ":D"
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "happi"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 192,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueTrigger",
+      "persistentUuid": "b1b26ce6-92eb-4e3d-bf72-f4bf291975c1",
+      "width": 384,
+      "x": 1536,
+      "y": -128,
+      "zOrder": 68,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "happi"
+        }
+      ]
     }
   ],
   "objects": [

@@ -1522,7 +1522,7 @@
                   },
                   "parameters": [
                     "",
-                    "Escape"
+                    "e"
                   ],
                   "subInstructions": []
                 },
@@ -4683,7 +4683,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Enemy",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4761,11 +4761,30 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Delete"
+                        "value": "Tween::AddObjectScaleTween"
                       },
                       "parameters": [
                         "Enemy",
-                        ""
+                        "Tween",
+                        "\"die\"",
+                        "0",
+                        "7",
+                        "\"easeInBack\"",
+                        "400",
+                        "yes",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "PlatformerObject",
+                        "no"
                       ],
                       "subInstructions": []
                     }
@@ -5085,13 +5104,13 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarObjet"
+                            "value": "VarObjetTxt"
                           },
                           "parameters": [
                             "Gate",
                             "LevelToGo",
                             "!=",
-                            "3"
+                            "\"4\""
                           ],
                           "subInstructions": []
                         }
@@ -5120,13 +5139,13 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarObjet"
+                            "value": "VarObjetTxt"
                           },
                           "parameters": [
                             "Gate",
                             "LevelToGo",
                             "=",
-                            "3"
+                            "\"4\""
                           ],
                           "subInstructions": []
                         }
@@ -5332,9 +5351,9 @@
                           },
                           "parameters": [
                             "",
-                            "assets\\Jump.wav",
+                            "assets\\step2.wav",
                             "no",
-                            "15",
+                            "30",
                             "1"
                           ],
                           "subInstructions": []
@@ -8339,12 +8358,11 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                        "value": "Scene"
                       },
                       "parameters": [
                         "",
-                        "\"Game Complete\"",
-                        "",
+                        "\"End\"",
                         ""
                       ],
                       "subInstructions": []
