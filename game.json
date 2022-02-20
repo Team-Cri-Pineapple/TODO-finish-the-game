@@ -720,6 +720,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/fallingback.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\fallingback.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
