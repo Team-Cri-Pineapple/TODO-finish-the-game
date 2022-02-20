@@ -3019,7 +3019,7 @@
             {
               "name": "Name",
               "type": "string",
-              "value": "Trgger once while true"
+              "value": "Trigger once while true"
             }
           ]
         }

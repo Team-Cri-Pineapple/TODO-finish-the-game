@@ -791,7 +791,7 @@
                                 "",
                                 "\"shootTimer\"",
                                 ">",
-                                "0.1"
+                                "0.2"
                               ],
                               "subInstructions": []
                             }
@@ -3821,16 +3821,6 @@
                 "move"
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "move"
-              ],
-              "subInstructions": []
             }
           ],
           "events": []
@@ -4599,25 +4589,28 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "BuiltinCommonInstructions::And"
+                            "value": "CollisionNP"
                           },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "CollisionNP"
-                              },
-                              "parameters": [
-                                "playerHitbox",
-                                "Bad",
-                                "",
-                                "",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ]
+                          "parameters": [
+                            "playerHitbox",
+                            "Bad",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PosY"
+                          },
+                          "parameters": [
+                            "playerHitbox",
+                            ">",
+                            "1720"
+                          ],
+                          "subInstructions": []
                         }
                       ]
                     }

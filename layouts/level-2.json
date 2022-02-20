@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6778908524513244,
+    "zoomFactor": 0.13000000000000003,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -58,11 +58,6 @@
               "name": "MoveMovingPlatforms",
               "type": "string",
               "value": "Move platforms"
-            },
-            {
-              "name": "ShootBullet",
-              "type": "string",
-              "value": "Shoot a bullet from the gun"
             },
             {
               "name": "ToggleLasers",
@@ -1964,7 +1959,7 @@
         {
           "name": "LevelToGo",
           "type": "string",
-          "value": "2"
+          "value": "3"
         }
       ]
     },
