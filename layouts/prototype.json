@@ -1992,7 +1992,24 @@
       "name": "Background",
       "visibility": true,
       "cameras": [],
-      "effects": []
+      "effects": [{
+        "effectType": "OldFilm",
+        "name": "Effect",
+        "doubleParameters": {
+          "animationFrequency": 0,
+          "noise": 0,
+          "noiseSize": 0,
+          "scratch": 0,
+          "scratchDensity": 0,
+          "scratchWidth": 1,
+          "sepia": 0,
+          "vignetting": 0.3,
+          "vignettingAlpha": 0.5,
+          "vignettingBlur": 0.6
+        },
+        "stringParameters": {},
+        "booleanParameters": {}
+      }]
     },
     {
       "ambientLightColorB": 9136208,
