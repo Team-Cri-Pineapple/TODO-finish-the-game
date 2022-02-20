@@ -684,6 +684,15 @@
         "name": "assets\\ButtonPressed-2-0.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/logo-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\logo-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

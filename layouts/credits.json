@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.43500000000000055,
+    "zoomFactor": 0.38500000000000056,
     "windowMask": false
   },
   "objectsGroups": [
@@ -36,6 +36,9 @@
         },
         {
           "name": "Team"
+        },
+        {
+          "name": "gamefinished"
         }
       ]
     }
@@ -205,7 +208,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 432,
+      "height": 1245,
       "layer": "",
       "locked": false,
       "name": "Credits",
@@ -1070,6 +1073,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 91.03394317626953,
+      "layer": "",
+      "locked": false,
+      "name": "gamefinished",
+      "persistentUuid": "b93fec7a-560c-4d74-ac7a-df0b8e0c4475",
+      "width": 447,
+      "x": 256,
+      "y": 1984,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1090,6 +1109,46 @@
         "align": "center",
         "wordWrap": true
       }
+    },
+    {
+      "name": "gamefinished",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "logo",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\icons\\logo-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Logos",
