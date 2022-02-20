@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.11000000000000049,
+    "zoomFactor": 0.28500000000000003,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1991,6 +1991,22 @@
           "value": "1"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 320,
+      "layer": "",
+      "locked": false,
+      "name": "VoidBlock",
+      "persistentUuid": "503e0ba3-b138-45d2-a4be-6262d7a16481",
+      "width": 7104,
+      "x": -2560,
+      "y": 576,
+      "zOrder": 67,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [

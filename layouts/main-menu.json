@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4365000000000031,
+    "zoomFactor": 0.41150000000000325,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1253,13 +1253,13 @@
       "angle": 180,
       "customSize": true,
       "height": 320,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "bricosBack",
       "persistentUuid": "02872631-1b4b-4c52-a50f-bf9eb7da047c",
       "width": 128,
-      "x": 1024,
-      "y": -384,
+      "x": 832,
+      "y": -320,
       "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
@@ -1269,13 +1269,13 @@
       "angle": 180,
       "customSize": true,
       "height": 192,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "bricosBack",
       "persistentUuid": "732beec9-0717-470d-8893-6bf01d5c7a7d",
       "width": 64,
-      "x": 960,
-      "y": -384,
+      "x": 768,
+      "y": -320,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -1285,13 +1285,13 @@
       "angle": 90,
       "customSize": true,
       "height": 64,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "brokosbackcurve",
       "persistentUuid": "7da5e29f-8f2a-40b3-a4b5-b2055e617b9f",
       "width": 64,
-      "x": 960,
-      "y": -192.00001525878906,
+      "x": 768,
+      "y": -128.00001525878906,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1301,13 +1301,13 @@
       "angle": 90,
       "customSize": true,
       "height": 64,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "brokosbackcurve",
       "persistentUuid": "77fe80db-8e66-484a-9313-ed7a747875d2",
       "width": 64,
-      "x": 960,
-      "y": -64,
+      "x": 768,
+      "y": 0,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1317,13 +1317,13 @@
       "angle": 180,
       "customSize": true,
       "height": 64,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "brokosbackcurve",
       "persistentUuid": "3a70b06d-9d13-44e0-a827-c0428deae4f9",
       "width": 64,
-      "x": 960,
-      "y": -128,
+      "x": 768,
+      "y": -64,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1333,13 +1333,13 @@
       "angle": 180,
       "customSize": true,
       "height": 64,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "bricosBack",
       "persistentUuid": "04f54347-d299-42e8-9482-94c9189f3e60",
       "width": 64,
-      "x": 1024,
-      "y": -64,
+      "x": 832,
+      "y": 0,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -1349,13 +1349,13 @@
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "brokosbackcurve",
       "persistentUuid": "ec6a452a-ebe9-4df0-b370-7dbf6c309424",
       "width": 64,
-      "x": 1088,
-      "y": -64,
+      "x": 896,
+      "y": 0,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1365,13 +1365,13 @@
       "angle": 270,
       "customSize": true,
       "height": 64,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "brokosbackcurve",
       "persistentUuid": "61208d8c-2d43-4e08-90a6-e72555cf5adf",
       "width": 64,
-      "x": 1088,
-      "y": 0,
+      "x": 896,
+      "y": 64,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1381,13 +1381,13 @@
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "brokosbackcurve",
       "persistentUuid": "de8a7202-7e3d-4db8-b93b-3e5e76558fd6",
       "width": 64,
-      "x": 1088,
-      "y": 64,
+      "x": 896,
+      "y": 128,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1397,13 +1397,13 @@
       "angle": 90,
       "customSize": true,
       "height": 64,
-      "layer": "Background",
+      "layer": "",
       "locked": false,
       "name": "brokosbackcurve",
       "persistentUuid": "087a4d34-5226-40fd-a5fa-3413af247200",
       "width": 64,
-      "x": 1024,
-      "y": 0,
+      "x": 832,
+      "y": 64,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -1421,6 +1421,22 @@
       "x": 0,
       "y": 128,
       "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1984,
+      "layer": "Background",
+      "locked": true,
+      "name": "background",
+      "persistentUuid": "0aa48c2d-41a0-4635-81b7-892384a38682",
+      "width": 3008,
+      "x": 416,
+      "y": 96,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1595,8 +1611,206 @@
             }
           ],
           "events": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "transition",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "transitionbg",
+                    "0",
+                    "0",
+                    "\"GUI\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "transitionbg",
+                    "=",
+                    "1000"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "transitionbg",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "transitionbubble",
+                    "transitionbg.CenterX()",
+                    "transitionbg.CenterY()",
+                    "\"GUI\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "transitionbubble",
+                    "=",
+                    "8"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectScaleTween"
+                  },
+                  "parameters": [
+                    "transitionbubble",
+                    "Tween",
+                    "\"start\"",
+                    "800",
+                    "800",
+                    "\"easeInOutCirc\"",
+                    "800",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SpriteMasking::Mask"
+                  },
+                  "parameters": [
+                    "",
+                    "transitionbg",
+                    "transitionbubble",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "transitionPop",
+                    "transitionbubble.X()",
+                    "transitionbubble.Y()",
+                    "\"GUI\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\step2.wav",
+                    "",
+                    "10",
+                    "RandomFloatInRange(0.8,1)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
         }
       ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "transitionbubble",
+            "Tween",
+            "\"start\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Delete"
+          },
+          "parameters": [
+            "transitionbg",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Delete"
+          },
+          "parameters": [
+            "transitionbubble",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     },
     {
       "disabled": false,
@@ -1667,19 +1881,298 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Scene"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "",
-                "Button.VariableString(to)",
-                "yes"
+                "to",
+                "=",
+                "Button.VariableString(to)"
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "transitioned",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "transitionbg",
+                    "0",
+                    "0",
+                    "\"GUI\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "transitionbg",
+                    "=",
+                    "1000"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "transitionbg",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "transitionbubble",
+                    "transitionbg.CenterX()",
+                    "transitionbg.CenterY()",
+                    "\"GUI\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "transitionbubble",
+                    "=",
+                    "800"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectScaleTween"
+                  },
+                  "parameters": [
+                    "transitionbubble",
+                    "Tween",
+                    "\"next\"",
+                    "8",
+                    "8",
+                    "\"easeInOutCirc\"",
+                    "800",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SpriteMasking::Mask"
+                  },
+                  "parameters": [
+                    "",
+                    "transitionbg",
+                    "transitionbubble",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "transitionbubble",
+            "Tween",
+            "\"next\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::RemoveTween"
+          },
+          "parameters": [
+            "transitionbubble",
+            "Tween",
+            "\"next\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "transitionPop",
+            "transitionbubble.X()",
+            "transitionbubble.Y()",
+            "\"GUI\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "transitionPop",
+            "=",
+            "1001"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Delete"
+          },
+          "parameters": [
+            "transitionbubble",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SpriteMasking::Unmask"
+          },
+          "parameters": [
+            "",
+            "transitionbg",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectAngleTween"
+          },
+          "parameters": [
+            "transitionbg",
+            "Tween",
+            "\"next\"",
+            "0",
+            "\"linear\"",
+            "500",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\step2.wav",
+            "",
+            "10",
+            "RandomFloatInRange(0.8,1)"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "transitionbg",
+            "Tween",
+            "\"next\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "VariableString(to)",
+            "yes"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     },
     {
       "disabled": false,
@@ -1798,24 +2291,26 @@
       "name": "Background",
       "visibility": true,
       "cameras": [],
-      "effects": [{
-        "effectType": "OldFilm",
-        "name": "Effect",
-        "doubleParameters": {
-          "animationFrequency": 0,
-          "noise": 0,
-          "noiseSize": 0,
-          "scratch": 0,
-          "scratchDensity": 0,
-          "scratchWidth": 1,
-          "sepia": 0,
-          "vignetting": 0.3,
-          "vignettingAlpha": 0.5,
-          "vignettingBlur": 0.6
-        },
-        "stringParameters": {},
-        "booleanParameters": {}
-      }]
+      "effects": [
+        {
+          "effectType": "OldFilm",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 0,
+            "noise": 0,
+            "noiseSize": 0,
+            "scratch": 0,
+            "scratchDensity": 0,
+            "scratchWidth": 1,
+            "sepia": 0,
+            "vignetting": 0.3,
+            "vignettingAlpha": 0.5,
+            "vignettingBlur": 0.6
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ]
     },
     {
       "ambientLightColorB": 2,
@@ -1837,42 +2332,44 @@
           "width": 0
         }
       ],
-      "effects": [{
-        "effectType": "DropShadow",
-        "name": "Effect",
-        "doubleParameters": {
-          "alpha": 0.3,
-          "blur": 4,
-          "distance": 1,
-          "padding": 80,
-          "quality": 7,
-          "rotation": 0
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 0.3,
+            "blur": 4,
+            "distance": 1,
+            "padding": 80,
+            "quality": 7,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
         },
-        "stringParameters": {
-          "color": "0;0;0"
-        },
-        "booleanParameters": {
-          "shadowOnly": false
+        {
+          "effectType": "OldFilm",
+          "name": "Effect2",
+          "doubleParameters": {
+            "animationFrequency": 0,
+            "noise": 0,
+            "noiseSize": 0,
+            "scratch": 0,
+            "scratchDensity": 0,
+            "scratchWidth": 0,
+            "sepia": 0,
+            "vignetting": 0.3,
+            "vignettingAlpha": 0.7,
+            "vignettingBlur": 0.6
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
         }
-      },
-      {
-        "effectType": "OldFilm",
-        "name": "Effect2",
-        "doubleParameters": {
-          "animationFrequency": 0,
-          "noise": 0,
-          "noiseSize": 0,
-          "scratch": 0,
-          "scratchDensity": 0,
-          "scratchWidth": 0,
-          "sepia": 0,
-          "vignetting": 0.3,
-          "vignettingAlpha": 0.7,
-          "vignettingBlur": 0.6
-        },
-        "stringParameters": {},
-        "booleanParameters": {}
-      }]
+      ]
     },
     {
       "ambientLightColorB": 83886080,
@@ -1881,6 +2378,17 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "name": "center",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 13,
+      "ambientLightColorG": 6032016,
+      "ambientLightColorR": 13101128,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "GUI",
       "visibility": true,
       "cameras": [],
       "effects": []

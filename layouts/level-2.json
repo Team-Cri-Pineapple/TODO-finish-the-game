@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.06999999999999997,
+    "zoomFactor": 0.4950000000000001,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1647,38 +1647,6 @@
       "layer": "",
       "locked": false,
       "name": "LaserBlock",
-      "persistentUuid": "30a01414-1b0b-4fac-b2a8-197fe4a96258",
-      "width": 64,
-      "x": 4128,
-      "y": -2656,
-      "zOrder": 25,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "LaserBlock",
-      "persistentUuid": "3c74be54-d92d-4c06-bbd8-0ebbccdebb8e",
-      "width": 64,
-      "x": 4576,
-      "y": -2656,
-      "zOrder": 25,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "locked": false,
-      "name": "LaserBlock",
       "persistentUuid": "10e54dae-7db6-4cfa-aeaf-f1562a5b2967",
       "width": 64,
       "x": 2784,
@@ -1724,7 +1692,13 @@
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "isFired",
+          "type": "boolean",
+          "value": true
+        }
+      ]
     },
     {
       "angle": 0,
@@ -2040,24 +2014,26 @@
       "name": "Background",
       "visibility": true,
       "cameras": [],
-      "effects": [{
-        "effectType": "OldFilm",
-        "name": "Effect",
-        "doubleParameters": {
-          "animationFrequency": 0,
-          "noise": 0,
-          "noiseSize": 0,
-          "scratch": 0,
-          "scratchDensity": 0,
-          "scratchWidth": 1,
-          "sepia": 0,
-          "vignetting": 0.3,
-          "vignettingAlpha": 0.5,
-          "vignettingBlur": 0.6
-        },
-        "stringParameters": {},
-        "booleanParameters": {}
-      }]
+      "effects": [
+        {
+          "effectType": "OldFilm",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 0,
+            "noise": 0,
+            "noiseSize": 0,
+            "scratch": 0,
+            "scratchDensity": 0,
+            "scratchWidth": 1,
+            "sepia": 0,
+            "vignetting": 0.3,
+            "vignettingAlpha": 0.5,
+            "vignettingBlur": 0.6
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ]
     },
     {
       "ambientLightColorB": 12288688,
@@ -2079,42 +2055,44 @@
           "width": 0
         }
       ],
-      "effects": [{
-        "effectType": "DropShadow",
-        "name": "Effect",
-        "doubleParameters": {
-          "alpha": 0.3,
-          "blur": 4,
-          "distance": 1,
-          "padding": 80,
-          "quality": 7,
-          "rotation": 0
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 0.3,
+            "blur": 4,
+            "distance": 1,
+            "padding": 80,
+            "quality": 7,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
         },
-        "stringParameters": {
-          "color": "0;0;0"
-        },
-        "booleanParameters": {
-          "shadowOnly": false
+        {
+          "effectType": "OldFilm",
+          "name": "Effect2",
+          "doubleParameters": {
+            "animationFrequency": 0,
+            "noise": 0,
+            "noiseSize": 0,
+            "scratch": 0,
+            "scratchDensity": 0,
+            "scratchWidth": 0,
+            "sepia": 0,
+            "vignetting": 0.3,
+            "vignettingAlpha": 0.7,
+            "vignettingBlur": 0.6
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
         }
-      },
-      {
-        "effectType": "OldFilm",
-        "name": "Effect2",
-        "doubleParameters": {
-          "animationFrequency": 0,
-          "noise": 0,
-          "noiseSize": 0,
-          "scratch": 0,
-          "scratchDensity": 0,
-          "scratchWidth": 0,
-          "sepia": 0,
-          "vignetting": 0.3,
-          "vignettingAlpha": 0.7,
-          "vignettingBlur": 0.6
-        },
-        "stringParameters": {},
-        "booleanParameters": {}
-      }]
+      ]
     },
     {
       "ambientLightColorB": 9812864,
