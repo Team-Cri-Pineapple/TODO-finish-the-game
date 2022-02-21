@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5200000000000025,
+    "zoomFactor": 0.6450000000000026,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1041,28 +1041,6 @@
       "layer": "",
       "locked": false,
       "name": "notes",
-      "persistentUuid": "6795520d-a22e-4be4-98c8-46fde1e5f6b0",
-      "width": 377,
-      "x": 128,
-      "y": 256,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "msg",
-          "type": "string",
-          "value": "[color=#F5D323]It wasn't hard, was it :)[/color]"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 33,
-      "layer": "",
-      "locked": false,
-      "name": "notes",
       "persistentUuid": "f0e1621d-d0bc-415d-b8d5-cc59e7a004e7",
       "width": 384,
       "x": 192,
@@ -1119,6 +1097,50 @@
           "name": "isFake",
           "type": "boolean",
           "value": true
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 75,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueText",
+      "persistentUuid": "ec8e4d42-5067-406b-bf96-4462fd980f7b",
+      "width": 512,
+      "x": -64,
+      "y": 576,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "[i]How da fke did dis guy do it[/i]"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 75,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueText",
+      "persistentUuid": "e8e8bcfb-770e-448e-8174-ff64f146327a",
+      "width": 320,
+      "x": 128,
+      "y": 320,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "It wasn't hard, was it :)"
         }
       ]
     }
@@ -1311,6 +1333,29 @@
             "notes",
             "=",
             "notes.VariableString(msg)"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "DialogueText",
+            "=",
+            "DialogueText.VariableString(insideContent)"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetGlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "finished",
+            "True"
           ],
           "subInstructions": []
         }

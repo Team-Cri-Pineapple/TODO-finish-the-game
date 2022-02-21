@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.2802500000000022,
+    "zoomFactor": 0.40525000000000233,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -190,8 +190,8 @@
       "locked": false,
       "name": "floorbrics",
       "persistentUuid": "2d417d80-54d5-49fb-aae8-8dc754c3d7af",
-      "width": 1920,
-      "x": -320,
+      "width": 1792,
+      "x": -192,
       "y": -1216,
       "zOrder": 10,
       "numberProperties": [],
@@ -325,7 +325,7 @@
       "name": "FakeGate",
       "persistentUuid": "e3e8e5e5-4b57-40ae-99dc-22bc59bd01ac",
       "width": 128,
-      "x": -256,
+      "x": -64,
       "y": -1280,
       "zOrder": 3,
       "numberProperties": [],
@@ -528,9 +528,9 @@
       "locked": false,
       "name": "VoidBlock",
       "persistentUuid": "eb933e00-2c9a-4c28-a3c5-d6bf07fffa35",
-      "width": 6272,
-      "x": -1024,
-      "y": 832,
+      "width": 2368,
+      "x": 1152,
+      "y": -960,
       "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
@@ -673,8 +673,8 @@
       "name": "button",
       "persistentUuid": "51dcfd18-4911-4066-9e29-c8a255173977",
       "width": 64,
-      "x": 2048,
-      "y": -1600,
+      "x": 1280,
+      "y": -1472,
       "zOrder": 30,
       "numberProperties": [
         {
@@ -826,8 +826,8 @@
       "locked": false,
       "name": "floorbrics",
       "persistentUuid": "24ae51b7-7634-4dfc-9ccc-18cbce809a27",
-      "width": 320,
-      "x": 4672,
+      "width": 576,
+      "x": 4416,
       "y": -2112,
       "zOrder": 33,
       "numberProperties": [],
@@ -853,7 +853,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 320,
+      "height": 448,
       "layer": "",
       "locked": false,
       "name": "floorbrics",
@@ -958,6 +958,195 @@
       "x": 3904,
       "y": -704,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueText",
+      "persistentUuid": "eeff241c-060c-4d38-85e6-d1c0b60bb035",
+      "width": 0,
+      "x": 256,
+      "y": -1408,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "dis IS the last level in yo journey.\n[i][b]Be gud :>[/b][/i]"
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "gud"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 208,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueTrigger",
+      "persistentUuid": "17c1f537-b305-4e31-9b11-8caa9f60f8ff",
+      "width": 256,
+      "x": 192,
+      "y": -1344,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "gud"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 192,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueTrigger",
+      "persistentUuid": "eb4663be-b0fe-4690-b8c0-941df185b9e7",
+      "width": 192,
+      "x": 576,
+      "y": -1408,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "gun"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueText",
+      "persistentUuid": "336aba3b-61fb-45eb-85f6-45c2021f5e92",
+      "width": 0,
+      "x": 512,
+      "y": -1344,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "Shoot."
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "gun"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 456,
+      "layer": "",
+      "locked": false,
+      "name": "camplace2x",
+      "persistentUuid": "e8b0d69d-f200-4051-a51c-3581fefa537d",
+      "width": 1920,
+      "x": 2432,
+      "y": -1380,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "zoom",
+          "type": "string",
+          "value": "0.8"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 456,
+      "layer": "",
+      "locked": false,
+      "name": "camplace",
+      "persistentUuid": "89b172a5-2f79-4057-ae53-7717ba3f146c",
+      "width": 1152,
+      "x": 2432,
+      "y": -1380,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "button",
+      "persistentUuid": "2201c065-148f-402d-84c8-f11d4a09fa64",
+      "width": 64,
+      "x": 2048,
+      "y": -1600,
+      "zOrder": 30,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Cri",
+      "persistentUuid": "de06c065-9817-4050-949e-7c1d93ce4be5",
+      "width": 0,
+      "x": -320,
+      "y": -768,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "locked": false,
+      "name": "VoidBlock",
+      "persistentUuid": "cdfc6e57-cf1d-48d4-83f4-32859c18b19a",
+      "width": 128,
+      "x": -320,
+      "y": -960,
+      "zOrder": 40,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []

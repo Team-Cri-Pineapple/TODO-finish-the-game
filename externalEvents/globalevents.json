@@ -2927,6 +2927,17 @@
                     "value": "Delete"
                   },
                   "parameters": [
+                    "EventIcon",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
                     "EventTextBB",
                     ""
                   ],
@@ -4136,7 +4147,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Tutorial dialogues",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4766,6 +4777,20 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "transitionPop",
+                        "bullet.X()",
+                        "bullet.Y()",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "Delete"
                       },
                       "parameters": [
@@ -4814,8 +4839,22 @@
                             "",
                             "assets\\Jump.wav",
                             "",
-                            "15",
+                            "2",
                             "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\step.wav",
+                            "",
+                            "10",
+                            "RandomFloatInRange(0.8, 1)"
                           ],
                           "subInstructions": []
                         },
@@ -5463,7 +5502,7 @@
                             "assets\\step.wav",
                             "no",
                             "5",
-                            "RandomInRange(0.8,1.2)"
+                            "RandomFloatInRange(0.8,1.2)"
                           ],
                           "subInstructions": []
                         },
@@ -7308,7 +7347,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "gun",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -7556,6 +7595,20 @@
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "transitionPop",
+                            "bullet.X()",
+                            "bullet.Y()",
+                            "\"\""
+                          ],
+                          "subInstructions": []
+                        },
                         {
                           "type": {
                             "inverted": false,

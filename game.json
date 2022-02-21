@@ -702,6 +702,33 @@
         "name": "assets\\enemy.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ButtonPressed-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ButtonPressed-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ButtonPressed-2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ButtonPressed-2-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/logo-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icons\\logo-1-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1587,7 +1614,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\ButtonPressed-1-0.png",
+                  "image": "assets\\ButtonPressed-1-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1604,7 +1631,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\ButtonPressed-2-0.png",
+                  "image": "assets\\ButtonPressed-2-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3139,7 +3166,7 @@
               "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "assets\\button-1.png",
                   "points": [],
                   "originPoint": {
@@ -3153,7 +3180,26 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 8,
+                        "y": 16
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -3168,7 +3214,7 @@
               "timeBetweenFrames": 0.07999999821186066,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "assets\\button-pressed.png",
                   "points": [],
                   "originPoint": {
@@ -3182,7 +3228,26 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 8,
+                        "y": 16
+                      }
+                    ]
+                  ]
                 }
               ]
             }

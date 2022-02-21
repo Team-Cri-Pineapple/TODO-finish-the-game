@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5500000000000002,
+    "zoomFactor": 0.7000000000000002,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2016,8 +2016,8 @@
       "locked": false,
       "name": "DialogueText",
       "persistentUuid": "7c0b42c0-63d1-482d-b435-97f7346f3978",
-      "width": 320,
-      "x": 1600,
+      "width": 192,
+      "x": 3712,
       "y": -64,
       "zOrder": 23,
       "numberProperties": [],
@@ -2026,12 +2026,12 @@
         {
           "name": "insideContent",
           "type": "string",
-          "value": ":D"
+          "value": "Wait, u actually did it???"
         },
         {
           "name": "trigger",
           "type": "string",
-          "value": "happi"
+          "value": "happi2"
         }
       ]
     },
@@ -2043,7 +2043,29 @@
       "locked": false,
       "name": "DialogueTrigger",
       "persistentUuid": "b1b26ce6-92eb-4e3d-bf72-f4bf291975c1",
-      "width": 384,
+      "width": 256,
+      "x": 3648,
+      "y": -128,
+      "zOrder": 68,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "happi2"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 192,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueTrigger",
+      "persistentUuid": "0ebd999e-bf05-4dee-ad9a-0965a63e1a23",
+      "width": 256,
       "x": 1536,
       "y": -128,
       "zOrder": 68,
@@ -2052,6 +2074,33 @@
       "initialVariables": [
         {
           "name": "triggerID",
+          "type": "string",
+          "value": "happi"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 75,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueText",
+      "persistentUuid": "65201216-a681-40ec-a69d-9eb28a287bed",
+      "width": 320,
+      "x": 1600,
+      "y": -64,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "Nice :D"
+        },
+        {
+          "name": "trigger",
           "type": "string",
           "value": "happi"
         }

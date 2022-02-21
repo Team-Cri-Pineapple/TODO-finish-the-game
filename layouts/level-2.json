@@ -1990,6 +1990,104 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 75,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueText",
+      "persistentUuid": "c5b3f81b-c247-4f5d-9c1d-e8355c3fa3c2",
+      "width": 192,
+      "x": 763.8162231445312,
+      "y": -734.5325317382812,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "fun."
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "fun"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 320,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueTrigger",
+      "persistentUuid": "3bba8bf8-4c76-4c9d-8c3b-82559cdcc2a0",
+      "width": 256,
+      "x": 704,
+      "y": -896,
+      "zOrder": 68,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "fun"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 75,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueText",
+      "persistentUuid": "a6f8bd56-f7f2-4ff0-a719-01bfbb0fab54",
+      "width": 192,
+      "x": 192,
+      "y": -1408,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "insideContent",
+          "type": "string",
+          "value": "0_o"
+        },
+        {
+          "name": "trigger",
+          "type": "string",
+          "value": "o"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 192,
+      "layer": "",
+      "locked": false,
+      "name": "DialogueTrigger",
+      "persistentUuid": "4696c650-47cd-4cd2-9cc3-e42af1f2db52",
+      "width": 256,
+      "x": 192,
+      "y": -1408,
+      "zOrder": 68,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "triggerID",
+          "type": "string",
+          "value": "o"
+        }
+      ]
     }
   ],
   "objects": [],
