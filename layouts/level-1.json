@@ -8,7 +8,7 @@
   "oglZNear": 1,
   "r": 73,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "Level 1",
   "v": 43,
   "uiSettings": {

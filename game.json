@@ -729,6 +729,15 @@
         "name": "assets\\icons\\logo-1-1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/bop.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bop.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
