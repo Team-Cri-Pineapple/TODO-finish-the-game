@@ -49,6 +49,12 @@
       "04k8NyykaEcX1dVkWEmXN2OxZDD3",
       "Mk7N5tFrpcePEmbe3ZLC4peEULY2"
     ],
+    "categories": [],
+    "playableDevices": [
+      "keyboard",
+      "gamepad",
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
