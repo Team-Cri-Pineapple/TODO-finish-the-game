@@ -1,14 +1,14 @@
 {
   "b": 58,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Main_32Menu",
-  "name": "Main Menu",
+  "mangledName": "art",
+  "name": "art",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
   "r": 73,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": false,
+  "stopSoundsOnStartup": true,
   "title": "",
   "v": 43,
   "uiSettings": {
@@ -21,66 +21,12 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7615000000000043,
+    "zoomFactor": 0.5615000000000042,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Button",
-      "persistentUuid": "c3c59d52-cd0c-4ec4-a0e9-21961ada0fe6",
-      "width": 0,
-      "x": 402,
-      "y": 169,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "to",
-          "type": "string",
-          "value": "Tutorial Level"
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "value": "Play"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Button",
-      "persistentUuid": "6c60b580-5301-4d87-83dc-691b3a34c51b",
-      "width": 0,
-      "x": 402,
-      "y": 231,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "to",
-          "type": "string",
-          "value": "Credits"
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "value": "CREDITS"
-        }
-      ]
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -260,14 +206,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 256,
+      "height": 192,
       "layer": "",
       "locked": false,
       "name": "floor",
       "persistentUuid": "4b79a7e3-c14f-486e-892f-564c6ef5a4b1",
       "width": 192,
       "x": 64,
-      "y": 320,
+      "y": 384,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -282,7 +228,7 @@
       "name": "player",
       "persistentUuid": "6703ba7a-1edf-4f13-9716-8900ad6b266d",
       "width": 64,
-      "x": 480,
+      "x": 544,
       "y": 416,
       "zOrder": 11,
       "numberProperties": [],
@@ -298,7 +244,7 @@
       "name": "cape",
       "persistentUuid": "1abb1c83-2d38-40c7-bd87-934df83a0f77",
       "width": 64,
-      "x": 480,
+      "x": 544,
       "y": 416,
       "zOrder": 12,
       "numberProperties": [],
@@ -610,22 +556,6 @@
       "initialVariables": []
     },
     {
-      "angle": 90,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "grass",
-      "persistentUuid": "951d4e4e-54e3-49d1-a581-947b19a2ce0a",
-      "width": 0,
-      "x": 256,
-      "y": 320,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
       "angle": 0,
       "customSize": false,
       "height": 0,
@@ -635,7 +565,7 @@
       "persistentUuid": "96177d51-a8bc-4c2b-b521-a311b1667481",
       "width": 0,
       "x": 64,
-      "y": 256,
+      "y": 320,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -651,7 +581,7 @@
       "persistentUuid": "f7d3e73d-2fed-41ad-b892-5a38b2f0ba48",
       "width": 64,
       "x": 128,
-      "y": 256,
+      "y": 320,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -667,7 +597,7 @@
       "persistentUuid": "42f7f229-68a8-4282-ad16-7f856e5bce5a",
       "width": 0,
       "x": 192,
-      "y": 256,
+      "y": 320,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -715,7 +645,7 @@
       "persistentUuid": "3d9e831a-e66a-4da9-9eb3-29a6679a17b0",
       "width": 0,
       "x": 192,
-      "y": 256,
+      "y": 320,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -872,22 +802,6 @@
       "layer": "",
       "locked": false,
       "name": "grass",
-      "persistentUuid": "6c73f091-c428-40f1-a82b-abd2908567e6",
-      "width": 0,
-      "x": 0,
-      "y": 320,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 270,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "grass",
       "persistentUuid": "336d6c3f-6172-43f1-9429-b93573ebbd6a",
       "width": 0,
       "x": -7.105427357601002e-15,
@@ -906,8 +820,8 @@
       "name": "Logo",
       "persistentUuid": "97f7c30f-ae65-4e18-bd25-b9069cbb9ee7",
       "width": 447,
-      "x": 257,
-      "y": 34.96605682373047,
+      "x": 256,
+      "y": 192,
       "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
@@ -1018,7 +932,7 @@
       "name": "computer",
       "persistentUuid": "52b31815-20ed-4b1b-991f-8384fd71e14f",
       "width": 64,
-      "x": 544,
+      "x": 608,
       "y": 416,
       "zOrder": 5,
       "numberProperties": [],
@@ -1034,8 +948,8 @@
       "name": "FakeGate",
       "persistentUuid": "df1e4608-541b-4c13-8a88-e823a73344c4",
       "width": 128,
-      "x": 0,
-      "y": 128,
+      "x": 384,
+      "y": 384,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -1442,31 +1356,20 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 90,
       "customSize": false,
       "height": 0,
       "layer": "",
       "locked": false,
-      "name": "Button",
-      "persistentUuid": "5afc4e61-95bf-43ee-9219-df21ff5be688",
+      "name": "grass",
+      "persistentUuid": "f31693c2-cbbd-4757-9bbc-4033a916909a",
       "width": 0,
-      "x": 402,
-      "y": 295,
-      "zOrder": 10,
+      "x": 192,
+      "y": 256,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "to",
-          "type": "string",
-          "value": "Help"
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "value": "Help"
-        }
-      ]
+      "initialVariables": []
     }
   ],
   "objects": [
