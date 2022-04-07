@@ -18,7 +18,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "//TO:DO",
-    "description": "//TO:DO is a game in wich you the player have to repair the mistakes made by the developper using the power of events sheets !",
+    "description": "The developer didn't finish making the game... Luckilly, you can use the power of events to create your own game mechanics, and finish the game 😎\n\n👑 Winner of the GDevelop game jam",
     "author": "Team Cri Pineapple",
     "windowWidth": 960,
     "windowHeight": 540,
@@ -77,11 +77,12 @@
       "04k8NyykaEcX1dVkWEmXN2OxZDD3",
       "Mk7N5tFrpcePEmbe3ZLC4peEULY2"
     ],
-    "categories": [],
+    "categories": [
+      "puzzle",
+      "platformer"
+    ],
     "playableDevices": [
-      "keyboard",
-      "gamepad",
-      "mobile"
+      "keyboard"
     ],
     "extensionProperties": [],
     "platforms": [
